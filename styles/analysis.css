@@ -9,6 +9,15 @@ main.content#quarto-document-content {
   max-width: 1240px;
 }
 
+#title-block-header .title {
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+#title-block-header .subtitle {
+  font-size: 1rem;
+}
+
 @media (max-width: 1200px) {
   main.content#quarto-document-content {
     max-width: 100%;
