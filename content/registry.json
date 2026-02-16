@@ -1,24 +1,7 @@
 {
-  "generatedAt": "2026-02-16T18:04:55.777Z",
+  "generatedAt": "2026-02-16T18:06:51.740Z",
   "total": 4,
   "works": [
-    {
-      "slug": "german-sanctions-3page-summary-ukr",
-      "fileName": "German_Sanctions_3Page_Summary_UKR",
-      "title": "How Germany Enforces Sanctions (3-page Summary, Ukrainian)",
-      "summary": "Ukrainian-language 3-page summary for policy communication.",
-      "kind": "Summary",
-      "language": "Ukrainian",
-      "updatedAt": "2026-02-16T18:04:02.842Z",
-      "htmlPath": "/rendered/German_Sanctions_3Page_Summary_UKR.html",
-      "pdfPath": "/rendered/German_Sanctions_3Page_Summary_UKR.pdf",
-      "tags": [
-        "brief",
-        "sanctions",
-        "Ukraine",
-        "translation"
-      ]
-    },
     {
       "slug": "german-sanction-mechanism-analysis-ukr",
       "fileName": "German_Sanction_Mechanism_Analysis_UKR",
@@ -26,10 +9,27 @@
       "summary": "Ukrainian-language edition of the full German sanctions mechanism analysis.",
       "kind": "Analysis",
       "language": "Ukrainian",
-      "updatedAt": "2026-02-16T17:59:28.381Z",
+      "updatedAt": "2026-02-16T18:05:50.054Z",
       "htmlPath": "/rendered/German_Sanction_Mechanism_Analysis_UKR.html",
       "pdfPath": "/rendered/German_Sanction_Mechanism_Analysis_UKR.pdf",
       "tags": [
+        "sanctions",
+        "Ukraine",
+        "translation"
+      ]
+    },
+    {
+      "slug": "german-sanctions-3page-summary-ukr",
+      "fileName": "German_Sanctions_3Page_Summary_UKR",
+      "title": "How Germany Enforces Sanctions (3-page Summary, Ukrainian)",
+      "summary": "Ukrainian-language 3-page summary for policy communication.",
+      "kind": "Summary",
+      "language": "Ukrainian",
+      "updatedAt": "2026-02-16T18:05:47.990Z",
+      "htmlPath": "/rendered/German_Sanctions_3Page_Summary_UKR.html",
+      "pdfPath": "/rendered/German_Sanctions_3Page_Summary_UKR.pdf",
+      "tags": [
+        "brief",
         "sanctions",
         "Ukraine",
         "translation"
