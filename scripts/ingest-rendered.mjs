@@ -77,6 +77,28 @@ function extractHtmlTitle(htmlText, fallback) {
   return match[1].replace(/\s+/g, " ").trim();
 }
 
+function extractFrontmatterDate(qmdPath) {
+  if (!fs.existsSync(qmdPath)) {
+    return null;
+  }
+
+  const raw = fs.readFileSync(qmdPath, "utf8");
+  const match = raw.match(/^---\s*\n([\s\S]*?)\n---/);
+  if (!match) {
+    return null;
+  }
+
+  const frontmatter = match[1];
+  const dateMatch = frontmatter.match(/^date:\s*["']?([0-9]{4}-[0-9]{2}-[0-9]{2})["']?\s*$/m);
+  if (!dateMatch) {
+    return null;
+  }
+
+  const isoDate = `${dateMatch[1]}T00:00:00.000Z`;
+  const parsed = new Date(isoDate);
+  return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString();
+}
+
 function sortWorks(works) {
   return works.sort((a, b) => {
     return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
@@ -139,6 +161,11 @@ function main() {
     const defaultTitle = baseName.replace(/_/g, " ");
     const titleFromHtml = extractHtmlTitle(htmlText, defaultTitle);
     const stat = fs.statSync(sourceHtmlPath);
+    const qmdInQuartoDir = path.join(root, "quarto", `${baseName}.qmd`);
+    const qmdInRootDir = path.join(root, `${baseName}.qmd`);
+    const frontmatterDate =
+      extractFrontmatterDate(qmdInQuartoDir) ??
+      extractFrontmatterDate(qmdInRootDir);
 
     const override = overrides[baseName] ?? {};
 
@@ -149,7 +176,7 @@ function main() {
       summary: override.summary ?? detectSummary(baseName),
       kind: override.kind ?? detectKind(baseName),
       language: override.language ?? detectLanguage(baseName),
-      updatedAt: stat.mtime.toISOString(),
+      updatedAt: frontmatterDate ?? stat.mtime.toISOString(),
       htmlPath: `/rendered/${baseName}.html`,
       pdfPath: fs.existsSync(sourcePdfPath) ? `/rendered/${baseName}.pdf` : null,
       tags: Array.isArray(override.tags) ? override.tags : []
