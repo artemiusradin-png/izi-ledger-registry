@@ -4,6 +4,7 @@ import path from "node:path";
 const root = process.cwd();
 const outputDir = path.join(root, "_output");
 const publicRenderedDir = path.join(root, "public", "rendered");
+const repoStylesDir = path.join(root, "styles");
 const contentDir = path.join(root, "content");
 const overridesPath = path.join(contentDir, "overrides.json");
 const registryPath = path.join(contentDir, "registry.json");
@@ -89,6 +90,9 @@ function main() {
 
   const overrides = safeReadJson(overridesPath, {});
   cleanRenderedDir(publicRenderedDir);
+  if (fs.existsSync(repoStylesDir)) {
+    copyRecursive(repoStylesDir, path.join(publicRenderedDir, "styles"));
+  }
 
   function findHtmlFiles(dir, base = "") {
     const results = [];
