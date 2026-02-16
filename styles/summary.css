@@ -94,12 +94,17 @@ pre.mermaid {
   margin-right: auto;
 }
 
-/* Much smaller enforcement flow diagram */
-.mermaid-small svg,
-.mermaid-small .mermaid svg,
-.mermaid-small figure svg {
-  max-width: 240px !important;
-  width: 240px !important;
+/* Much smaller enforcement flow diagram - specific to wrapped block */
+.mermaid-small .cell-output-display figure {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.mermaid-small .mermaid svg {
+  width: 100% !important;
+  max-width: 420px !important;
   height: auto !important;
 }
 

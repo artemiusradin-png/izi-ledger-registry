@@ -94,13 +94,14 @@ pre.mermaid {
   margin-right: auto;
 }
 
-/* Much smaller enforcement flow diagram */
-.mermaid-small svg,
-.mermaid-small .mermaid svg,
-.mermaid-small figure svg {
-  max-width: 240px !important;
-  width: 240px !important;
-  height: auto !important;
+/* Much smaller enforcement flow diagram - scale diagram only */
+.mermaid-small figure > div:first-of-type {
+  transform: scale(0.4);
+  transform-origin: center top;
+  display: inline-block;
+}
+.mermaid-small figure {
+  text-align: center;
 }
 
 figure.quarto-float-figure,
