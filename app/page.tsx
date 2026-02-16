@@ -1,49 +1,55 @@
+"use client";
+
 import Link from "next/link";
+import { useMemo, useState } from "react";
 import { getAllWorks, getRegistryMeta } from "@/lib/works";
+import { prefixPath } from "@/lib/url";
 
-type HomeProps = {
-  searchParams: Promise<{
-    q?: string;
-    language?: string;
-    kind?: string;
-    sort?: string;
-  }>;
-};
-
-export default async function HomePage({ searchParams }: HomeProps) {
-  const params = await searchParams;
-  const q = (params.q ?? "").trim().toLowerCase();
-  const language = (params.language ?? "all").trim();
-  const kind = (params.kind ?? "all").trim();
-  const sort = (params.sort ?? "newest").trim();
-
+export default function HomePage() {
   const allWorks = getAllWorks();
   const meta = getRegistryMeta();
-  const languages = [...new Set(allWorks.map((work) => work.language))].sort();
-  const kinds = [...new Set(allWorks.map((work) => work.kind))].sort();
 
-  const filteredWorks = allWorks.filter((work) => {
-    const matchesSearch =
-      q.length === 0 ||
-      work.title.toLowerCase().includes(q) ||
-      work.summary.toLowerCase().includes(q) ||
-      work.tags.some((tag) => tag.toLowerCase().includes(q));
+  const [query, setQuery] = useState("");
+  const [language, setLanguage] = useState("all");
+  const [kind, setKind] = useState("all");
+  const [sort, setSort] = useState("newest");
 
-    const matchesLanguage = language === "all" || work.language === language;
-    const matchesKind = kind === "all" || work.kind === kind;
+  const languages = useMemo(() => [...new Set(allWorks.map((work) => work.language))].sort(), [allWorks]);
+  const kinds = useMemo(() => [...new Set(allWorks.map((work) => work.kind))].sort(), [allWorks]);
 
-    return matchesSearch && matchesLanguage && matchesKind;
-  });
+  const works = useMemo(() => {
+    const q = query.trim().toLowerCase();
 
-  const works = [...filteredWorks].sort((a, b) => {
-    if (sort === "title-asc") {
-      return a.title.localeCompare(b.title);
-    }
-    if (sort === "title-desc") {
-      return b.title.localeCompare(a.title);
-    }
-    return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
-  });
+    const filtered = allWorks.filter((work) => {
+      const matchesSearch =
+        q.length === 0 ||
+        work.title.toLowerCase().includes(q) ||
+        work.summary.toLowerCase().includes(q) ||
+        work.tags.some((tag) => tag.toLowerCase().includes(q));
+
+      const matchesLanguage = language === "all" || work.language === language;
+      const matchesKind = kind === "all" || work.kind === kind;
+
+      return matchesSearch && matchesLanguage && matchesKind;
+    });
+
+    return [...filtered].sort((a, b) => {
+      if (sort === "title-asc") {
+        return a.title.localeCompare(b.title);
+      }
+      if (sort === "title-desc") {
+        return b.title.localeCompare(a.title);
+      }
+      return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
+    });
+  }, [allWorks, kind, language, query, sort]);
+
+  function resetFilters() {
+    setQuery("");
+    setLanguage("all");
+    setKind("all");
+    setSort("newest");
+  }
 
   return (
     <main className="page">
@@ -52,25 +58,24 @@ export default async function HomePage({ searchParams }: HomeProps) {
         <h1>General Ledger Registry</h1>
         <p className="subtitle">All analytics in one searchable portfolio.</p>
         <p className="meta">
-          Total works: {allWorks.length} · Showing: {works.length} · Updated:{" "}
-          {new Date(meta.generatedAt).toLocaleString()}
+          Total works: {allWorks.length} · Showing: {works.length} · Updated: {new Date(meta.generatedAt).toLocaleString()}
         </p>
       </header>
 
-      <form className="filters" method="get">
+      <section className="filters" aria-label="Filters">
         <label className="field">
           <span>Search</span>
           <input
             type="search"
-            name="q"
             placeholder="Title, summary, tags"
-            defaultValue={params.q ?? ""}
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
           />
         </label>
 
         <label className="field">
           <span>Language</span>
-          <select name="language" defaultValue={language}>
+          <select value={language} onChange={(event) => setLanguage(event.target.value)}>
             <option value="all">All</option>
             {languages.map((value) => (
               <option key={value} value={value}>
@@ -82,7 +87,7 @@ export default async function HomePage({ searchParams }: HomeProps) {
 
         <label className="field">
           <span>Type</span>
-          <select name="kind" defaultValue={kind}>
+          <select value={kind} onChange={(event) => setKind(event.target.value)}>
             <option value="all">All</option>
             {kinds.map((value) => (
               <option key={value} value={value}>
@@ -94,7 +99,7 @@ export default async function HomePage({ searchParams }: HomeProps) {
 
         <label className="field">
           <span>Sort</span>
-          <select name="sort" defaultValue={sort}>
+          <select value={sort} onChange={(event) => setSort(event.target.value)}>
             <option value="newest">Recently updated</option>
             <option value="title-asc">Title A-Z</option>
             <option value="title-desc">Title Z-A</option>
@@ -102,10 +107,9 @@ export default async function HomePage({ searchParams }: HomeProps) {
         </label>
 
         <div className="filter-actions">
-          <button type="submit" className="btn">Apply</button>
-          <Link href="/" className="btn ghost">Reset</Link>
+          <button type="button" className="btn ghost" onClick={resetFilters}>Reset</button>
         </div>
-      </form>
+      </section>
 
       <section className="grid">
         {works.length === 0 ? (
@@ -131,7 +135,7 @@ export default async function HomePage({ searchParams }: HomeProps) {
               <div className="actions">
                 <Link href={`/work/${work.slug}`} className="btn">Open</Link>
                 {work.pdfPath ? (
-                  <a href={work.pdfPath} className="btn ghost" target="_blank" rel="noreferrer">PDF</a>
+                  <a href={prefixPath(work.pdfPath)} className="btn ghost" target="_blank" rel="noreferrer">PDF</a>
                 ) : null}
               </div>
             </article>

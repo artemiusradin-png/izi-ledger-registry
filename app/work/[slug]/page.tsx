@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllWorks, getWorkBySlug } from "@/lib/works";
+import { prefixPath } from "@/lib/url";
 
 export function generateStaticParams() {
   return getAllWorks().map((work) => ({ slug: work.slug }));
@@ -32,7 +33,7 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
         </div>
         <div className="actions">
           {work.pdfPath ? (
-            <a href={work.pdfPath} className="btn ghost" target="_blank" rel="noreferrer">PDF</a>
+            <a href={prefixPath(work.pdfPath)} className="btn ghost" target="_blank" rel="noreferrer">PDF</a>
           ) : null}
         </div>
       </div>
@@ -40,7 +41,7 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
       <iframe
         className="work-frame"
         title={work.title}
-        src={work.htmlPath}
+        src={prefixPath(work.htmlPath)}
       />
     </main>
   );
