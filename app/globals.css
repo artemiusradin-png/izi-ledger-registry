@@ -179,14 +179,14 @@ h1 {
 }
 
 .work-page {
-  max-width: 1320px;
+  max-width: 1560px;
   margin: 0 auto;
-  padding: 1.1rem;
+  padding: 0.9rem 0.8rem 1.1rem;
 }
 
 .work-header {
   margin-bottom: 0.85rem;
-  padding: 1rem;
+  padding: 1.2rem 1.35rem;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.88);
@@ -194,6 +194,7 @@ h1 {
 
 .work-summary {
   margin: 0.45rem 0 0.65rem;
+  max-width: 1200px;
 }
 
 .work-frame {
@@ -250,5 +251,9 @@ h1 {
 
   .work-frame {
     min-height: 72vh;
+  }
+
+  .work-header {
+    padding: 0.95rem;
   }
 }
