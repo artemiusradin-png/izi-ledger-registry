@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-16T16:43:59.177Z",
+  "generatedAt": "2026-02-16T16:47:02.508Z",
   "total": 4,
   "works": [
     {
@@ -9,10 +9,27 @@
       "summary": "Ukrainian-language edition of the full German sanctions mechanism analysis.",
       "kind": "Analysis",
       "language": "Ukrainian",
-      "updatedAt": "2026-02-16T16:42:07.681Z",
+      "updatedAt": "2026-02-16T16:46:42.311Z",
       "htmlPath": "/rendered/German_Sanction_Mechanism_Analysis_UKR.html",
-      "pdfPath": null,
+      "pdfPath": "/rendered/German_Sanction_Mechanism_Analysis_UKR.pdf",
       "tags": [
+        "sanctions",
+        "Ukraine",
+        "translation"
+      ]
+    },
+    {
+      "slug": "german-sanctions-3page-summary-ukr",
+      "fileName": "German_Sanctions_3Page_Summary_UKR",
+      "title": "How Germany Enforces Sanctions (3-page Summary, Ukrainian)",
+      "summary": "Ukrainian-language 3-page summary for policy communication.",
+      "kind": "Summary",
+      "language": "Ukrainian",
+      "updatedAt": "2026-02-16T16:46:40.568Z",
+      "htmlPath": "/rendered/German_Sanctions_3Page_Summary_UKR.html",
+      "pdfPath": "/rendered/German_Sanctions_3Page_Summary_UKR.pdf",
+      "tags": [
+        "brief",
         "sanctions",
         "Ukraine",
         "translation"
@@ -33,23 +50,6 @@
         "Germany",
         "EU law",
         "enforcement"
-      ]
-    },
-    {
-      "slug": "german-sanctions-3page-summary-ukr",
-      "fileName": "German_Sanctions_3Page_Summary_UKR",
-      "title": "How Germany Enforces Sanctions (3-page Summary, Ukrainian)",
-      "summary": "Ukrainian-language 3-page summary for policy communication.",
-      "kind": "Summary",
-      "language": "Ukrainian",
-      "updatedAt": "2026-02-16T16:29:15.690Z",
-      "htmlPath": "/rendered/German_Sanctions_3Page_Summary_UKR.html",
-      "pdfPath": null,
-      "tags": [
-        "brief",
-        "sanctions",
-        "Ukraine",
-        "translation"
       ]
     },
     {
