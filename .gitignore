@@ -19,5 +19,9 @@ _output/
 *.fdb_latexmk
 *.fls
 
-# Local Quarto figure output
-German_Sanctions_3Page_Summary_UKR_files/
+# Quarto figure output (only in _output)
+_output/*_files/
+_output/quarto/*_files/
+
+/.quarto/
+**/*.quarto_ipynb
