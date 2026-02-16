@@ -95,10 +95,55 @@ h1 {
   align-items: flex-end;
 }
 
+.type-switch {
+  display: flex;
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+  flex-wrap: wrap;
+}
+
+.switch-btn {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 0.32rem 0.7rem;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.switch-btn.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: #eef9f6;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 1.05rem;
+}
+
+.section-block {
+  margin-bottom: 1.15rem;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0 0 0.6rem;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.section-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .card {

@@ -44,6 +44,9 @@ export default function HomePage() {
     });
   }, [allWorks, kind, language, query, sort]);
 
+  const analysisWorks = works.filter((work) => work.kind === "Analysis");
+  const summaryWorks = works.filter((work) => work.kind === "Summary");
+
   function resetFilters() {
     setQuery("");
     setLanguage("all");
@@ -111,37 +114,106 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="grid">
-        {works.length === 0 ? (
+      <section className="type-switch" aria-label="Browse by type">
+        <button
+          type="button"
+          className={`switch-btn ${kind === "all" ? "active" : ""}`}
+          onClick={() => setKind("all")}
+        >
+          All ({works.length})
+        </button>
+        <button
+          type="button"
+          className={`switch-btn ${kind === "Analysis" ? "active" : ""}`}
+          onClick={() => setKind("Analysis")}
+        >
+          Analysis ({analysisWorks.length})
+        </button>
+        <button
+          type="button"
+          className={`switch-btn ${kind === "Summary" ? "active" : ""}`}
+          onClick={() => setKind("Summary")}
+        >
+          Summary ({summaryWorks.length})
+        </button>
+      </section>
+
+      {works.length === 0 ? (
+        <section className="grid">
           <article className="empty-state">
             <h2>No matching documents</h2>
             <p>Change filters or clear search to show all works.</p>
           </article>
-        ) : (
-          works.map((work) => (
-            <article className="card" key={work.slug}>
-              <div className="card-top">
-                <p className="tag">{work.language}</p>
-                <p className="tag">{work.kind}</p>
+        </section>
+      ) : (
+        <>
+          {(kind === "all" || kind === "Analysis") && analysisWorks.length > 0 ? (
+            <section className="section-block">
+              <div className="section-head">
+                <h2>Analysis</h2>
+                <p>{analysisWorks.length} document(s)</p>
               </div>
-              <h2>{work.title}</h2>
-              <p className="card-summary">{work.summary}</p>
-              <p className="small">Updated: {new Date(work.updatedAt).toLocaleDateString()}</p>
-              <div className="tags-row">
-                {work.tags.map((tag) => (
-                  <span className="chip" key={`${work.slug}-${tag}`}>{tag}</span>
+              <div className="grid">
+                {analysisWorks.map((work) => (
+                  <article className="card" key={work.slug}>
+                    <div className="card-top">
+                      <p className="tag">{work.language}</p>
+                      <p className="tag">{work.kind}</p>
+                    </div>
+                    <h2>{work.title}</h2>
+                    <p className="card-summary">{work.summary}</p>
+                    <p className="small">Updated: {new Date(work.updatedAt).toLocaleDateString()}</p>
+                    <div className="tags-row">
+                      {work.tags.map((tag) => (
+                        <span className="chip" key={`${work.slug}-${tag}`}>{tag}</span>
+                      ))}
+                    </div>
+                    <div className="actions">
+                      <Link href={`/work/${work.slug}`} className="btn">Open</Link>
+                      {work.pdfPath ? (
+                        <a href={prefixPath(work.pdfPath)} className="btn ghost" target="_blank" rel="noreferrer">PDF</a>
+                      ) : null}
+                    </div>
+                  </article>
                 ))}
               </div>
-              <div className="actions">
-                <Link href={`/work/${work.slug}`} className="btn">Open</Link>
-                {work.pdfPath ? (
-                  <a href={prefixPath(work.pdfPath)} className="btn ghost" target="_blank" rel="noreferrer">PDF</a>
-                ) : null}
+            </section>
+          ) : null}
+
+          {(kind === "all" || kind === "Summary") && summaryWorks.length > 0 ? (
+            <section className="section-block">
+              <div className="section-head">
+                <h2>Summary</h2>
+                <p>{summaryWorks.length} document(s)</p>
               </div>
-            </article>
-          ))
-        )}
-      </section>
+              <div className="grid">
+                {summaryWorks.map((work) => (
+                  <article className="card" key={work.slug}>
+                    <div className="card-top">
+                      <p className="tag">{work.language}</p>
+                      <p className="tag">{work.kind}</p>
+                    </div>
+                    <h2>{work.title}</h2>
+                    <p className="card-summary">{work.summary}</p>
+                    <p className="small">Updated: {new Date(work.updatedAt).toLocaleDateString()}</p>
+                    <div className="tags-row">
+                      {work.tags.map((tag) => (
+                        <span className="chip" key={`${work.slug}-${tag}`}>{tag}</span>
+                      ))}
+                    </div>
+                    <div className="actions">
+                      <Link href={`/work/${work.slug}`} className="btn">Open</Link>
+                      {work.pdfPath ? (
+                        <a href={prefixPath(work.pdfPath)} className="btn ghost" target="_blank" rel="noreferrer">PDF</a>
+                      ) : null}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          ) : null}
+        </>
+      )}
     </main>
   );
 }
