@@ -11,4 +11,16 @@ all:
 pdf-ukr:
 	./render_ukr_pdf.sh
 
-.PHONY: all pdf-ukr
+# Build static website for GitHub Pages
+site:
+	NEXT_PUBLIC_BASE_PATH=/izi-ledger-registry npm run build
+	rsync -a --delete out/ docs/
+	touch docs/.nojekyll
+
+# Build and push website updates
+publish-site: site
+	git add docs
+	git commit -m "Update published site" || true
+	git push
+
+.PHONY: all pdf-ukr site publish-site
