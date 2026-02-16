@@ -1,0 +1,18 @@
+flowchart LR
+    subgraph EU["EU decides"]
+        Rules[EU sanctions lists<br/>and rules]
+    end
+    
+    subgraph Germany["Germany enforces"]
+        ZfS[Central Office ZfS<br/>Investigates assets<br/>Coordinates everyone]
+        BAFA[BAFA<br/>Export controls]
+        Customs[Customs<br/>Borders & goods]
+        Banks[Bundesbank<br/>Financial sanctions]
+        Prosecutors[Prosecutors<br/>Criminal cases]
+    end
+    
+    Rules --> ZfS
+    ZfS --> BAFA
+    ZfS --> Customs
+    ZfS --> Banks
+    ZfS --> Prosecutors

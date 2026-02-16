@@ -1,0 +1,18 @@
+graph TB
+    subgraph EU["EU Level"]
+        EU_Reg[EU Regulations<br/>e.g. 269/2014, 833/2014]
+        EU_Dir[Directive 2024/1226<br/>Criminal Standards]
+    end
+    
+    subgraph National["National Level"]
+        AWG[Außenwirtschaftsgesetz<br/>Foreign Trade Act]
+        AWV[Außenwirtschaftsverordnung<br/>Foreign Trade Ordinance]
+        SDG1[Sanktionsdurchsetzungsgesetz I<br/>May 2022]
+        SDG2[Sanktionsdurchsetzungsgesetz II<br/>Dec 2022]
+    end
+    
+    EU_Reg --> AWG
+    EU_Dir --> AWG
+    AWG --> AWV
+    SDG1 --> AWG
+    SDG2 --> SDG1

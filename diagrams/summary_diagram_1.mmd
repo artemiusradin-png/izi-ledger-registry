@@ -1,0 +1,10 @@
+flowchart TD
+    A[Person added to EU list] --> B[Central Office ZfS is notified]
+    B --> C[Listed person must report their assets]
+    C --> D[ZfS checks banks, land registry, etc.]
+    D --> E{Assets found?}
+    E -->|Yes| F[Assets are frozen]
+    E -->|No| G[Investigation continues]
+    F --> H[Violation suspected?]
+    H -->|Yes| I[Case sent to prosecutors]
+    H -->|No| J[Monitoring continues]

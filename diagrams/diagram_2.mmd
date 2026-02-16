@@ -1,0 +1,19 @@
+sequenceDiagram
+    participant EU as EU Sanctions List
+    participant ZfS as Central Office (ZfS)
+    participant Listed as Listed Person
+    participant Reg as Registers
+    participant StA as Prosecutor
+
+    EU->>ZfS: Person/entity listed
+    ZfS->>Listed: Reporting obligation (under penalty)
+    Listed->>ZfS: Asset disclosure
+    ZfS->>Reg: Query banks, land registry, etc.
+    ZfS->>ZfS: Administrative investigation
+    alt Assets found
+        ZfS->>ZfS: Freeze assets
+        ZfS->>ZfS: Register in sanctions asset register
+    end
+    alt Violation suspected
+        ZfS->>StA: Refer for criminal prosecution
+    end

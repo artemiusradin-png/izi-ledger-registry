@@ -1,0 +1,22 @@
+node_modules/
+node_modules_broken_*/
+.next/
+.quarto/
+
+# Local render/build artifacts
+_output/
+
+# OS/editor noise
+.DS_Store
+
+# Quarto temp outputs
+*.log
+*.aux
+*.toc
+*.out
+*.tex
+*.fdb_latexmk
+*.fls
+
+# Local Quarto figure output
+German_Sanctions_3Page_Summary_UKR_files/

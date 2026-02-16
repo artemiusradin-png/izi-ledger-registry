@@ -1,0 +1,28 @@
+flowchart TB
+    subgraph Federal["Federal Level"]
+        BMF[Federal Ministry of Finance]
+        BMWE[Federal Ministry for Economic Affairs<br/>and Energy - BMWE]
+        ZfS[Zentralstelle für Sanktionsdurchsetzung<br/>Central Office for Sanctions Enforcement]
+        BAFA[Bundesamt für Wirtschaft und Ausfuhrkontrolle<br/>Federal Office for Economics and Export Control]
+        Zoll[Customs Administration]
+        BBk[Bundesbank]
+    end
+    
+    subgraph State["State Level"]
+        StA[Public Prosecutors]
+        Courts[Courts]
+        Police[Police & Ordnungsbehörden]
+    end
+    
+    subgraph Other["Other Authorities"]
+        Harbor[Harbour Authorities]
+        LandReg[Land Registry Offices]
+    end
+    
+    BMF --> ZfS
+    BMWE --> BAFA
+    ZfS --> Zoll
+    ZfS -.coordinates.-> BAFA
+    ZfS -.coordinates.-> BBk
+    ZfS -.refers.-> StA
+    StA --> Courts
