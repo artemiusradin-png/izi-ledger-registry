@@ -10,6 +10,7 @@ export function generateStaticParams() {
 export default async function WorkPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const work = getWorkBySlug(slug);
+  const useDirectOpen = slug === "german-sanctions-3page-summary-ukr";
 
   if (!work) {
     notFound();
@@ -38,11 +39,22 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
         </div>
       </div>
 
-      <iframe
-        className="work-frame"
-        title={work.title}
-        src={prefixPath(work.htmlPath)}
-      />
+      {useDirectOpen ? (
+        <div className="work-header">
+          <p className="work-summary">This document is opened directly to avoid browser iframe crashes.</p>
+          <div className="actions">
+            <a href={prefixPath(work.htmlPath)} className="btn" target="_blank" rel="noreferrer">
+              Open document
+            </a>
+          </div>
+        </div>
+      ) : (
+        <iframe
+          className="work-frame"
+          title={work.title}
+          src={prefixPath(work.htmlPath)}
+        />
+      )}
     </main>
   );
 }
