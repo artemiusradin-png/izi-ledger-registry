@@ -1,8 +1,8 @@
 /* Custom styles for German Sanctions Summary */
 :root {
-  --izi-primary: #2c3e50;
-  --izi-accent: #3498db;
-  --izi-light: #ecf0f1;
+  --izi-primary: #1f5f59;
+  --izi-accent: #0f766e;
+  --izi-light: #eaf6f2;
 }
 
 body {
@@ -64,17 +64,17 @@ tr:nth-child(even) {
 .mermaid .node circle,
 .mermaid .node polygon,
 .mermaid .node path {
-  fill: #f8f9fa !important;
-  stroke: #2c3e50 !important;
+  fill: #f4fbf8 !important;
+  stroke: #1f5f59 !important;
 }
 .mermaid .label,
 .mermaid .edgeLabel {
-  color: #2c3e50 !important;
-  fill: #2c3e50 !important;
+  color: #1f5f59 !important;
+  fill: #1f5f59 !important;
 }
 .mermaid .cluster rect {
-  fill: #ecf0f1 !important;
-  stroke: #2c3e50 !important;
+  fill: #eaf6f2 !important;
+  stroke: #1f5f59 !important;
 }
 
 .cell-output-display {
@@ -94,17 +94,16 @@ pre.mermaid {
   margin-right: auto;
 }
 
-/* Much smaller enforcement flow diagram - specific to wrapped block */
+/* Much smaller enforcement flow diagram */
+.mermaid-small figure,
 .mermaid-small .cell-output-display figure {
-  max-width: 420px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  max-width: 180px !important;
+  margin: 0 auto !important;
 }
-
+.mermaid-small svg,
 .mermaid-small .mermaid svg {
-  width: 100% !important;
-  max-width: 420px !important;
+  max-width: 180px !important;
+  width: 180px !important;
   height: auto !important;
 }
 

@@ -1,0 +1,167 @@
+---
+title: "How Germany Enforces Sanctions"
+subtitle: "A Simple Overview"
+author:
+  - name: "Artem Radin"
+    affiliation: "Intern"
+date: "February 2026"
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+    papersize: a4
+    geometry:
+      - margin=0.75in
+    fontsize: 10pt
+    fig-align: center
+    include-in-header:
+      - text: |
+          \makeatletter
+          \g@addto@macro\@floatboxreset{\centering}
+          \makeatother
+  html:
+    toc: true
+    toc-location: left
+    toc-depth: 2
+    number-sections: true
+    theme: flatly
+    highlight-style: github
+    css: styles/summary.css
+---
+
+## What Is This About?
+
+When the EU decides to sanction people or countries (for example, Russia), someone must make sure those sanctions are actually applied. In Germany, this is done through a clear system of laws and a central office that coordinates the work.
+
+::: {.callout-note icon=false}
+## In short
+EU sets the rules → Germany enforces them through several authorities → one office (ZfS) coordinates and investigates.
+:::
+
+## Who Does What?
+
+The diagram below shows the main actors and how they work together.
+
+```{mermaid}
+%%| fig-cap: "Main actors in German sanctions enforcement"
+%%| fig-width: 6
+%%| fig-align: center
+flowchart LR
+    subgraph EU["EU decides"]
+        Rules[EU sanctions lists<br/>and rules]
+    end
+    
+    subgraph Germany["Germany enforces"]
+        ZfS[Central Office ZfS<br/>Investigates assets<br/>Coordinates everyone]
+        BAFA[BAFA<br/>Export controls]
+        Customs["Customs<br/>Borders and goods"]
+        Banks[Bundesbank<br/>Financial sanctions]
+        Prosecutors[Prosecutors<br/>Criminal cases]
+    end
+    
+    Rules --> ZfS
+    ZfS --> BAFA
+    ZfS --> Customs
+    ZfS --> Banks
+    ZfS --> Prosecutors
+```
+
+| Authority | Role in simple terms |
+|:----------|:---------------------|
+| **ZfS (Central Office)** | Finds and freezes assets of sanctioned persons; coordinates all other bodies |
+| **BAFA** | Controls exports (e.g. goods that must not go to Russia) |
+| **Customs** | Checks goods at borders |
+| **Bundesbank** | Monitors banks and frozen funds |
+| **Prosecutors** | Bring criminal cases when someone breaks the rules |
+
+## How Does It Work? (Step by Step)
+
+When a person or company is added to the EU sanctions list, this is what happens:
+
+```{mermaid}
+%%| fig-cap: "Enforcement flow from listing to prosecution"
+%%| fig-width: 2.5
+%%| fig-align: center
+flowchart TD
+    A[Person added to EU list] --> B[Central Office ZfS is notified]
+    B --> C[Listed person must report their assets]
+    C --> D[ZfS checks banks, land registry, etc.]
+    D --> E{Assets found?}
+    E -->|Yes| F[Assets are frozen]
+    E -->|No| G[Investigation continues]
+    F --> H{Violation suspected?}
+    H -->|Yes| I[Case sent to prosecutors]
+    H -->|No| J[Monitoring continues]
+```
+
+**Key steps:**
+1. **EU lists** a person or company.
+2. **ZfS** asks them to report all assets (under penalty if they don't).
+3. **ZfS** checks banks, land registry, and other sources.
+4. **Assets are frozen** – the person cannot sell or use them for profit.
+5. If someone **breaks the rules**, the case goes to **prosecutors** for criminal proceedings.
+
+## What Happens If Someone Breaks the Rules?
+
+| Who | Consequence |
+|:----|:------------|
+| **Individuals** | Prison (1–5 years or more for serious cases) |
+| **Companies** | Large fines (up to €40 million for the most serious offences) |
+| **Typical offences** | Giving money to sanctioned persons, hiding frozen assets, exporting banned goods |
+
+## Why Is the German Model Interesting for Ukraine?
+
+| Element | Why it matters |
+|:--------|:---------------|
+| **One central office (ZfS)** | Avoids confusion; one place coordinates everything |
+| **Listed persons must report assets** | Makes it harder to hide money |
+| **Tip-off centre** | Anyone can report suspected violations |
+| **Links to anti–money laundering** | Helps trace who really owns assets |
+| **Strong criminal penalties** | Deters people from breaking the rules |
+
+## Where Does the Money Go?
+
+::: {.callout-important icon=true}
+## Freezing is not the same as confiscation
+:::
+
+| What happens | Where the money goes |
+|:-------------|:---------------------|
+| **Assets are frozen** | The person cannot sell or use them. They stay in place. No automatic transfer to the state or Ukraine. |
+| **After criminal confiscation** | Ownership passes to the German state (StGB §75). |
+| **Victim compensation** | German law allows injured parties to claim compensation or return of assets (StPO §§459h–459m) if they prove entitlement in time. |
+
+**There is no German "Ukraine fund"** that automatically sends all confiscated Russia-related assets to Ukraine.
+
+**Separate EU channel:** Revenues from immobilised Russian Central Bank assets go through the EU (e.g. Ukraine Loan Cooperation Mechanism), not through a German domestic fund.
+
+## Can Ukraine Get Those Assets?
+
+::: {.callout-tip icon=true}
+## Yes, but only in specific cases
+:::
+
+- **Case-by-case:** Ukraine (or Ukrainian entities) can seek compensation or disbursement in criminal confiscation cases if they prove legal entitlement under German procedure (StPO §§459h–459m).
+- **Main limitation:** Freezing alone does not create funds for victims. A criminal confiscation or a special allocation mechanism is needed.
+- **New EU option:** Directive (EU) 2024/1260 allows Member States to use confiscated assets from sanctions-related crimes to support affected third countries (e.g. Ukraine). This is optional, not automatic.
+
+**Practical steps for Ukraine:**
+1. Focus on **EU extraordinary-revenue channels** (e.g. ULCM) as the most operational route.
+2. Push for German use of **Directive 2024/1260, Art. 19(2)** to direct qualifying confiscated assets to Ukraine.
+3. Prepare **case-by-case claims** in German courts: evidence of damage, claimant standing, and compliance with StPO procedures.
+4. In messaging, clearly separate: (a) frozen assets, (b) criminal confiscation proceeds, (c) EU-level revenues from sovereign-asset immobilisation.
+
+## Main Takeaways
+
+::: {.callout-note icon=false}
+1. **EU rules apply directly** in Germany – no extra national law is needed for the basic prohibitions.
+2. **ZfS** is the hub: it investigates, freezes assets, and coordinates other authorities.
+3. **Freezing ≠ confiscation** – frozen assets do not automatically go to the state or Ukraine.
+4. **Ukraine can receive assets** in criminal confiscation cases if entitlement is proven; EU Directive 2024/1260 offers an additional route.
+5. The system was **strengthened in 2022–2026** with new laws and a dedicated central office.
+:::
+
+---
+
+*Based on the full analysis: German Sanction Mechanism Analysis (Institute of Legislative Ideas, Feb 2026).*

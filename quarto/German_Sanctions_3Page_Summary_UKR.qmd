@@ -1,7 +1,9 @@
 ---
 title: "Як Німеччина застосовує санкції"
 subtitle: "Простий огляд"
-author: "Інститут законодавчих ідей"
+author:
+  - name: "Artem Radin"
+    affiliation: "Intern"
 date: "Лютий 2026"
 lang: uk
 format:
@@ -10,9 +12,20 @@ format:
     toc-depth: 2
     toc-location: left
     number-sections: true
-    theme: cosmo
+    theme: flatly
     highlight-style: github
     css: styles/summary.css
+    include-in-header:
+      text: |
+        <style>
+        .mermaid-small .cell-output-display { transform: scale(0.8); transform-origin: center top; display: inline-block; }
+        .mermaid-small { text-align: center; margin: 0; }
+        .mermaid-small figure { margin: 0 auto; }
+        .quarto-layout-panel[data-layout-ncol="2"] .mermaid-small.quarto-layout-cell { flex: 0 0 38%; max-width: 38%; }
+        .quarto-layout-panel[data-layout-ncol="2"] .quarto-layout-cell:last-child { flex: 1 1 60%; }
+        .quarto-layout-panel + .callout,
+        .quarto-layout-panel + .callout-important { margin-top: 0.75em; }
+        </style>
 ---
 
 ## Про що йдеться?
@@ -62,9 +75,10 @@ flowchart LR
 
 ## Як це працює? (Крок за кроком)
 
-::: {.mermaid-small}
 Коли особу або компанію додають до списку санкцій ЄС, відбувається таке:
 
+::: {layout-ncol=2 layout-valign="top"}
+::: {.mermaid-small}
 ```{mermaid}
 %%| fig-cap: "Потік застосування від внесення до списку до переслідування"
 %%| fig-width: 1.1
@@ -88,6 +102,11 @@ flowchart TD
 3. **ZfS** перевіряє банки, реєстр землі та інші джерела.
 4. **Активи заморожуються** — особа не може їх продати або використовувати для прибутку.
 5. Якщо хтось **порушує правила**, справа йде до **прокурорів** для кримінального переслідування.
+:::
+
+::: {.callout-important icon=true}
+## Заморожування не дорівнює конфіскації
+:::
 
 ## Що відбувається, якщо хтось порушує правила?
 
@@ -108,10 +127,6 @@ flowchart TD
 | **Суворі кримінальні покарання** | Стримує людей від порушення правил |
 
 ## Куди йдуть гроші?
-
-::: {.callout-important icon=true}
-## Заморожування не дорівнює конфіскації
-:::
 
 | Що відбувається | Куди йдуть гроші |
 |:----------------|:------------------|
