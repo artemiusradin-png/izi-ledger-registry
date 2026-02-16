@@ -24,7 +24,7 @@ function slugify(name) {
 }
 
 function detectLanguage(baseName) {
-  return baseName.endsWith("_UKR") ? "Ukrainian" : "English";
+  return /_UKR(?:$|[^A-Za-z0-9])/.test(baseName) ? "Ukrainian" : "English";
 }
 
 function detectKind(baseName) {
@@ -90,26 +90,40 @@ function main() {
   const overrides = safeReadJson(overridesPath, {});
   cleanRenderedDir(publicRenderedDir);
 
-  const htmlFiles = fs
-    .readdirSync(outputDir)
-    .filter((file) => file.endsWith(".html") && !file.startsWith("."));
+  function findHtmlFiles(dir, base = "") {
+    const results = [];
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const rel = base ? `${base}/${entry.name}` : entry.name;
+      if (entry.isDirectory() && !entry.name.startsWith(".")) {
+        results.push(...findHtmlFiles(path.join(dir, entry.name), rel));
+      } else if (entry.name.endsWith(".html") && !entry.name.startsWith(".") && !/\s/.test(path.basename(entry.name, ".html"))) {
+        results.push(rel);
+      }
+    }
+    return results;
+  }
+  const htmlFiles = findHtmlFiles(outputDir);
 
   const works = [];
 
   for (const htmlFile of htmlFiles) {
     const baseName = path.basename(htmlFile, ".html");
+    const htmlDir = path.dirname(htmlFile);
     const sourceHtmlPath = path.join(outputDir, htmlFile);
-    const sourcePdfPath = path.join(outputDir, `${baseName}.pdf`);
-    const sourceAssetsDir = path.join(outputDir, `${baseName}_files`);
+    const sourcePdfPath = path.join(outputDir, htmlDir, `${baseName}.pdf`);
+    const sourceAssetsDir = path.join(outputDir, htmlDir, `${baseName}_files`);
 
-    const targetHtmlPath = path.join(publicRenderedDir, htmlFile);
+    const targetHtmlPath = path.join(publicRenderedDir, `${baseName}.html`);
     copyRecursive(sourceHtmlPath, targetHtmlPath);
 
     if (fs.existsSync(sourceAssetsDir)) {
       copyRecursive(sourceAssetsDir, path.join(publicRenderedDir, `${baseName}_files`));
     }
 
-    if (fs.existsSync(path.join(outputDir, "styles"))) {
+    const stylesDir = path.join(outputDir, htmlDir, "styles");
+    if (fs.existsSync(stylesDir)) {
+      copyRecursive(stylesDir, path.join(publicRenderedDir, "styles"));
+    } else if (fs.existsSync(path.join(outputDir, "styles"))) {
       copyRecursive(path.join(outputDir, "styles"), path.join(publicRenderedDir, "styles"));
     }
 
@@ -132,7 +146,7 @@ function main() {
       kind: override.kind ?? detectKind(baseName),
       language: override.language ?? detectLanguage(baseName),
       updatedAt: stat.mtime.toISOString(),
-      htmlPath: `/rendered/${htmlFile}`,
+      htmlPath: `/rendered/${baseName}.html`,
       pdfPath: fs.existsSync(sourcePdfPath) ? `/rendered/${baseName}.pdf` : null,
       tags: Array.isArray(override.tags) ? override.tags : []
     });
