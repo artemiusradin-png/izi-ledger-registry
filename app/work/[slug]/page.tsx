@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllWorks, getWorkBySlug } from "@/lib/works";
 import { prefixPath } from "@/lib/url";
+import DocumentFrame from "@/app/components/document-frame";
 
 export function generateStaticParams() {
   return getAllWorks().map((work) => ({ slug: work.slug }));
@@ -38,8 +39,7 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
         </div>
       </div>
 
-      <iframe
-        className="work-frame"
+      <DocumentFrame
         title={work.title}
         src={prefixPath(work.htmlPath)}
       />
