@@ -1,7 +1,29 @@
 {
-  "generatedAt": "2026-02-22T12:04:09.040Z",
+  "generatedAt": "2026-02-22T13:45:30.357Z",
   "total": 6,
   "works": [
+    {
+      "slug": "german-sanctions-criminal-asset-pipeline-3page-ukr",
+      "fileName": "German_Sanctions_Criminal_Asset_Pipeline_3Page_UKR",
+      "title": "Німеччина: Шлях кримінально конфіскованих активів для України",
+      "summary": "Операційний підручник щодо отримання вартості від завершених кримінальних конфіскацій у Німеччині для України.",
+      "kind": "Analysis",
+      "language": "Ukrainian",
+      "updatedAt": "2026-02-22T00:00:00.000Z",
+      "htmlPath": "/rendered/German_Sanctions_Criminal_Asset_Pipeline_3Page_UKR.html",
+      "pdfPath": "/rendered/German_Sanctions_Criminal_Asset_Pipeline_3Page_UKR.pdf",
+      "tags": [
+        "Germany",
+        "Ukraine",
+        "asset recovery",
+        "confiscation",
+        "criminal law",
+        "translation"
+      ],
+      "relatedSlugs": [
+        "german-sanctions-criminal-asset-pipeline-3page"
+      ]
+    },
     {
       "slug": "german-sanctions-criminal-asset-pipeline-3page",
       "fileName": "German_Sanctions_Criminal_Asset_Pipeline_3Page",
@@ -18,6 +40,9 @@
         "asset recovery",
         "confiscation",
         "criminal law"
+      ],
+      "relatedSlugs": [
+        "german-sanctions-criminal-asset-pipeline-3page-ukr"
       ]
     },
     {
@@ -29,7 +54,7 @@
       "language": "Ukrainian",
       "updatedAt": "2026-02-17T00:00:00.000Z",
       "htmlPath": "/rendered/German_Sanctions_3Page_Summary_UKR.html",
-      "pdfPath": null,
+      "pdfPath": "/rendered/German_Sanctions_3Page_Summary_UKR.pdf",
       "tags": [
         "brief",
         "sanctions",
@@ -90,23 +115,6 @@
         "brief",
         "sanctions",
         "Germany"
-      ]
-    },
-    {
-      "slug": "german-sanctions-3page-summary-ukr",
-      "fileName": "German_Sanctions_3Page_Summary_UKR",
-      "title": "How Germany Enforces Sanctions (3-page Summary, Ukrainian)",
-      "summary": "Ukrainian-language 3-page summary for policy communication.",
-      "kind": "Summary",
-      "language": "Ukrainian",
-      "updatedAt": "2026-02-17T00:00:00.000Z",
-      "htmlPath": "/rendered/German_Sanctions_3Page_Summary_UKR.html",
-      "pdfPath": "/rendered/German_Sanctions_3Page_Summary_UKR.pdf",
-      "tags": [
-        "brief",
-        "sanctions",
-        "Ukraine",
-        "translation"
       ]
     }
   ]

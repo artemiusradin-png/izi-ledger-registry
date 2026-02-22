@@ -123,6 +123,40 @@ function normalizeRelatedSlugs(works) {
   });
 }
 
+function preferWork(existing, candidate) {
+  if (!existing.pdfPath && candidate.pdfPath) {
+    return candidate;
+  }
+
+  if (existing.pdfPath && !candidate.pdfPath) {
+    return existing;
+  }
+
+  const existingUpdated = new Date(existing.updatedAt).getTime();
+  const candidateUpdated = new Date(candidate.updatedAt).getTime();
+
+  if (candidateUpdated > existingUpdated) {
+    return candidate;
+  }
+
+  return existing;
+}
+
+function dedupeWorksBySlug(works) {
+  const bySlug = new Map();
+
+  for (const work of works) {
+    const current = bySlug.get(work.slug);
+    if (!current) {
+      bySlug.set(work.slug, work);
+      continue;
+    }
+    bySlug.set(work.slug, preferWork(current, work));
+  }
+
+  return Array.from(bySlug.values());
+}
+
 function main() {
   if (!fs.existsSync(outputDir)) {
     throw new Error("_output directory not found. Run `quarto render` first.");
@@ -202,7 +236,7 @@ function main() {
     });
   }
 
-  const sortedWorks = sortWorks(normalizeRelatedSlugs(works));
+  const sortedWorks = sortWorks(dedupeWorksBySlug(normalizeRelatedSlugs(works)));
 
   const registry = {
     generatedAt: new Date().toISOString(),
