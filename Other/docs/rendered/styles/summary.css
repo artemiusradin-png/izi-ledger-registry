@@ -1,0 +1,133 @@
+/* Custom styles for German Sanctions Summary */
+:root {
+  --izi-primary: #1f5f59;
+  --izi-accent: #0f766e;
+  --izi-light: #eaf6f2;
+}
+
+body {
+  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: var(--izi-primary);
+  font-weight: 600;
+}
+
+h1 {
+  border-bottom: 2px solid var(--izi-accent);
+  padding-bottom: 0.3em;
+  font-size: 1.65rem;
+  line-height: 1.2;
+}
+
+#title-block-header .subtitle {
+  font-size: 1rem;
+}
+
+h2 {
+  margin-top: 1.5em;
+  font-size: 1.25em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  font-size: 0.95em;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.75em;
+  text-align: left;
+}
+
+th {
+  background-color: var(--izi-primary);
+  color: white;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.callout {
+  border-radius: 4px;
+  padding: 0.6em 1em;
+  margin: 0.6em 0;
+}
+
+.quarto-layout-panel {
+  gap: 1em;
+}
+
+.mermaid {
+  margin: 1.5em auto;
+}
+
+/* Ensure readable text in Mermaid diagrams - light backgrounds, dark text */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node polygon,
+.mermaid .node path {
+  fill: #f4fbf8 !important;
+  stroke: #1f5f59 !important;
+}
+.mermaid .label,
+.mermaid .edgeLabel {
+  color: #1f5f59 !important;
+  fill: #1f5f59 !important;
+}
+.mermaid .cluster rect {
+  fill: #eaf6f2 !important;
+  stroke: #1f5f59 !important;
+}
+
+.cell-output-display {
+  text-align: center;
+}
+
+pre.mermaid {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  text-align: left;
+}
+
+.mermaid svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Much smaller enforcement flow diagram */
+.mermaid-small figure,
+.mermaid-small .cell-output-display figure {
+  max-width: 180px !important;
+  margin: 0 auto !important;
+}
+.mermaid-small svg,
+.mermaid-small .mermaid svg {
+  max-width: 180px !important;
+  width: 180px !important;
+  height: auto !important;
+}
+
+figure.quarto-float-figure,
+.quarto-figure,
+figure.figure {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Side-by-side diagram layout (7.1 and 7.2) - ensure columns stack on narrow screens */
+@media (max-width: 768px) {
+  div.columns {
+    flex-direction: column;
+  }
+}

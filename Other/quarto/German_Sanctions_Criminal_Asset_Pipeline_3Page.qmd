@@ -55,7 +55,7 @@ Determine how Ukraine can lawfully obtain value from assets already confiscated 
 
 **Usually no.** A think tank generally has no standing unless it is itself the direct injured owner/claimant.
 
-### Who should file instead?
+### Who should file instead? (Standing)
 
 | Actor | Can file claim for confiscated proceeds? | Typical role |
 |------|-------------------------------------------|--------------|
@@ -64,7 +64,7 @@ Determine how Ukraine can lawfully obtain value from assets already confiscated 
 | Ukrainian SOE | Yes, if direct victim/owner | Corporate claimant |
 | Private victim (UA entity/person) | Yes, if directly harmed | Individual/corporate restitution claimant |
 | German prosecutor | No, not as Ukraine's representative | Prosecutes crime, seeks confiscation *ex officio* |
-| Think tank | Normally no | Case development, evidence package, coordination |
+| Think tank / research NGO | Normally no (unless direct victim) | Case development, evidence package, coordination |
 
 ### Practical operating model for the think tank
 
@@ -74,22 +74,7 @@ Determine how Ukraine can lawfully obtain value from assets already confiscated 
 4. Track deadlines, appeals status, and enforcement distribution stage.
 5. Run parallel policy track for state-to-state transfer where claimant route is weak.
 
-## Restitution/compensation from confiscated proceeds
-
-| Pathway | What it does | Practical status |
-|---------|--------------|------------------|
-| Restitution/compensation from confiscated proceeds | Priority channel where traceable victim entitlement exists | Available now with strong evidence |
-
 ## "Lawsuit Mechanism" - Operational Steps
-
-### Standing (Who can initiate)
-
-- Ukraine as a state (through authorized governmental body)
-- Ukrainian ministries/agencies with legal personality/mandate
-- State-owned entities (if direct victim/owner)
-- Other directly injured Ukrainian legal or natural persons
-- Prosecutors act *ex officio* for confiscation, not as Ukraine's private counsel
-- Think tanks/research NGOs generally lack standing unless they are direct victims
 
 ### Competent Forum / Authority
 
@@ -106,15 +91,6 @@ Determine how Ukraine can lawfully obtain value from assets already confiscated 
 - Representation by counsel admitted in Germany strongly required for effectiveness
 - Service via court channels (electronic filing where enabled)
 - Court/legal fees depend on procedural route and value in dispute
-
-### Evidentiary Package
-
-- Proof of ownership/beneficial ownership
-- Proof linking asset to predicate crime (including sanctions-evasion conduct where relevant)
-- Victimhood and quantified damage
-- Asset tracing and chain-of-custody materials
-- Corporate records, banking records, transaction data
-- Expert reports (forensics, valuation, tracing)
 
 ### Timeline and Decision Points
 
@@ -136,80 +112,9 @@ Determine how Ukraine can lawfully obtain value from assets already confiscated 
 
 ## Action Checklist ("How to Proceed")
 
-::: {.callout-important icon=true}
-## Objective
-Obtain payment/return from **already confiscated assets** in Germany through the victim/claimant route, and use a governmental route if claimant standing is unavailable.
-:::
-
-### Step-by-step execution plan
-
-```{mermaid}
-%%| fig-cap: "Execution flow"
-%%| fig-width: 5
-flowchart TD
-    A[1 Go No-Go] --> B[2 Claimant]
-    B --> C[3 Counsel]
-    C --> D[4 Evidence]
-    D --> E[5 File]
-    E --> F[6 Adversarial]
-    F --> G[7 Payout]
-    C --> H[8 Fallback]
-```
-
-| Step | Stage |
-|:-----|:------|
-| 1 | Go/No-Go gate |
-| 2 | Claimant selection |
-| 3 | Counsel and strategy |
-| 4 | Evidence package |
-| 5 | File claim |
-| 6 | Adversarial phase |
-| 7 | Secure payout |
-| 8 | Fallback track (parallel) |
-
-1. **Screen the case for legal eligibility (Go/No-Go gate).**
-   - Confirm there is a **final criminal confiscation order** (finality reached after appeal period/appeals).
-   - Confirm the target is confiscated property/proceeds, not only frozen sanctioned assets.
-   - Identify which authority holds the file at enforcement stage (court/prosecutor/enforcement office).
-
-2. **Select the legally strongest claimant.**
-   - Pick one primary claimant: Ukraine state body, ministry/agency, SOE, or direct private victim.
-   - Obtain formal mandate documents (authorizing act, power of attorney, signatory proof).
-   - If the think tank has no standing, position it as technical support only.
-
-3. **Instruct German counsel and lock procedural strategy.**
-   - Engage counsel admitted in Germany for criminal-enforcement filings.
-   - Choose route: restitution from confiscated proceeds, adhesion/civil add-on, or both.
-   - Build a deadline calendar tied to notification dates and enforcement milestones.
-
-4. **Build the minimum viable evidence package (without this, filing fails).**
-   - Ownership/beneficial ownership proof (registries, contracts, account records).
-   - Tracing file linking confiscated asset/proceeds to claimant loss.
-   - Crime linkage evidence (sanctions-evasion/ML/corruption connection in case file).
-   - Damage quantification with methodology and supporting documents.
-   - Certified translations into German for all key documents.
-
-5. **File the claim in the correct forum and format.**
-   - Submit written application through counsel to the competent court/enforcement authority.
-   - Include: legal basis, requested amount/asset, evidence index, and procedural requests.
-   - Ensure service is completed correctly (electronic/registry channel as applicable).
-
-6. **Actively manage adversarial phase.**
-   - Respond to objections: third-party rights, proportionality, causation, tracing gaps.
-   - Cure evidentiary defects fast (supplemental declarations, expert tracing reports).
-   - Track hearings/orders and keep claimant instructions updated.
-
-7. **Secure enforcement payout/transfer execution.**
-   - After favorable decision, confirm payment order mechanics (account, currency, recipient legal identity).
-   - Verify deductions/priority rules and net distributable amount.
-   - Confirm treasury/enforcement processing timeline and written confirmation of transfer.
-
-8. **Run fallback governmental track in parallel (risk control).**
-   - If claimant standing or tracing is weak, prepare state-to-state transfer proposal package.
-   - Use finalized confiscation facts + beneficiary safeguards (auditing, ring-fencing, reporting).
-   - Coordinate with authorized Ukrainian and German governmental counterparts.
-
 ### Documents you should prepare immediately
+
+The evidence package must prove ownership, tracing, crime linkage, and damage. Prepare:
 
 - Case-status memo proving final confiscation status
 - Claimant mandate pack (authority + POA + legal personality evidence)
@@ -239,59 +144,16 @@ flowchart TD
 |------|-----------------|-----------|---------|--------|
 | **Germany (Cum-Ex)** OLG Köln 3 Ws 58-59/23 (Jul 2024) | Injured tax authorities as claimants; criminal enforcement phase | Claims after §459i notification; 6‑month window; §459h(2) "mirror" linkage required | Court confirms mechanism; restricts payouts where linkage insufficient | Claimant route works; tracing/legal qualification is the bottleneck |
 | **US → Malaysia (1MDB)** | US DOJ MLARS led forfeiture; Malaysia as beneficiary | Forfeiture litigation → DOJ repatriation decisions | 41 actions since Jul 2016; >$1.7bn seized; ~$1.4bn returned (incl. $452m Aug 2021, $156m Jun 2024) to 1MDB Asset Recovery Trust Account | Large returns need long forfeiture phase + dedicated repatriation channel |
-| **US Madoff Victim Fund** | Victims submit remission claims; DOJ/Special Master administers | Petition-based victim compensation | 10th/final distribution Dec 2024; >$4.3bn to 40,930 victims (~93.71% recovery) | Specialized compensation administrator improves payout speed/scale |
 | **UK → Nigeria (Ibori)** | UK prosecutors recovered; Nigeria as victim state | UK–Nigeria agreement (9 Mar 2021) | £4.2m returned for public-benefit projects | Confiscation alone did not complete transfer; bilateral agreement operationalized destination |
 | **Switzerland → Nigeria (Abacha II)** | Swiss authorities post-criminal; Nigeria beneficiary | 2017 Switzerland–Nigeria–World Bank tripartite agreement | ~USD 321m restitution with monitoring safeguards | Monitoring architecture reduces misuse risk, unlocks political/legal acceptance |
-| **Switzerland/Luxembourg → Peru** | State authorities via cooperation framework | 2020 trilateral agreement; earlier ~USD 93m (2002–2006) | ~USD 26m to justice-sector strengthening | Restitution can be earmarked to rule-of-law infrastructure |
 
 **Implication for Germany–Ukraine:** Feasible now: victim/claimant route in finalized confiscation files (strict proof burden). Missing for scale: standing transfer framework converting German-confiscated value into structured Ukraine-directed disbursement. Best historical analogue: Swiss/UK style post-confiscation transfer agreement + safeguards.
 
-*Sources: OLG Köln 3 Ws 58-59/23; DOJ 1MDB (Jun 2024), Madoff (Dec 2024); UK–Nigeria (Mar 2021); Switzerland–Nigeria (Dec 2017); Switzerland/Luxembourg–Peru (Dec 2020).*
+*Sources: OLG Köln 3 Ws 58-59/23; DOJ 1MDB (Jun 2024); UK–Nigeria (Mar 2021); Switzerland–Nigeria (Dec 2017).*
 
 ## Comparative Execution Diagrams
 
-::: {.content-visible when-format="html"}
-<details>
-<summary><strong>Diagram 1: US -> Malaysia (1MDB) Playbook</strong> (click to expand)</summary>
-
-```{mermaid}
-%%| fig-cap: "US -> Malaysia (1MDB): forfeiture-to-repatriation execution model"
-%%| fig-width: 3
-flowchart TD
-    A[Corruption and laundering detected] --> B[DOJ Kleptocracy / MLARS investigation]
-    B --> C[Parallel international tracing and evidence sharing]
-    C --> D[US civil forfeiture complaints filed]
-    D --> E[Asset-by-asset litigation or settlement]
-    E --> F[Final forfeiture / recovery orders]
-    F --> G[DOJ repatriation decision framework]
-    G --> H[Funds transferred in tranches to Malaysia]
-    H --> I[Dedicated destination vehicle: 1MDB Asset Recovery Trust Account]
-    I --> J[Public reporting, audit, continued recovery rounds]
-```
-
-</details>
-:::
-
-::: {.content-visible unless-format="html"}
-### Diagram 1: US -> Malaysia (1MDB) Playbook
-
-```{mermaid}
-%%| fig-cap: "US -> Malaysia (1MDB): forfeiture-to-repatriation execution model"
-%%| fig-width: 3
-flowchart TD
-    A[Corruption and laundering detected] --> B[DOJ Kleptocracy / MLARS investigation]
-    B --> C[Parallel international tracing and evidence sharing]
-    C --> D[US civil forfeiture complaints filed]
-    D --> E[Asset-by-asset litigation or settlement]
-    E --> F[Final forfeiture / recovery orders]
-    F --> G[DOJ repatriation decision framework]
-    G --> H[Funds transferred in tranches to Malaysia]
-    H --> I[Dedicated destination vehicle: 1MDB Asset Recovery Trust Account]
-    I --> J[Public reporting, audit, continued recovery rounds]
-```
-:::
-
-### Diagram 2: Germany -> Ukraine (Think Tank Operational Model)
+### Diagram: Germany -> Ukraine (Think Tank Operational Model)
 
 ```{mermaid}
 %%| fig-cap: "Ukraine pathway: how a think tank supports claims over finalized German confiscations"

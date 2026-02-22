@@ -1,0 +1,24 @@
+{
+  "German_Sanction_Mechanism_Analysis": {
+    "title": "German Sanction Mechanism Analysis",
+    "summary": "Full legal and institutional analysis of Germany's sanctions enforcement framework.",
+    "tags": ["sanctions", "Germany", "EU law", "enforcement"],
+    "related": ["German_Sanctions_3Page_Summary"]
+  },
+  "German_Sanction_Mechanism_Analysis_UKR": {
+    "title": "German Sanction Mechanism Analysis (Ukrainian)",
+    "summary": "Ukrainian-language edition of the full German sanctions mechanism analysis.",
+    "tags": ["sanctions", "Ukraine", "translation"],
+    "related": ["German_Sanctions_3Page_Summary_UKR"]
+  },
+  "German_Sanctions_3Page_Summary": {
+    "title": "How Germany Enforces Sanctions (3-page Summary)",
+    "summary": "Concise 3-page overview of actors, process, and legal effects.",
+    "tags": ["brief", "sanctions", "Germany"]
+  },
+  "German_Sanctions_3Page_Summary_UKR": {
+    "title": "How Germany Enforces Sanctions (3-page Summary, Ukrainian)",
+    "summary": "Ukrainian-language 3-page summary for policy communication.",
+    "tags": ["brief", "sanctions", "Ukraine", "translation"]
+  }
+}

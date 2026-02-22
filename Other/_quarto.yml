@@ -1,0 +1,19 @@
+project:
+  type: default
+  output-dir: _output
+  render:
+    - quarto/German_Sanction_Mechanism_Analysis.qmd
+    - quarto/German_Sanctions_3Page_Summary.qmd
+    - quarto/German_Sanction_Mechanism_Analysis_UKR.qmd
+    - quarto/German_Sanctions_3Page_Summary_UKR.qmd
+    - quarto/German_Sanctions_Criminal_Asset_Pipeline_3Page.qmd
+
+format:
+  pdf:
+    fig-width: 6
+    fig-align: center
+  html:
+    fig-width: 6
+    fig-align: center
+    mermaid:
+      theme: neutral
