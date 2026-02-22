@@ -27,16 +27,6 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
         </Link>
         <h1>{work.title}</h1>
         <p className="work-summary">{work.summary}</p>
-        <div className="card-top">
-          <p className={`tag ${work.language === "Ukrainian" ? "tag-ukrainian" : ""}`}>{work.language}</p>
-          <p className="tag">{work.kind}</p>
-          <p className="tag" suppressHydrationWarning>Updated {new Date(work.updatedAt).toLocaleDateString()}</p>
-        </div>
-        <div className="tags-row">
-          {work.tags.map((tag) => (
-            <span className="chip" key={`${work.slug}-${tag}`}>{tag}</span>
-          ))}
-        </div>
         <div className="actions">
           {work.pdfPath ? (
             <a href={prefixPath(work.pdfPath)} className="btn ghost" target="_blank" rel="noreferrer">PDF</a>
