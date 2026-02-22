@@ -1,8 +1,8 @@
 /* Custom styles for German Sanctions Summary */
 :root {
-  --izi-primary: #1f5f59;
-  --izi-accent: #0f766e;
-  --izi-light: #eaf6f2;
+  --izi-primary: #2c3e50;
+  --izi-accent: #3498db;
+  --izi-light: #ecf0f1;
 }
 
 body {
@@ -19,12 +19,6 @@ h1, h2, h3 {
 h1 {
   border-bottom: 2px solid var(--izi-accent);
   padding-bottom: 0.3em;
-  font-size: 1.65rem;
-  line-height: 1.2;
-}
-
-#title-block-header .subtitle {
-  font-size: 1rem;
 }
 
 h2 {
@@ -57,12 +51,8 @@ tr:nth-child(even) {
 
 .callout {
   border-radius: 4px;
-  padding: 0.6em 1em;
-  margin: 0.6em 0;
-}
-
-.quarto-layout-panel {
-  gap: 1em;
+  padding: 1em 1.25em;
+  margin: 1em 0;
 }
 
 .mermaid {
@@ -74,17 +64,17 @@ tr:nth-child(even) {
 .mermaid .node circle,
 .mermaid .node polygon,
 .mermaid .node path {
-  fill: #f4fbf8 !important;
-  stroke: #1f5f59 !important;
+  fill: #f8f9fa !important;
+  stroke: #2c3e50 !important;
 }
 .mermaid .label,
 .mermaid .edgeLabel {
-  color: #1f5f59 !important;
-  fill: #1f5f59 !important;
+  color: #2c3e50 !important;
+  fill: #2c3e50 !important;
 }
 .mermaid .cluster rect {
-  fill: #eaf6f2 !important;
-  stroke: #1f5f59 !important;
+  fill: #ecf0f1 !important;
+  stroke: #2c3e50 !important;
 }
 
 .cell-output-display {
@@ -104,17 +94,14 @@ pre.mermaid {
   margin-right: auto;
 }
 
-/* Much smaller enforcement flow diagram */
-.mermaid-small figure,
-.mermaid-small .cell-output-display figure {
-  max-width: 180px !important;
-  margin: 0 auto !important;
+/* Much smaller enforcement flow diagram - scale diagram only */
+.mermaid-small figure > div:first-of-type {
+  transform: scale(0.4);
+  transform-origin: center top;
+  display: inline-block;
 }
-.mermaid-small svg,
-.mermaid-small .mermaid svg {
-  max-width: 180px !important;
-  width: 180px !important;
-  height: auto !important;
+.mermaid-small figure {
+  text-align: center;
 }
 
 figure.quarto-float-figure,
@@ -123,11 +110,4 @@ figure.figure {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-
-/* Side-by-side diagram layout (7.1 and 7.2) - ensure columns stack on narrow screens */
-@media (max-width: 768px) {
-  div.columns {
-    flex-direction: column;
-  }
 }

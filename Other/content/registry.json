@@ -1,23 +1,34 @@
 {
-  "generatedAt": "2026-02-22T08:36:45.805Z",
-  "total": 5,
+  "generatedAt": "2026-02-22T10:47:08.706Z",
+  "total": 6,
   "works": [
     {
       "slug": "german-sanctions-criminal-asset-pipeline-3page",
       "fileName": "German_Sanctions_Criminal_Asset_Pipeline_3Page",
       "title": "Germany: Criminally Confiscated Assets Pathway for Ukraine",
-      "summary": "Operational playbook for pursuing value transfer to Ukraine from finalized criminal confiscation cases in Germany.",
-      "kind": "Analysis",
+      "summary": "Short policy summary",
+      "kind": "Summary",
       "language": "English",
       "updatedAt": "2026-02-20T00:00:00.000Z",
       "htmlPath": "/rendered/German_Sanctions_Criminal_Asset_Pipeline_3Page.html",
       "pdfPath": "/rendered/German_Sanctions_Criminal_Asset_Pipeline_3Page.pdf",
+      "tags": []
+    },
+    {
+      "slug": "german-sanctions-3page-summary-ukr",
+      "fileName": "German_Sanctions_3Page_Summary_UKR",
+      "title": "How Germany Enforces Sanctions (3-page Summary, Ukrainian)",
+      "summary": "Ukrainian-language 3-page summary for policy communication.",
+      "kind": "Summary",
+      "language": "Ukrainian",
+      "updatedAt": "2026-02-17T00:00:00.000Z",
+      "htmlPath": "/rendered/German_Sanctions_3Page_Summary_UKR.html",
+      "pdfPath": null,
       "tags": [
-        "Germany",
+        "brief",
+        "sanctions",
         "Ukraine",
-        "asset recovery",
-        "confiscation",
-        "criminal law"
+        "translation"
       ]
     },
     {
@@ -30,14 +41,14 @@
       "updatedAt": "2026-02-17T00:00:00.000Z",
       "htmlPath": "/rendered/German_Sanction_Mechanism_Analysis.html",
       "pdfPath": "/rendered/German_Sanction_Mechanism_Analysis.pdf",
-      "relatedSlugs": [
-        "german-sanctions-3page-summary"
-      ],
       "tags": [
         "sanctions",
         "Germany",
         "EU law",
         "enforcement"
+      ],
+      "relatedSlugs": [
+        "german-sanctions-3page-summary"
       ]
     },
     {
@@ -50,13 +61,13 @@
       "updatedAt": "2026-02-17T00:00:00.000Z",
       "htmlPath": "/rendered/German_Sanction_Mechanism_Analysis_UKR.html",
       "pdfPath": "/rendered/German_Sanction_Mechanism_Analysis_UKR.pdf",
-      "relatedSlugs": [
-        "german-sanctions-3page-summary-ukr"
-      ],
       "tags": [
         "sanctions",
         "Ukraine",
         "translation"
+      ],
+      "relatedSlugs": [
+        "german-sanctions-3page-summary-ukr"
       ]
     },
     {
@@ -84,6 +95,17 @@
       "language": "Ukrainian",
       "updatedAt": "2026-02-17T00:00:00.000Z",
       "htmlPath": "/rendered/German_Sanctions_3Page_Summary_UKR.html",
+      "pdfPath": "/rendered/German_Sanctions_3Page_Summary_UKR.pdf",
+      "tags": [
+        "brief",
+        "sanctions",
+        "Ukraine",
+        "translation"
+      ]
+    }
+  ]
+}
+ons_3Page_Summary_UKR.html",
       "pdfPath": "/rendered/German_Sanctions_3Page_Summary_UKR.pdf",
       "tags": [
         "brief",
