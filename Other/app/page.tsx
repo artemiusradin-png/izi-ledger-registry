@@ -115,30 +115,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="type-switch" aria-label="Browse by type">
-        <button
-          type="button"
-          className={`switch-btn ${kind === "all" ? "active" : ""}`}
-          onClick={() => setKind("all")}
-        >
-          All ({works.length})
-        </button>
-        <button
-          type="button"
-          className={`switch-btn ${kind === "Analysis" ? "active" : ""}`}
-          onClick={() => setKind("Analysis")}
-        >
-          Analysis ({analysisWorks.length})
-        </button>
-        <button
-          type="button"
-          className={`switch-btn ${kind === "Summary" ? "active" : ""}`}
-          onClick={() => setKind("Summary")}
-        >
-          Summary ({summaryWorks.length})
-        </button>
-      </section>
-
       {works.length === 0 ? (
         <section className="grid">
           <article className="empty-state">
