@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:docs": "NEXT_PUBLIC_BASE_PATH=/izi-ledger-registry next build && rm -rf ../docs && cp -r out ../docs",
+    "build:docs": "next build && rm -rf ../docs && cp -r out ../docs",
+    "build:docs:gh": "NEXT_PUBLIC_BASE_PATH=/izi-ledger-registry next build && rm -rf ../docs && cp -r out ../docs",
     "start": "next start",
     "ingest": "node scripts/ingest-rendered.mjs",
     "render:all": "quarto render",

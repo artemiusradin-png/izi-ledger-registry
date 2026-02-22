@@ -4,6 +4,8 @@ import { getAllWorks, getWorkBySlug } from "@/lib/works";
 import { prefixPath } from "@/lib/url";
 import DocumentFrame from "@/app/components/document-frame";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getAllWorks().map((work) => ({ slug: work.slug }));
 }
