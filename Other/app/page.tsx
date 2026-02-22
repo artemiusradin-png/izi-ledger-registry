@@ -142,7 +142,7 @@ export default function HomePage() {
                     return (
                       <article className="card" key={work.slug}>
                         <div className="card-top">
-                          <p className="tag">{work.language}</p>
+                          <p className={`tag ${work.language === "Ukrainian" ? "tag-ukrainian" : ""}`}>{work.language}</p>
                           <p className="tag">{work.kind}</p>
                         </div>
                         <h2>{work.title}</h2>
@@ -186,7 +186,7 @@ export default function HomePage() {
                 {summaryWorks.map((work) => (
                   <article className="card" key={work.slug}>
                     <div className="card-top">
-                      <p className="tag">{work.language}</p>
+                      <p className={`tag ${work.language === "Ukrainian" ? "tag-ukrainian" : ""}`}>{work.language}</p>
                       <p className="tag">{work.kind}</p>
                     </div>
                     <h2>{work.title}</h2>

@@ -25,7 +25,7 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
         <h1>{work.title}</h1>
         <p className="work-summary">{work.summary}</p>
         <div className="card-top">
-          <p className="tag">{work.language}</p>
+          <p className={`tag ${work.language === "Ukrainian" ? "tag-ukrainian" : ""}`}>{work.language}</p>
           <p className="tag">{work.kind}</p>
           <p className="tag" suppressHydrationWarning>Updated {new Date(work.updatedAt).toLocaleDateString()}</p>
         </div>
