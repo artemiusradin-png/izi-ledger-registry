@@ -44,9 +44,10 @@ This paper is limited to **criminal cases with finalized confiscation/forfeiture
 Excluded: assets only frozen/blocked under sanctions without a final criminal confiscation outcome.
 :::
 
+::: {.callout-important icon=true}
 ## Practical Objective
-
 Determine how Ukraine can lawfully obtain value from assets already confiscated by Germany in criminal proceedings, and what can be done immediately versus what needs legal/policy change.
+:::
 
 ## Who Can Actually File (Plain Answer)
 
@@ -135,9 +136,10 @@ Determine how Ukraine can lawfully obtain value from assets already confiscated 
 
 ## Action Checklist ("How to Proceed")
 
-### Objective
-
+::: {.callout-important icon=true}
+## Objective
 Obtain payment/return from **already confiscated assets** in Germany through the victim/claimant route, and use a governmental route if claimant standing is unavailable.
+:::
 
 ### Step-by-step execution plan
 
@@ -226,7 +228,12 @@ flowchart TD
 
 ## Validated Case Studies (Framework-Mapped)
 
-**Framework takeaways:** (1) Germany has a working victim-claim route after final confiscation, but it is technically strict and evidence-driven; (2) Cross-border transfers to victim populations usually require a second governmental agreement layer after confiscation; (3) Successful models combine: final forfeiture + clear beneficiary design + monitored transfer mechanism.
+::: {.callout-note icon=true}
+## Framework takeaways
+1. Germany has a working victim-claim route after final confiscation, but it is technically strict and evidence-driven.
+2. Cross-border transfers to victim populations usually require a second governmental agreement layer after confiscation.
+3. Successful models combine: final forfeiture + clear beneficiary design + monitored transfer mechanism.
+:::
 
 | Case | Standing / Forum | Mechanism | Outcome | Lesson |
 |------|-----------------|-----------|---------|--------|
@@ -243,10 +250,13 @@ flowchart TD
 
 ## Comparative Execution Diagrams
 
-### Diagram 1: US -> Malaysia (1MDB) Playbook
+::: {.content-visible when-format="html"}
+<details>
+<summary><strong>Diagram 1: US -> Malaysia (1MDB) Playbook</strong> (click to expand)</summary>
 
 ```{mermaid}
 %%| fig-cap: "US -> Malaysia (1MDB): forfeiture-to-repatriation execution model"
+%%| fig-width: 3
 flowchart TD
     A[Corruption and laundering detected] --> B[DOJ Kleptocracy / MLARS investigation]
     B --> C[Parallel international tracing and evidence sharing]
@@ -259,10 +269,33 @@ flowchart TD
     I --> J[Public reporting, audit, continued recovery rounds]
 ```
 
+</details>
+:::
+
+::: {.content-visible unless-format="html"}
+### Diagram 1: US -> Malaysia (1MDB) Playbook
+
+```{mermaid}
+%%| fig-cap: "US -> Malaysia (1MDB): forfeiture-to-repatriation execution model"
+%%| fig-width: 3
+flowchart TD
+    A[Corruption and laundering detected] --> B[DOJ Kleptocracy / MLARS investigation]
+    B --> C[Parallel international tracing and evidence sharing]
+    C --> D[US civil forfeiture complaints filed]
+    D --> E[Asset-by-asset litigation or settlement]
+    E --> F[Final forfeiture / recovery orders]
+    F --> G[DOJ repatriation decision framework]
+    G --> H[Funds transferred in tranches to Malaysia]
+    H --> I[Dedicated destination vehicle: 1MDB Asset Recovery Trust Account]
+    I --> J[Public reporting, audit, continued recovery rounds]
+```
+:::
+
 ### Diagram 2: Germany -> Ukraine (Think Tank Operational Model)
 
 ```{mermaid}
 %%| fig-cap: "Ukraine pathway: how a think tank supports claims over finalized German confiscations"
+%%| fig-width: 3
 flowchart TD
     A[Think tank identifies candidate case] --> B{Final criminal confiscation already in force?}
     B -->|No| C[Exclude or monitor until finality]
