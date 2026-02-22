@@ -61,7 +61,7 @@ export default function HomePage() {
         <p className="kicker">Artemis Radin - Institute of Legislative Ideas</p>
         <h1>General Ledger Registry</h1>
         <p className="subtitle">All analytics in one searchable portfolio.</p>
-        <p className="meta">
+        <p className="meta" suppressHydrationWarning>
           Total works: {allWorks.length} · Showing: {works.length} · Updated: {new Date(meta.generatedAt).toLocaleString()}
         </p>
       </header>
@@ -171,7 +171,7 @@ export default function HomePage() {
                         </div>
                         <h2>{work.title}</h2>
                         <p className="card-summary">{work.summary}</p>
-                        <p className="small">Updated: {new Date(work.updatedAt).toLocaleDateString()}</p>
+                        <p className="small" suppressHydrationWarning>Updated: {new Date(work.updatedAt).toLocaleDateString()}</p>
                         <div className="tags-row">
                           {work.tags.map((tag) => (
                             <span className="chip" key={`${work.slug}-${tag}`}>{tag}</span>
@@ -215,7 +215,7 @@ export default function HomePage() {
                     </div>
                     <h2>{work.title}</h2>
                     <p className="card-summary">{work.summary}</p>
-                    <p className="small">Updated: {new Date(work.updatedAt).toLocaleDateString()}</p>
+                    <p className="small" suppressHydrationWarning>Updated: {new Date(work.updatedAt).toLocaleDateString()}</p>
                     <div className="tags-row">
                       {work.tags.map((tag) => (
                         <span className="chip" key={`${work.slug}-${tag}`}>{tag}</span>

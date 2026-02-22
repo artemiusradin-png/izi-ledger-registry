@@ -25,7 +25,7 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
         <div className="card-top">
           <p className="tag">{work.language}</p>
           <p className="tag">{work.kind}</p>
-          <p className="tag">Updated {new Date(work.updatedAt).toLocaleDateString()}</p>
+          <p className="tag" suppressHydrationWarning>Updated {new Date(work.updatedAt).toLocaleDateString()}</p>
         </div>
         <div className="tags-row">
           {work.tags.map((tag) => (
