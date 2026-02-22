@@ -21,7 +21,7 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
   return (
     <main className="work-page">
       <div className="work-header">
-        <Link href="/" className="btn ghost">Back to registry</Link>
+        <Link href="/" className="btn ghost back-link">Back to registry</Link>
         <h1>{work.title}</h1>
         <p className="work-summary">{work.summary}</p>
         <div className="card-top">

@@ -264,6 +264,12 @@ h1 {
   background: rgba(255, 255, 255, 0.88);
 }
 
+.work-header .back-link {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
 .work-header h1 {
   font-size: clamp(1.15rem, 2vw, 1.45rem);
   margin: 0.15rem 0 0.2rem;
