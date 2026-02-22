@@ -179,10 +179,10 @@ h1 {
 }
 
 .tag-ukrainian {
-  border-color: #2454a6;
-  background: linear-gradient(180deg, #2f7ddd 0 50%, #ffd447 50% 100%);
-  color: #0f172a;
-  font-weight: 700;
+  border-color: #c8d8ef;
+  background: linear-gradient(180deg, #eef5ff 0 50%, #fff8dc 50% 100%);
+  color: #2f3b52;
+  font-weight: 600;
 }
 
 .card-summary {
