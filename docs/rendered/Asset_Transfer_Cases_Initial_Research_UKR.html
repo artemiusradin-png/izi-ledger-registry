@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk" xml:lang="uk"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Artem Radin">
+
+<title>Кейси передачі активів: початкове дослідження</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/quarto-html/popper.min.js"></script>
+<script src="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/bootstrap/bootstrap-66f220744880a257c6c06aa45740e4a9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<meta name="mermaid-theme" content="neutral">
+<script src="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="Asset_Transfer_Cases_Initial_Research_UKR_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles/summary.css">
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#мета" id="toc-мета" class="nav-link active" data-scroll-target="#мета"><span class="header-section-number">1</span> Мета</a></li>
+  <li><a href="#попередній-висновок" id="toc-попередній-висновок" class="nav-link" data-scroll-target="#попередній-висновок"><span class="header-section-number">2</span> Попередній висновок</a></li>
+  <li><a href="#початкова-таблиця-регістрів-розширена" id="toc-початкова-таблиця-регістрів-розширена" class="nav-link" data-scroll-target="#початкова-таблиця-регістрів-розширена"><span class="header-section-number">3</span> Початкова таблиця регістрів (розширена)</a></li>
+  <li><a href="#посилання-на-рішення-суду-та-взаємозвязок-передачі-пріоритетні-справи" id="toc-посилання-на-рішення-суду-та-взаємозвязок-передачі-пріоритетні-справи" class="nav-link" data-scroll-target="#посилання-на-рішення-суду-та-взаємозвязок-передачі-пріоритетні-справи"><span class="header-section-number">4</span> Посилання на рішення суду та взаємозв’язок передачі (пріоритетні справи)</a></li>
+  <li><a href="#завершення-шаблону-справи-поточний-статус" id="toc-завершення-шаблону-справи-поточний-статус" class="nav-link" data-scroll-target="#завершення-шаблону-справи-поточний-статус"><span class="header-section-number">5</span> Завершення шаблону справи (поточний статус)</a></li>
+  <li><a href="#домашні-роздавальні-коробки" id="toc-домашні-роздавальні-коробки" class="nav-link" data-scroll-target="#домашні-роздавальні-коробки"><span class="header-section-number">6</span> Домашні роздавальні коробки</a></li>
+  <li><a href="#транскордонні-випадки-передачі" id="toc-транскордонні-випадки-передачі" class="nav-link" data-scroll-target="#транскордонні-випадки-передачі"><span class="header-section-number">7</span> Транскордонні випадки передачі</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Asset_Transfer_Cases_Initial_Research_UKR.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Кейси передачі активів: початкове дослідження</h1>
+<p class="subtitle lead">Підтверджені внутрішні та транскордонні передачі конфіскованих кримінальних активів</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Artem Radin </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Intern
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">4 березня 2026 р.</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="мета" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="мета"><span class="header-section-number">1</span> Мета</h2>
+<p>Ця примітка є <strong>початковим чернеткою дослідження на основі конкретних справ</strong> у відповідь на прохання зосередитися на <strong>фактичних передачах конфіскованих злочинних активів</strong>, а не лише на абстрактних правових шляхах. Він визначає перевірені приклади:</p>
+<ul>
+<li><strong>внутрішні перекази</strong> з конфіскованих активів потерпілим; і</li>
+<li><strong>транскордонні перекази</strong> з однієї держави в іншу або до контрольованого суспільно-корисного механізму.</li>
+</ul>
+<p>Замітка спирається переважно на <strong>офіційні джерела</strong>. Судові рішення та офіційні документи включені там, де їх можна було легко ідентифікувати з офіційних матеріалів.</p>
+</section>
+<section id="попередній-висновок" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="попередній-висновок"><span class="header-section-number">2</span> Попередній висновок</h2>
+<p>Перший огляд свідчить про чітку закономірність. У найвагоміших публічних прикладах передача активів зазвичай вимагає <strong>трьох окремих кроків</strong>:</p>
+<ol type="1">
+<li><strong>Остаточна конфіскація/конфіскація/погашення</strong> у державі, яка повертається.</li>
+<li><strong>Юридичний механізм розподілу</strong> для потерпілих або іноземних бенефіціарів.</li>
+<li><strong>Моніторинг реалізації</strong>, особливо у справах про транскордонну корупцію.</li>
+</ol>
+<p>Ось чому найбільш розроблені моделі не є простими випадками «держава А захоплює, а потім передає гроші державі Б». Зазвичай вони поєднують конфіскацію з процесом ремісії, угодою про реституцію або контрольованим трастовим фондом або структурою проекту.</p>
+</section>
+<section id="початкова-таблиця-регістрів-розширена" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="початкова-таблиця-регістрів-розширена"><span class="header-section-number">3</span> Початкова таблиця регістрів (розширена)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Справа</th>
+<th>Юрисдикція(и)</th>
+<th>Тип передачі</th>
+<th>Перерахована сума</th>
+<th>одержувач</th>
+<th>Основний правовий механізм</th>
+<th>Рішення суду / посилання на правовий документ</th>
+<th>Статус перевірки</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Швейцарія -&gt; Нігерія (Абача II)</td>
+<td>Швейцарія / Нігерія</td>
+<td>Транскордонні</td>
+<td>321 млн дол</td>
+<td>Населення Нігерії через проект соціального захисту</td>
+<td>Конфіскація у Швейцарії + тристороння угода з моніторингом Світового банку</td>
+<td>Федеральний верховний суд Швейцарії (система взаємної правової допомоги/конфіскації Abacha) 1A.215/2004 (ATF 131 II 169)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> + тристороння угода 2017 року<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></td>
+<td>Перевірено (офіційні джерела + рішення суду)</td>
+</tr>
+<tr class="even">
+<td>Великобританія -&gt; Нігерія (Ibori)</td>
+<td>Великобританія / Нігерія</td>
+<td>Транскордонні</td>
+<td>4,2 мільйона фунтів стерлінгів</td>
+<td>Інфраструктурні проекти Нігерії</td>
+<td>Порядок повернення у Великобританії + угода про повернення між Великобританією та Нігерією</td>
+<td>Додаток до Меморандуму про взаєморозуміння між Великобританією та Нігерією, що підтверджує накази про конфіскацію з 2010 року<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></td>
+<td>Перевірено (офіційне джерело). Повний текст ухвали суду ще не розміщений у відкритому доступі</td>
+</tr>
+<tr class="odd">
+<td>США -&gt; Малайзія (1MDB)</td>
+<td>США / Малайзія</td>
+<td>Транскордонні</td>
+<td>близько 1,4 млрд дол</td>
+<td>народ Малайзії</td>
+<td>Судовий процес у США щодо конфіскації + репатріація Міністерства юстиції</td>
+<td>Апеляційний суд США (9th Cir.) у пов’язаній справі про конфіскацію, пов’язаної з 1MDB, <em>U.S. проти PetroSaudi Oil Services</em> (13 червня 2023 р.)<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> + повідомлення про репатріацію Міністерства юстиції<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></td>
+<td>Перевірено (офіційне джерело + рішення суду)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="посилання-на-рішення-суду-та-взаємозвязок-передачі-пріоритетні-справи" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="посилання-на-рішення-суду-та-взаємозвязок-передачі-пріоритетні-справи"><span class="header-section-number">4</span> Посилання на рішення суду та взаємозв’язок передачі (пріоритетні справи)</h2>
+<section id="швейцарія---нігерія-абача" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="швейцарія---нігерія-абача"><span class="header-section-number">4.1</span> Швейцарія -&gt; Нігерія (Абача)</h3>
+<p>Швейцарія повернула <strong>321 мільйон доларів США</strong> активів, пов’язаних з Abacha, до Нігерії згідно з тристоронньою угодою зі спостереженням Світового банку.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a><a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Нігерія звернулася з проханням про взаємоправу; Швейцарські суди підтвердили параметри співпраці (ATF 131 II 169, 2005);<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Женевський прокурор конфіскував активи (2016);<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> кошти були виплачені траншами Національному проекту соціальної безпеки для грошових переказів бідним домогосподарствам.</p>
+<div class="cell" data-fig-width="7" data-fig-height="9" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart': {'rankSpacing': 80, 'nodeSpacing': 60}}}%%
+flowchart TD
+    subgraph MAIN["Main transfer pathway"]
+        A1["Step 1: Nigeria submits MLA request to Switzerland&lt;br/&gt;for Abacha-linked assets held in Swiss banks"]
+        A2["Step 2: Swiss authorities conduct IRSG admissibility review&lt;br/&gt;assess cooperation conditions under mutual legal assistance"]
+        A3["Step 3: Swiss Federal Supreme Court ATF 131 II 169&lt;br/&gt;7 Feb 2005 — confirms legal parameters for cooperation and return"]
+        A4["Step 4: Geneva prosecutor initiates criminal proceedings&lt;br/&gt;against Abba Abacha and related parties"]
+        A5["Step 5: Swiss court Dec 2014: repatriation conditional on&lt;br/&gt;World Bank monitoring of use of funds"]
+        A6["Step 6: Geneva Attorney General confiscates assets&lt;br/&gt;8 Mar 2016 — return process becomes legally possible"]
+        A7["Step 7: Nigeria designates use: National Social Safety Net Project&lt;br/&gt;targeted cash transfers to poor and vulnerable Nigerians"]
+        A8["Step 8: 4 Dec 2017: Tripartite MOU signed&lt;br/&gt;Switzerland, Nigeria, World Bank — USD 321 million"]
+        A9["Step 9: Tranche-based disbursement to Nigeria&lt;br/&gt;funds applied to National Social Safety Net Project"]
+        A10["Step 10: Cash transfers to beneficiaries&lt;br/&gt;poor and vulnerable Nigerians via IDA-financed project"]
+    end
+
+    subgraph MON["Monitoring &amp; oversight structure"]
+        M1["World Bank: monitors use of funds&lt;br/&gt;same manner as IDA Credit for National Social Safety Net Project"]
+        M2["Nigerian CSOs under Network on Asset Recovery&lt;br/&gt;expertise in anti-corruption and asset recovery"]
+        M3["CSOs monitor cash-to-beneficiaries&lt;br/&gt;bi-annual reports on use of funds"]
+        M4["Transparency and accountability framework&lt;br/&gt;civil society oversight per tripartite agreement"]
+    end
+
+    A1 --&gt; A2 --&gt; A3 --&gt; A4 --&gt; A5 --&gt; A6 --&gt; A7 --&gt; A8 --&gt; A9 --&gt; A10
+    A8 -.-&gt;|"enables"| M1
+    A9 -.-&gt;|"subject to"| M2
+    M2 --&gt; M3
+    M1 --&gt; M4
+    M3 --&gt; M4
+
+    A1 -.-&gt; NA1
+    A2 -.-&gt; NA2
+    A3 -.-&gt; NA3
+    A4 -.-&gt; NA4
+    A5 -.-&gt; NA5
+    A6 -.-&gt; NA6
+    A7 -.-&gt; NA7
+    A8 -.-&gt; NA8
+    A9 -.-&gt; NA9
+    A10 -.-&gt; NA10
+
+    NA1["MLA request under Swiss IRSG Bundesgesetz über internationale Rechtshilfe in Strafsachen; assets traced to late Gen. Sani Abacha and family in Swiss banks; Nigeria as requesting state."]
+    NA2["OFJ and cantonal authorities assessed admissibility under IRSG Art. 3; dual criminality and cooperation conditions reviewed."]
+    NA3["ATF 131 II 169 7 Feb 2005 case 1A.215/2004; confirmed MLA and return parameters under IRSG while proceedings ongoing in Nigeria."]
+    NA4["Procureur général de Genève initiated criminal proceedings against Abba Abacha; assets identified, frozen under Swiss criminal procedure."]
+    NA5["Dec 2014 Swiss court ruling: repatriation conditional on World Bank monitoring of use; precondition for transfer."]
+    NA6["8 Mar 2016 Procureur général Genève confiscation order; assets transferred to Swiss Confederation under Art. 69-72 SCC."]
+    NA7["Nigeria designated National Social Safety Net Project P151488; IDA Credit; targeted cash transfers to poor households."]
+    NA8["4 Dec 2017 tripartite MOU: Federal Govt Nigeria, Swiss Federal Council, World Bank; disbursement modalities and WB monitoring role."]
+    NA9["Tranche-based release; funds applied to IDA-financed National Social Safety Net Project; same monitoring as IDA Credit."]
+    NA10["Cash to beneficiaries; NAR CSOs monitor cash-to-beneficiaries; bi-annual reports per tripartite agreement."]
+
+    classDef noteBox fill:#fff8e1,stroke:#f9a825,stroke-width:2px,stroke-dasharray: 6 4
+    class NA1,NA2,NA3,NA4,NA5,NA6,NA7,NA8,NA9,NA10 noteBox
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="сша---малайзія-1mdb" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="сша---малайзія-1mdb"><span class="header-section-number">4.2</span> США -&gt; Малайзія (1MDB)</h3>
+<p>США репатріювали <strong>~1,4 мільярда доларів США</strong> доходів від 1MDB до Малайзії шляхом цивільно-правової конфіскації (41 позов з 2016 року) і репатріаційних траншів Міністерства юстиції.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Активи були передані на трастовий рахунок повернення активів Малайзії 1MDB для суспільного блага. Дев’ятий окружний суд підтвердив повноваження на арешт у пов’язаному позові про конфіскацію PetroSaudi (2023 р.).<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
+<div class="cell" data-fig-width="7" data-fig-height="9" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart': {'rankSpacing': 80, 'nodeSpacing': 60}}}%%
+flowchart TD
+    subgraph MAIN["Main transfer pathway"]
+        B1["Step 1: DOJ initiates civil forfeiture actions&lt;br/&gt;from Jul 2016 — 41 actions targeting 1MDB-linked assets"]
+        B2["Step 2: U.S. district courts order restraint and seizure&lt;br/&gt;preservation of res during litigation"]
+        B3["Step 3: Ninth Circuit affirms seizure-preservation orders&lt;br/&gt;13 Jun 2023 — PetroSaudi-related track upheld"]
+        B4["Step 4: Forfeiture pipeline: settlements and dispositions&lt;br/&gt;assets converted to recoverable value under U.S. law"]
+        B5["Step 5: DOJ repatriation tranche decisions&lt;br/&gt;executive/legal-policy determination for Malaysia"]
+        B6["Step 6: Transfer to Malaysia 1MDB Asset Recovery Trust Account&lt;br/&gt;e.g. USD 452m Aug 2021, USD 156m Jun 2024 — total ~USD 1.4bn"]
+        B7["Step 7: Funds for benefit of people of Malaysia&lt;br/&gt;administered via Malaysian trust vehicle"]
+    end
+
+    subgraph MON["Monitoring &amp; oversight structure"]
+        N1["Malaysian 1MDB Asset Recovery Trust Account&lt;br/&gt;designated vehicle for repatriated proceeds"]
+        N2["Trust account administration&lt;br/&gt;use for public benefit per agreement"]
+        N3["Bilateral U.S.–Malaysia repatriation framework&lt;br/&gt;tranche-based returns with designated destination"]
+    end
+
+    B1 --&gt; B2 --&gt; B3 --&gt; B4 --&gt; B5 --&gt; B6 --&gt; B7
+    B5 -.-&gt;|"governs"| N1
+    B6 -.-&gt;|"to"| N1
+    N1 --&gt; N2
+    N2 --&gt; N3
+
+    B1 -.-&gt; NB1
+    B2 -.-&gt; NB2
+    B3 -.-&gt; NB3
+    B4 -.-&gt; NB4
+    B5 -.-&gt; NB5
+    B6 -.-&gt; NB6
+    B7 -.-&gt; NB7
+
+    NB1["41 in rem civil forfeiture actions under 18 USC 981 from Jul 2016; Kleptocracy Asset Recovery Initiative; assets traceable to 1MDB."]
+    NB2["District court restraining orders and warrants of arrest in rem; 18 USC 981; res preserved pending forfeiture litigation."]
+    NB3["9th Cir. U.S. v. PetroSaudi Oil Services Nos. 21-56228 22-55025 13 Jun 2023; affirmed interlocutory orders; USD 380m arbitration fund."]
+    NB4["Settlements and default judgments under 18 USC 981; assets converted to recoverable value; DOJ disposition authority."]
+    NB5["DOJ MLARS repatriation decision; assets legally forfeited; tranche determination under bilateral U.S.-Malaysia framework."]
+    NB6["Wire to 1MDB Asset Recovery Trust Account; USD 452m Aug 2021, USD 156m Jun 2024; total ~USD 1.4bn per DOJ."]
+    NB7["Trust account administered for benefit of people of Malaysia; designated recipient per bilateral repatriation agreement."]
+
+    classDef noteBox fill:#fff8e1,stroke:#f9a825,stroke-width:2px,stroke-dasharray: 6 4
+    class NB1,NB2,NB3,NB4,NB5,NB6,NB7 noteBox
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="великобританія---нігерія-ibori" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="великобританія---нігерія-ibori"><span class="header-section-number">4.3</span> Великобританія -&gt; Нігерія (Ibori)</h3>
+<p>Сполучене Королівство повернуло Нігерії <strong>4,2 мільйона фунтів стерлінгів</strong> із доходів, стягнутих згідно з рішеннями про конфіскацію з 2010 року.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> В угоді між Великобританією та Нігерією 2021 року було виділено кошти на інфраструктуру (швидкісна дорога Лагос-Ібадан, дорога Абуджа-Кано, другий міст у Нігері).<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> Фонд Клін забезпечує незалежний моніторинг; Суверенне управління інвестицій Нігерії керує впровадженням. Очікується на розгляд повнотекстової загальнодоступної копії наказів про конфіскацію.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
+<div class="cell" data-fig-width="7" data-fig-height="9" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart': {'rankSpacing': 80, 'nodeSpacing': 60}}}%%
+flowchart TD
+    subgraph MAIN["Main transfer pathway"]
+        C1["Step 1: UK investigation: Met Police, NCA, CPS&lt;br/&gt;Ibori network — money laundering, fraud, forgery"]
+        C2["Step 2: Feb 2012: Ibori pleads guilty in UK court&lt;br/&gt;13 years imprisonment"]
+        C3["Step 3: UK confiscation orders since 2010&lt;br/&gt;recoverable criminal property value established"]
+        C4["Step 4: UK–Nigeria return negotiations&lt;br/&gt;framework for destination and safeguards"]
+        C5["Step 5: 9 Mar 2021: UK–Nigeria agreement and annex signed&lt;br/&gt;GBP 4.2 million — project use and oversight conditions"]
+        C6["Step 6: Transfer of GBP 4.2m to Nigeria&lt;br/&gt;under bilateral MoU"]
+        C7["Step 7: Projects: Lagos–Ibadan Expressway, Abuja–Kano road&lt;br/&gt;second Niger Bridge — infrastructure and public benefit"]
+        C8["Step 8: Nigeria Sovereign Investment Authority&lt;br/&gt;administers project implementation"]
+    end
+
+    subgraph MON["Monitoring &amp; oversight structure"]
+        O1["Cleen Foundation: independent monitoring&lt;br/&gt;expertise in infrastructure, anti-corruption, procurement"]
+        O2["Federal Republic of Nigeria Monitoring Team&lt;br/&gt;oversees implementation, regular progress reporting"]
+        O3["Budget plan and work/expenditure schedule&lt;br/&gt;per project, agreed by UK and Nigerian representatives"]
+        O4["Annual accountability reports&lt;br/&gt;published, information to Nigerian public"]
+        O5["Bar on disbursement to perpetrators&lt;br/&gt;and related persons per annex"]
+    end
+
+    C1 --&gt; C2 --&gt; C3 --&gt; C4 --&gt; C5 --&gt; C6 --&gt; C7 --&gt; C8
+    C5 -.-&gt;|"requires"| O1
+    C6 -.-&gt;|"subject to"| O2
+    O1 --&gt; O3
+    O2 --&gt; O4
+    O3 --&gt; O5
+    O4 --&gt; O5
+
+    C1 -.-&gt; NC1
+    C2 -.-&gt; NC2
+    C3 -.-&gt; NC3
+    C4 -.-&gt; NC4
+    C5 -.-&gt; NC5
+    C6 -.-&gt; NC6
+    C7 -.-&gt; NC7
+    C8 -.-&gt; NC8
+
+    NC1["Met Police Proceeds of Crime Unit, NCA, CPS; POCA 2002; money laundering s.327, conspiracy to defraud, forgery; Ibori network."]
+    NC2["Southwark Crown Court Feb 2012; Ibori guilty plea; 13 years; confiscation proceedings under POCA s.6 followed."]
+    NC3["Confiscation orders under POCA s.6 since 2010; recoverable amount and criminal property value; annex confirms order basis."]
+    NC4["UK-Nigeria negotiations under 2016 MoU; return framework; destination, project earmarking, audit safeguards."]
+    NC5["9 Mar 2021 UK-Nigeria agreement and annex; GBP 4.2m; budget plan and work schedule per project; bar on perpetrator disbursement."]
+    NC6["Transfer under bilateral MoU; first return under 2016 framework; funds to NSIA for designated projects."]
+    NC7["Earmarked: Lagos-Ibadan Expressway, Abuja-Kano road, second Niger Bridge; infrastructure and public benefit."]
+    NC8["NSIA administers; Cleen Foundation independent monitoring; Federal Monitoring Team; annual accountability reports to public."]
+
+    classDef noteBox fill:#fff8e1,stroke:#f9a825,stroke-width:2px,stroke-dasharray: 6 4
+    class NC1,NC2,NC3,NC4,NC5,NC6,NC7,NC8 noteBox
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="завершення-шаблону-справи-поточний-статус" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="завершення-шаблону-справи-поточний-статус"><span class="header-section-number">5</span> Завершення шаблону справи (поточний статус)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Справа</th>
+<th>Тип злочину</th>
+<th>Авторитет</th>
+<th>Правова основа / інструмент</th>
+<th>Посилання на рішення суду</th>
+<th>Статус перевірки</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>США -&gt; жертви Медоффа</td>
+<td>Шахрайство / схема Понці / доходи від відмивання грошей</td>
+<td>Міністерство юстиції США (MLARS) і призначена адміністрація фонду</td>
+<td>Конфіскація США + процес розподілу коштів жертвам Міністерства юстиції</td>
+<td>Не є пріоритетним для цього траншу</td>
+<td>Перевірено</td>
+</tr>
+<tr class="even">
+<td>США -&gt; жертви Western Union</td>
+<td>Сприяння шахрайству та збої в боротьбі з відмиванням коштів, пов’язані з шахрайством споживачів</td>
+<td>Міністерство юстиції США</td>
+<td>Конфіскація + процес ремісії під керівництвом Міністерства юстиції</td>
+<td>Не є пріоритетним для цього траншу</td>
+<td>Перевірено</td>
+</tr>
+<tr class="odd">
+<td>Швейцарія -&gt; Нігерія (Абача II)</td>
+<td>Корупція / розкрадання / відмивання незаконних державних активів</td>
+<td>прокуратура та федеральні органи Швейцарії; FDFA; Світовий банк (моніторингова роль)</td>
+<td>Швейцарська система конфіскації + тристороння угода про реституцію (2017)</td>
+<td>ATF 131 II 169 (1A.215/2004)<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a></td>
+<td>Перевірено (сильний)</td>
+</tr>
+<tr class="even">
+<td>Великобританія -&gt; Нігерія (Ibori)</td>
+<td>Доходи, пов’язані з корупцією та відмиванням, пов’язані з мережею Ibori</td>
+<td>державні органи Великобританії; Влада Нігерії</td>
+<td>Накази про конфіскацію (з 2010 р.) + додаток про повернення Великобританії та Нігерії (2021 р.)</td>
+<td>Додаток підтверджує підстави наказу про конфіскацію; повний текст ухвали суду очікує на розгляд</td>
+<td>Перевірено з розривом судового тексту</td>
+</tr>
+<tr class="odd">
+<td>США -&gt; Малайзія (1MDB)</td>
+<td>Привласнення/хабарництво/відмивання грошей у великих розмірах</td>
+<td>Міністерство юстиції США; Федеральні суди США</td>
+<td>Цивільні позови про конфіскацію + рішення Міністерства юстиції про репатріацію</td>
+<td>Рішення дев’ятого округу у пов’язаній справі про конфіскацію<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></td>
+<td>Перевірено (сильний)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="домашні-роздавальні-коробки" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="домашні-роздавальні-коробки"><span class="header-section-number">6</span> Домашні роздавальні коробки</h2>
+<section id="фонд-жертв-медоффа-сша" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="фонд-жертв-медоффа-сша"><span class="header-section-number">6.1</span> 1. Фонд жертв Медоффа США</h3>
+<p>Це один із найяскравіших публічних прикладів <strong>конфіскованих активів, які масштабно перерозподіляються жертвам</strong>. 30 грудня 2024 року Міністерство юстиції США оголосило про <strong>10-й і останній розподіл</strong> Фонду жертв Медоффа. Департамент заявив, що конфісковані кошти на суму понад <strong>4,3 мільярда доларів США</strong> були виплачені <strong>40 930 жертвам у 127 країнах</strong>, завдяки чому загальне відшкодування становить <strong>93,71% збитків від шахрайства</strong>.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></p>
+<p>Юридичним кроком, що передував передачі, було повернення активів урядом США через <strong>цивільну та кримінальну конфіскацію, пов’язану з шахрайською схемою Бернарда Л. Медоффа</strong>. Механізм передачі не був спеціальним політичним рішенням, а формальною структурою компенсації жертвам під керівництвом Міністерства юстиції.</p>
+<p>Чому це важливо: це яскравий приклад <strong>національної моделі компенсації жертвам</strong>, побудованої на конфіскованих активах, а не на звичайній реституції.</p>
+</section>
+<section id="ремісійний-фонд-western-union-сша" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="ремісійний-фонд-western-union-сша"><span class="header-section-number">6.2</span> 2. Ремісійний фонд Western Union США</h3>
+<p>Western Union є ще однією сильною національною моделлю, оскільки Міністерство юстиції публічно пояснює як <strong>конфіскацію</strong>, так і <strong>процес розповсюдження</strong>. 9 вересня 2024 року Міністерство юстиції оголосило, що Фонд ремісій Western Union почав свій другий розподіл у другому етапі, перерахувавши приблизно <strong>18,5 мільйонів доларів США</strong> приблизно <strong>3000 жертвам</strong>. Міністерство юстиції заявило, що на обох етапах фонд уже розподілив <strong>понад 420 мільйонів доларів США</strong> <strong>понад 175 000 постраждалим</strong>, які отримали повну компенсацію за свої збитки.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a></p>
+<p>Офіційні матеріали пов’язують переказ з <strong>коштами, конфіскованими в США від Western Union</strong>. Механізмом компенсації була <strong>ремісія</strong>, офіційний адміністративний процес, за допомогою якого конфісковані кошти можуть бути повернуті жертвам.</p>
+<p>Чому це важливо: цей випадок показує, що переказ потерпілим може бути структурований навіть тоді, коли доходи вперше проходять через державу, за умови наявності чітких рамок ремісії та перевіреного класу жертв.</p>
+</section>
+</section>
+<section id="транскордонні-випадки-передачі" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="транскордонні-випадки-передачі"><span class="header-section-number">7</span> Транскордонні випадки передачі</h2>
+<section id="швейцарія---нігерія-абача-ii" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="швейцарія---нігерія-абача-ii"><span class="header-section-number">7.1</span> 3. Швейцарія -&gt; Нігерія (Абача II)</h3>
+<p>Повернення Швейцарією активів Abacha є однією з найкраще задокументованих транскордонних моделей. За даними Федерального департаменту закордонних справ Швейцарії, <strong>4 грудня 2017 року</strong> Швейцарія, Нігерія та Світовий банк підписали <strong>тристоронню угоду</strong>, яка регулює повернення приблизно <strong>321 мільйона доларів США</strong> населенню Нігерії.<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a></p>
+<p>Офіційне швейцарське пояснення важливе, оскільки воно вказує на юридичний крок, який відбувся перед переказом: кошти були <strong>репатрійовані та конфісковані Швейцарією в рамках кримінального провадження, порушеного прокуратурою Женеви проти Абба Абача</strong>.<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a> У попередньому швейцарському прес-релізі від <strong>8 березня 2016</strong> зазначено, що процес повернення став можливим після <strong>Генерального прокурора кантону Женева конфіскувала</strong> активи.<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a></p>
+<p>Угода не дозволяла необмежений переказ до державного бюджету Нігерії. Натомість він вимагав <strong>моніторингу за підтримки Світового банку</strong>, виплати на основі траншів і гарантії проти зловживання. Власний інформаційний бюлетень Світового банку також описує угоду як контрольований процес репатріації.<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a></p>
+<p>Чому це важливо: це провідний приклад <strong>конфіскації плюс контрольована міждержавна реституція</strong>, яка, ймовірно, більш актуальна для України, ніж безумовна двостороння передача.</p>
+</section>
+<section id="великобританія---нігерія-іборі" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="великобританія---нігерія-іборі"><span class="header-section-number">7.2</span> 4. Великобританія -&gt; Нігерія (Іборі)</h3>
+<p><strong>9 березня 2021 року</strong> Велика Британія та Нігерія погодилися повернути <strong>4,2 мільйона фунтів стерлінгів</strong>, стягнених з партнерів колишнього губернатора штату Дельта Джеймса Іборі.<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a> В офіційному прес-релізі Великобританії говориться, що гроші будуть використані для нігерійських інфраструктурних і суспільно-корисних проектів, а реалізація підлягатиме моніторингу та аудиту.</p>
+<p>Пов’язана публікація Великобританією додатку до угоди є корисною, оскільки в ній визначено правового попередника передачі. У ньому зазначено, що повернуті кошти було стягнуто в ході провадження, яке призвело до <strong>розпоряджень про конфіскацію, виданих з 2010 року</strong>.<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> Він також обмежує використання грошей на певні проекти та забороняє виплату передбачуваним злочинцям і пов’язаним особам.</p>
+<p>Чому це важливо: це стислий приклад <strong>наказів про конфіскацію плюс двостороння угода про виконання</strong>. Передача не випливала автоматично з конфіскації; двостороння домовленість запровадила в дію пункт призначення та контроль.</p>
+<p>Статус пов’язаності із судом: цей початковий транш підтверджує підставу наказу про конфіскацію з офіційних матеріалів Великобританії, але повний текст загальнодоступної копії оперативних наказів про конфіскацію все ще очікує.</p>
+</section>
+<section id="сша---малайзія-1mdb-1" class="level3" data-number="7.3">
+<h3 data-number="7.3" class="anchored" data-anchor-id="сша---малайзія-1mdb-1"><span class="header-section-number">7.3</span> 5. США -&gt; Малайзія (1MDB)</h3>
+<p>Міністерство юстиції США надає надзвичайно чіткі офіційні звіти про репатріацію доходів 1MDB. <strong>13 червня 2024 року</strong> Міністерство юстиції оголосило про репатріацію додаткових <strong>156 мільйонів доларів США</strong> до Малайзії, довівши загальну суму, повернуту Міністерством юстиції, приблизно до <strong>1,4 мільярда доларів США</strong>.<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a></p>
+<p>Міністерство юстиції пов’язує ці повернення з довгостроковою кампанією конфіскації в США, що включає доходи 1MDB. Департамент заявляє, що з липня 2016 року він подав <strong>41 цивільний позов про конфіскацію</strong> та конфіскував активи на суму понад <strong>1,7 мільярда доларів США</strong>, імовірно пов’язані зі схемою.<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a></p>
+<p>Опублікований судовий рівень доступний у пов’язаній версії конфіскації: у справі <em>Сполучені Штати проти PetroSaudi Oil Services (Venezuela) Ltd.</em> (дев’ятий округ, 13 червня 2023 р.) суд підтвердив проміжні накази про збереження та арешт активів, які ймовірно пов’язані з доходами 1MDB.<a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a> Саме по собі це не наказало репатріацію до Малайзії, але вона підтвердила юридичний контроль над активами в процесі конфіскації, який необхідний до прийняття рішень про передачу.</p>
+<p>Чому це важливо: 1MDB показує, що великі транскордонні повернення можливі, але лише після тривалого етапу конфіскації, значної роботи з розшуку та спеціального рішення про репатріацію державою, яка повертається.</p>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Swiss Federal Supreme Court, ATF 131 II 169 (Abacha et consorts v. Office fédéral de la justice), case 1A.215/2004, 7 Feb 2005, <a href="https://search.bger.ch/ext/eurospider/live/de/php/clir/http/index.php?highlight_docid=atf%3A%2F%2F131-II-169%3Ait&amp;lang=de&amp;type=show_document" class="uri">https://search.bger.ch/ext/eurospider/live/de/php/clir/http/index.php?highlight_docid=atf%3A%2F%2F131-II-169%3Ait&amp;lang=de&amp;type=show_document</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Swiss FDFA, “Restitution of USD 321 million by Switzerland to Nigeria under World Bank oversight: signing of a tripartite agreement”, 4 Dec 2017, <a href="https://www.eda.admin.ch/countries/democratic-republic-congo/en/home/news/news.html/content/eda/en/meta/news/2017/12/4/69088" class="uri">https://www.eda.admin.ch/countries/democratic-republic-congo/en/home/news/news.html/content/eda/en/meta/news/2017/12/4/69088</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>GOV.UK, “MoU between UK and Nigeria on the modalities for return of stolen assets confiscated by the UK: annex 1”, 2021, <a href="https://www.gov.uk/government/publications/return-of-stolen-assets-confiscated-by-the-uk-agreement-between-the-uk-and-nigeria/mou-between-uk-and-nigeria-on-the-modalities-for-return-of-stolen-assets-confiscated-by-the-uk-annex-1" class="uri">https://www.gov.uk/government/publications/return-of-stolen-assets-confiscated-by-the-uk-agreement-between-the-uk-and-nigeria/mou-between-uk-and-nigeria-on-the-modalities-for-return-of-stolen-assets-confiscated-by-the-uk-annex-1</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>U.S. Court of Appeals for the Ninth Circuit, <em>United States v. PetroSaudi Oil Services (Venezuela) Ltd.</em>, Nos. 21-56228 &amp; 22-55025, filed 13 Jun 2023, <a href="https://cdn.ca9.uscourts.gov/datastore/opinions/2023/06/13/21-56228.pdf" class="uri">https://cdn.ca9.uscourts.gov/datastore/opinions/2023/06/13/21-56228.pdf</a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>U.S. Department of Justice, “Justice Department Repatriates $1.4B Misappropriated 1MDB Funds to Malaysia”, 13 Jun 2024, <a href="https://www.justice.gov/archives/opa/pr/justice-department-repatriates-14b-misappropriated-1mdb-funds-malaysia" class="uri">https://www.justice.gov/archives/opa/pr/justice-department-repatriates-14b-misappropriated-1mdb-funds-malaysia</a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Swiss FDFA, “Restitution of USD 321 million by Switzerland to Nigeria under World Bank oversight: signing of a tripartite agreement”, 4 Dec 2017, <a href="https://www.eda.admin.ch/countries/democratic-republic-congo/en/home/news/news.html/content/eda/en/meta/news/2017/12/4/69088" class="uri">https://www.eda.admin.ch/countries/democratic-republic-congo/en/home/news/news.html/content/eda/en/meta/news/2017/12/4/69088</a>.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>World Bank, “World Bank Monitoring of Repatriated Abacha Funds”, 4 Dec 2017, <a href="https://www.worldbank.org/en/news/factsheet/2017/12/04/world-bank-monitoring-of-repatriated-abacha-funds" class="uri">https://www.worldbank.org/en/news/factsheet/2017/12/04/world-bank-monitoring-of-repatriated-abacha-funds</a>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Swiss Federal Supreme Court, ATF 131 II 169 (Abacha et consorts v. Office fédéral de la justice), case 1A.215/2004, 7 Feb 2005, <a href="https://search.bger.ch/ext/eurospider/live/de/php/clir/http/index.php?highlight_docid=atf%3A%2F%2F131-II-169%3Ait&amp;lang=de&amp;type=show_document" class="uri">https://search.bger.ch/ext/eurospider/live/de/php/clir/http/index.php?highlight_docid=atf%3A%2F%2F131-II-169%3Ait&amp;lang=de&amp;type=show_document</a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Swiss FDFA, “Switzerland and Nigeria conclude agreement on the return of USD 321 million of Abacha’s assets”, 8 Mar 2016, <a href="https://www.eda.admin.ch/countries/romania/ro/home/aktuell/news.html/content/eda/en/meta/news/2016/3/8/60907" class="uri">https://www.eda.admin.ch/countries/romania/ro/home/aktuell/news.html/content/eda/en/meta/news/2016/3/8/60907</a>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>U.S. Department of Justice, “Justice Department Repatriates $1.4B Misappropriated 1MDB Funds to Malaysia”, 13 Jun 2024, <a href="https://www.justice.gov/archives/opa/pr/justice-department-repatriates-14b-misappropriated-1mdb-funds-malaysia" class="uri">https://www.justice.gov/archives/opa/pr/justice-department-repatriates-14b-misappropriated-1mdb-funds-malaysia</a>.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>U.S. Court of Appeals for the Ninth Circuit, <em>United States v. PetroSaudi Oil Services (Venezuela) Ltd.</em>, Nos. 21-56228 &amp; 22-55025, filed 13 Jun 2023, <a href="https://cdn.ca9.uscourts.gov/datastore/opinions/2023/06/13/21-56228.pdf" class="uri">https://cdn.ca9.uscourts.gov/datastore/opinions/2023/06/13/21-56228.pdf</a>.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>GOV.UK, “MoU between UK and Nigeria on the modalities for return of stolen assets confiscated by the UK: annex 1”, 2021, <a href="https://www.gov.uk/government/publications/return-of-stolen-assets-confiscated-by-the-uk-agreement-between-the-uk-and-nigeria/mou-between-uk-and-nigeria-on-the-modalities-for-return-of-stolen-assets-confiscated-by-the-uk-annex-1" class="uri">https://www.gov.uk/government/publications/return-of-stolen-assets-confiscated-by-the-uk-agreement-between-the-uk-and-nigeria/mou-between-uk-and-nigeria-on-the-modalities-for-return-of-stolen-assets-confiscated-by-the-uk-annex-1</a>.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>GOV.UK, “UK to send millions of pounds recovered from corrupt officials back to Nigeria”, 9 Mar 2021, <a href="https://www.gov.uk/government/news/uk-to-send-millions-of-pounds-recovered-from-corrupt-officials-back-to-nigeria" class="uri">https://www.gov.uk/government/news/uk-to-send-millions-of-pounds-recovered-from-corrupt-officials-back-to-nigeria</a>.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>GOV.UK, “MoU between UK and Nigeria on the modalities for return of stolen assets confiscated by the UK: annex 1”, 2021, <a href="https://www.gov.uk/government/publications/return-of-stolen-assets-confiscated-by-the-uk-agreement-between-the-uk-and-nigeria/mou-between-uk-and-nigeria-on-the-modalities-for-return-of-stolen-assets-confiscated-by-the-uk-annex-1" class="uri">https://www.gov.uk/government/publications/return-of-stolen-assets-confiscated-by-the-uk-agreement-between-the-uk-and-nigeria/mou-between-uk-and-nigeria-on-the-modalities-for-return-of-stolen-assets-confiscated-by-the-uk-annex-1</a>.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>Swiss Federal Supreme Court, ATF 131 II 169 (Abacha et consorts v. Office fédéral de la justice), case 1A.215/2004, 7 Feb 2005, <a href="https://search.bger.ch/ext/eurospider/live/de/php/clir/http/index.php?highlight_docid=atf%3A%2F%2F131-II-169%3Ait&amp;lang=de&amp;type=show_document" class="uri">https://search.bger.ch/ext/eurospider/live/de/php/clir/http/index.php?highlight_docid=atf%3A%2F%2F131-II-169%3Ait&amp;lang=de&amp;type=show_document</a>.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>U.S. Court of Appeals for the Ninth Circuit, <em>United States v. PetroSaudi Oil Services (Venezuela) Ltd.</em>, Nos. 21-56228 &amp; 22-55025, filed 13 Jun 2023, <a href="https://cdn.ca9.uscourts.gov/datastore/opinions/2023/06/13/21-56228.pdf" class="uri">https://cdn.ca9.uscourts.gov/datastore/opinions/2023/06/13/21-56228.pdf</a>.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>U.S. Department of Justice, “Justice Department’s 10th Distribution Brings Total Provided to Over $4.3B in Nearly Full Recovery to Over 40,000 Victims in Madoff Ponzi Scheme”, 30 Dec 2024, <a href="https://www.justice.gov/archives/opa/pr/justice-departments-10th-distribution-brings-total-provided-over-43b-nearly-full-recovery" class="uri">https://www.justice.gov/archives/opa/pr/justice-departments-10th-distribution-brings-total-provided-over-43b-nearly-full-recovery</a>.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>U.S. Department of Justice, “Justice Department Begins Second Distribution of Forfeited Funds to Compensate Victims of Fraud Scheme Facilitated by Western Union”, 9 Sep 2024, <a href="https://www.justice.gov/archives/opa/pr/justice-department-begins-second-distribution-forfeited-funds-compensate-victims-fraud" class="uri">https://www.justice.gov/archives/opa/pr/justice-department-begins-second-distribution-forfeited-funds-compensate-victims-fraud</a>.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>Swiss FDFA, “Restitution of USD 321 million by Switzerland to Nigeria under World Bank oversight: signing of a tripartite agreement”, 4 Dec 2017, <a href="https://www.eda.admin.ch/countries/democratic-republic-congo/en/home/news/news.html/content/eda/en/meta/news/2017/12/4/69088" class="uri">https://www.eda.admin.ch/countries/democratic-republic-congo/en/home/news/news.html/content/eda/en/meta/news/2017/12/4/69088</a>.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>Swiss FDFA, “Restitution of USD 321 million by Switzerland to Nigeria under World Bank oversight: signing of a tripartite agreement”, 4 Dec 2017, <a href="https://www.eda.admin.ch/countries/democratic-republic-congo/en/home/news/news.html/content/eda/en/meta/news/2017/12/4/69088" class="uri">https://www.eda.admin.ch/countries/democratic-republic-congo/en/home/news/news.html/content/eda/en/meta/news/2017/12/4/69088</a>.<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p>Swiss FDFA, “Switzerland and Nigeria conclude agreement on the return of USD 321 million of Abacha’s assets”, 8 Mar 2016, <a href="https://www.eda.admin.ch/countries/romania/ro/home/aktuell/news.html/content/eda/en/meta/news/2016/3/8/60907" class="uri">https://www.eda.admin.ch/countries/romania/ro/home/aktuell/news.html/content/eda/en/meta/news/2016/3/8/60907</a>.<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>World Bank, “World Bank Monitoring of Repatriated Abacha Funds”, 4 Dec 2017, <a href="https://www.worldbank.org/en/news/factsheet/2017/12/04/world-bank-monitoring-of-repatriated-abacha-funds" class="uri">https://www.worldbank.org/en/news/factsheet/2017/12/04/world-bank-monitoring-of-repatriated-abacha-funds</a>.<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p>GOV.UK, “UK to send millions of pounds recovered from corrupt officials back to Nigeria”, 9 Mar 2021, <a href="https://www.gov.uk/government/news/uk-to-send-millions-of-pounds-recovered-from-corrupt-officials-back-to-nigeria" class="uri">https://www.gov.uk/government/news/uk-to-send-millions-of-pounds-recovered-from-corrupt-officials-back-to-nigeria</a>.<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p>GOV.UK, “MoU between UK and Nigeria on the modalities for return of stolen assets confiscated by the UK: annex 1”, 2021, <a href="https://www.gov.uk/government/publications/return-of-stolen-assets-confiscated-by-the-uk-agreement-between-the-uk-and-nigeria/mou-between-uk-and-nigeria-on-the-modalities-for-return-of-stolen-assets-confiscated-by-the-uk-annex-1" class="uri">https://www.gov.uk/government/publications/return-of-stolen-assets-confiscated-by-the-uk-agreement-between-the-uk-and-nigeria/mou-between-uk-and-nigeria-on-the-modalities-for-return-of-stolen-assets-confiscated-by-the-uk-annex-1</a>.<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn25"><p>U.S. Department of Justice, “Justice Department Repatriates $1.4B Misappropriated 1MDB Funds to Malaysia”, 13 Jun 2024, <a href="https://www.justice.gov/archives/opa/pr/justice-department-repatriates-14b-misappropriated-1mdb-funds-malaysia" class="uri">https://www.justice.gov/archives/opa/pr/justice-department-repatriates-14b-misappropriated-1mdb-funds-malaysia</a>.<a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn26"><p>U.S. Department of Justice, “Justice Department Repatriates $1.4B Misappropriated 1MDB Funds to Malaysia”, 13 Jun 2024, <a href="https://www.justice.gov/archives/opa/pr/justice-department-repatriates-14b-misappropriated-1mdb-funds-malaysia" class="uri">https://www.justice.gov/archives/opa/pr/justice-department-repatriates-14b-misappropriated-1mdb-funds-malaysia</a>.<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn27"><p>U.S. Court of Appeals for the Ninth Circuit, <em>United States v. PetroSaudi Oil Services (Venezuela) Ltd.</em>, Nos. 21-56228 &amp; 22-55025, filed 13 Jun 2023, <a href="https://cdn.ca9.uscourts.gov/datastore/opinions/2023/06/13/21-56228.pdf" class="uri">https://cdn.ca9.uscourts.gov/datastore/opinions/2023/06/13/21-56228.pdf</a>.<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
