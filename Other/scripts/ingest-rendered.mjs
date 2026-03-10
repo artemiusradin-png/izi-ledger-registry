@@ -181,7 +181,13 @@ function main() {
     }
     return results;
   }
-  const htmlFiles = findHtmlFiles(outputDir);
+  const ignoredBaseNames = new Set([
+    "Asset_Transfer_Case_Research_Workplan"
+  ]);
+  const htmlFiles = findHtmlFiles(outputDir).filter((htmlFile) => {
+    const baseName = path.basename(htmlFile, ".html");
+    return !ignoredBaseNames.has(baseName);
+  });
 
   const works = [];
 

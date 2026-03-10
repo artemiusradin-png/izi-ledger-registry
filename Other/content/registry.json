@@ -1,26 +1,7 @@
 {
-  "generatedAt": "2026-03-10T05:27:15.953Z",
-  "total": 9,
+  "generatedAt": "2026-03-10T05:34:39.985Z",
+  "total": 8,
   "works": [
-    {
-      "slug": "asset-transfer-case-research-workplan",
-      "fileName": "Asset_Transfer_Case_Research_Workplan",
-      "title": "Asset Transfer Cases Research Workplan",
-      "summary": "Research brief and task plan for collecting domestic and cross-border cases of criminal asset transfer.",
-      "kind": "Analysis",
-      "language": "English",
-      "updatedAt": "2026-03-04T00:00:00.000Z",
-      "htmlPath": "/rendered/Asset_Transfer_Case_Research_Workplan.html",
-      "pdfPath": "/rendered/Asset_Transfer_Case_Research_Workplan.pdf",
-      "tags": [
-        "asset recovery",
-        "confiscation",
-        "repatriation",
-        "research plan",
-        "Switzerland",
-        "Ukraine"
-      ]
-    },
     {
       "slug": "asset-transfer-cases-initial-research",
       "fileName": "Asset_Transfer_Cases_Initial_Research",

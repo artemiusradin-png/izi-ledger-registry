@@ -2,7 +2,6 @@ project:
   type: default
   output-dir: _output
   render:
-    - quarto/Asset_Transfer_Case_Research_Workplan.qmd
     - quarto/Asset_Transfer_Cases_Initial_Research.qmd
     - quarto/Asset_Transfer_Cases_Initial_Research_UKR.qmd
     - quarto/German_Sanction_Mechanism_Analysis.qmd
