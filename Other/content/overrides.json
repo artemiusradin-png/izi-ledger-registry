@@ -1,9 +1,38 @@
 {
+  "Asset_Transfer_Case_Research_Workplan": {
+    "title": "Asset Transfer Cases Research Workplan",
+    "summary": "Research brief and task plan for collecting domestic and cross-border cases of criminal asset transfer.",
+    "kind": "Analysis",
+    "tags": ["asset recovery", "confiscation", "repatriation", "research plan", "Switzerland", "Ukraine"]
+  },
+  "Asset_Transfer_Cases_Initial_Research": {
+    "title": "Asset Transfer Cases: Initial Research",
+    "summary": "Initial case-based research on verified domestic and cross-border transfers of confiscated criminal assets.",
+    "kind": "Analysis",
+    "tags": ["asset recovery", "confiscation", "repatriation", "Switzerland", "Nigeria", "Malaysia", "victim compensation"],
+    "related": ["Asset_Transfer_Cases_Initial_Research_UKR"]
+  },
+  "Asset_Transfer_Cases_Initial_Research_UKR": {
+    "title": "Кейси передачі активів: початкове дослідження",
+    "summary": "Початкове кейс-орієнтоване дослідження підтверджених внутрішніх і транскордонних передач конфіскованих кримінальних активів.",
+    "kind": "Analysis",
+    "language": "Ukrainian",
+    "tags": ["повернення активів", "конфіскація", "репатріація", "Швейцарія", "Нігерія", "Малайзія", "компенсація потерпілим", "переклад"],
+    "related": ["Asset_Transfer_Cases_Initial_Research"]
+  },
   "German_Sanctions_Criminal_Asset_Pipeline_3Page": {
     "title": "Germany: Criminally Confiscated Assets Pathway for Ukraine",
     "summary": "Operational playbook for pursuing value transfer to Ukraine from finalized criminal confiscation cases in Germany.",
     "kind": "Analysis",
-    "tags": ["Germany", "Ukraine", "asset recovery", "confiscation", "criminal law"]
+    "tags": ["Germany", "Ukraine", "asset recovery", "confiscation", "criminal law"],
+    "related": ["German_Sanctions_Criminal_Asset_Pipeline_3Page_UKR"]
+  },
+  "German_Sanctions_Criminal_Asset_Pipeline_3Page_UKR": {
+    "title": "Німеччина: Шлях кримінально конфіскованих активів для України",
+    "summary": "Операційний підручник щодо отримання вартості від завершених кримінальних конфіскацій у Німеччині для України.",
+    "kind": "Analysis",
+    "tags": ["Germany", "Ukraine", "asset recovery", "confiscation", "criminal law", "translation"],
+    "related": ["German_Sanctions_Criminal_Asset_Pipeline_3Page"]
   },
   "German_Sanction_Mechanism_Analysis": {
     "title": "German Sanction Mechanism Analysis",
@@ -12,9 +41,9 @@
     "related": ["German_Sanctions_3Page_Summary"]
   },
   "German_Sanction_Mechanism_Analysis_UKR": {
-    "title": "German Sanction Mechanism Analysis (Ukrainian)",
-    "summary": "Ukrainian-language edition of the full German sanctions mechanism analysis.",
-    "tags": ["sanctions", "Ukraine", "translation"],
+    "title": "Аналіз німецького механізму санкцій",
+    "summary": "Українськомовне видання повного аналізу німецького механізму застосування санкцій.",
+    "tags": ["санкції", "Німеччина", "ЄС", "застосування", "Україна", "переклад"],
     "related": ["German_Sanctions_3Page_Summary_UKR"]
   },
   "German_Sanctions_3Page_Summary": {

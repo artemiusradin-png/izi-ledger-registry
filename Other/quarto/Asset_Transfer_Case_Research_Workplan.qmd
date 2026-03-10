@@ -1,0 +1,230 @@
+---
+title: "Asset Transfer Cases Research Workplan"
+subtitle: "Domestic and Cross-Border Transfers of Confiscated Criminal Assets"
+author:
+  - name: "Artem Radin"
+    affiliation: "Intern"
+date: "2026-03-04"
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+    papersize: a4
+    geometry:
+      - margin=0.7in
+    fontsize: 10pt
+    fig-align: center
+    include-in-header:
+      - text: |
+          \makeatletter
+          \g@addto@macro\@floatboxreset{\centering}
+          \usepackage{enumitem}
+          \setlist{nosep,leftmargin=*,topsep=0.3em,partopsep=0pt}
+          \setlength{\parskip}{0.35em}
+          \setlength{\parindent}{0pt}
+          \makeatother
+  html:
+    toc: true
+    toc-location: left
+    toc-depth: 2
+    number-sections: true
+    theme: flatly
+    highlight-style: github
+    css: styles/summary.css
+---
+
+## Objective
+
+Prepare a short, evidence-based note focused on **real cases where criminally confiscated or forfeited assets were actually transferred** after recovery.
+
+The document should no longer focus mainly on the abstract legal pathway. It should focus on **how asset transfer worked in practice**, especially:
+
+- transfers to victims or public beneficiaries within the same country;
+- transfers from one state to another through cross-border cooperation;
+- the legal act, agreement, or judgment that made the transfer possible.
+
+::: {.callout-important icon=true}
+## Main shift in scope
+The next paper should answer: **which assets were transferred, to whom, under what legal mechanism, and after which decision?**
+:::
+
+## Core Research Tasks
+
+1. Identify at least **6 to 8 concrete transfer cases** involving confiscated criminal assets.
+2. Split the cases into **two blocks**:
+   - domestic transfers inside one country;
+   - cross-border returns or sharing with another state.
+3. Use **official sources first**: ministries, prosecutors, courts, asset recovery offices, and official reports.
+4. For the strongest cases, locate the **judgment, forfeiture order, settlement, or intergovernmental agreement** that preceded the transfer.
+5. Extract the same factual fields for each case so the final note is comparable and easy to cite.
+
+## Deliverable Structure
+
+The new research note should be built in this order:
+
+1. Short introduction explaining the focus on actual transfers of assets.
+2. Domestic transfer cases.
+3. Cross-border transfer cases.
+4. Switzerland as a dedicated subsection.
+5. Short section on the legal mechanisms that recur across cases.
+6. Brief conclusion on what model may be relevant for Ukraine.
+
+## Case Selection Criteria
+
+Use a case only if most of the following can be verified:
+
+- the assets were not merely frozen, but **confiscated, forfeited, restituted, repatriated, or otherwise transferred**;
+- the recipient is identifiable;
+- the amount is stated or can be reliably approximated;
+- the transfer mechanism is visible from an official source;
+- there is a traceable legal step before transfer, such as a court ruling, confiscation order, settlement, or bilateral/tripartite agreement.
+
+Avoid weak examples where reporting only says that assets were "targeted", "seized", or "under investigation".
+
+## Priority Research Streams
+
+### Stream 1: Domestic Transfers to Victims or Public Beneficiaries
+
+Look for cases where recovered assets were distributed:
+
+- directly to victims in criminal proceedings;
+- to a state compensation fund;
+- to a designated domestic public-interest project after confiscation.
+
+Priority jurisdictions:
+
+- Germany
+- United States
+- United Kingdom
+- France
+- Italy
+
+### Stream 2: Cross-Border Returns or Asset Sharing
+
+Look for cases where one state returned confiscated assets to another state or to a monitored beneficiary vehicle.
+
+Priority jurisdictions:
+
+- Switzerland
+- United States
+- United Kingdom
+- France
+- Netherlands
+
+## Switzerland Track
+
+Management specifically flagged Switzerland. This should be treated as a separate mini-study.
+
+Questions to answer:
+
+- Which official Swiss authority describes the legal basis for returning illicit assets abroad?
+- What official figure supports the claim that Switzerland has returned more than CHF/USD/EUR 2 billion in illicit assets?
+- Which cases best illustrate the Swiss model?
+- Was the transfer made directly to the recipient state, or through a monitored program with an international organization?
+
+Priority examples to verify first:
+
+- Abacha assets returned to Nigeria
+- Assets linked to Kazakhstan / BOTA-type restitution mechanisms
+- Any Swiss Federal Council or FDFA / FOJ materials summarizing total returned assets
+
+## Case File Template
+
+For each case, fill in the following fields:
+
+| Field | What to capture |
+|------|------------------|
+| Case name | Common short title |
+| Countries involved | Recovering state and receiving state, if any |
+| Crime type | Corruption, embezzlement, money laundering, tax fraud, sanctions evasion, etc. |
+| Asset type | Cash, bank funds, shares, real estate, luxury assets, mixed proceeds |
+| Recovery stage | Confiscation, forfeiture, settlement, restitution, repatriation |
+| Authority | Court, prosecutor, ministry, asset recovery office |
+| Legal basis | Statute, court order, settlement, agreement |
+| Recipient | Victims, state treasury, compensation vehicle, foreign state, monitored fund |
+| Amount | Amount transferred and currency |
+| Transfer date | Exact or approximate date |
+| Official source | Link to official statement or report |
+| Judicial source | Link to judgment or order, if available |
+| Why it matters | One sentence on the legal or operational lesson |
+
+## Priority Cases To Collect First
+
+These are the first cases to validate because they are frequently cited and likely to produce usable official materials:
+
+| Category | Case to verify | Why start here |
+|------|-----------------|----------------|
+| Cross-border | Switzerland -> Nigeria (Abacha) | Canonical example of monitored repatriation |
+| Cross-border | UK -> Nigeria (Ibori) | Clear transfer agreement and public-benefit framing |
+| Cross-border | US -> Malaysia (1MDB) | Strong DOJ documentation and multiple return tranches |
+| Cross-border | Switzerland -> Kazakhstan | Useful for restitution-by-program rather than direct state transfer |
+| Domestic | Germany victim compensation after confiscation | Direct relevance to current Germany-focused work |
+| Domestic | US compensation / remission practice | Strong official guidance on victim returns |
+
+## Source Hierarchy
+
+Use sources in this order:
+
+1. Court decisions, court databases, confiscation orders.
+2. Prosecutor or ministry press releases.
+3. Official annual reports of asset recovery offices or justice ministries.
+4. Official international organization materials where they administer or monitor the transfer.
+5. Reputable secondary reporting only to fill gaps or locate the primary source.
+
+::: {.callout-note icon=true}
+## Working rule
+If a media source describes a transfer, use it only as a lead. The case should move into the final draft only after confirmation from an official source.
+:::
+
+## What To Extract From Judgments
+
+For the strongest cases, add a short legal note covering:
+
+- what the court or competent authority formally decided;
+- whether the decision finalized confiscation or merely preserved assets;
+- how that decision opened the door to restitution, repatriation, or transfer;
+- whether any later agreement was still needed to direct the assets to the final recipient.
+
+Target output per case:
+
+- a 2 to 4 sentence summary of the judgment or confiscation decision;
+- one sentence linking that decision to the later transfer.
+
+## Writing Standard For The Final Note
+
+Each case study in the final note should answer five short questions:
+
+1. What assets were transferred?
+2. Who received them?
+3. What legal step came before the transfer?
+4. What mechanism governed the transfer?
+5. What lesson does the case offer for a future Ukraine-oriented model?
+
+## Immediate Next Steps
+
+Complete the work in this order:
+
+1. Build a working table with 10 to 12 candidate cases.
+2. Mark which cases already have official confirmation of transfer.
+3. Pull the top 5 official source sets.
+4. For the top 3 cases, find the underlying judgment or operative legal instrument.
+5. Draft the new 3-page note only after the case table is populated.
+
+## Proposed Output Package
+
+The workstream should produce:
+
+- one short note focused on actual transfer cases;
+- one background table of cases and sources;
+- one short annex with links to judgments, orders, or agreements.
+
+## Internal Completion Standard
+
+The new note is ready only if:
+
+- it contains both domestic and cross-border examples;
+- Switzerland is covered as a separate subsection;
+- each main case has at least one official source;
+- at least several cases include the legal decision or agreement that preceded the transfer;
+- the conclusion explains which transfer models are most relevant for Ukraine.

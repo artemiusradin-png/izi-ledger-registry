@@ -4,6 +4,7 @@ import path from "node:path";
 const root = process.cwd();
 const outputDir = path.join(root, "_output");
 const publicRenderedDir = path.join(root, "public", "rendered");
+const finalResearchesDir = path.join(root, "..", "Final Researches");
 const repoStylesDir = path.join(root, "styles");
 const contentDir = path.join(root, "content");
 const overridesPath = path.join(contentDir, "overrides.json");
@@ -207,6 +208,8 @@ function main() {
 
     if (fs.existsSync(sourcePdfPath)) {
       copyRecursive(sourcePdfPath, path.join(publicRenderedDir, `${baseName}.pdf`));
+      ensureDir(finalResearchesDir);
+      copyRecursive(sourcePdfPath, path.join(finalResearchesDir, `${baseName}.pdf`));
     }
 
     const htmlText = fs.readFileSync(sourceHtmlPath, "utf8");

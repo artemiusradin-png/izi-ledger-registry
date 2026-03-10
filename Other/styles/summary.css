@@ -67,6 +67,14 @@ tr:nth-child(even) {
 
 .mermaid {
   margin: 1.5em auto;
+  max-width: 100%;
+}
+
+/* Scrollable wrapper for large transfer-case flowcharts */
+.quarto-content .mermaid,
+.quarto-content .cell-output-display figure {
+  overflow-x: auto;
+  overflow-y: visible;
 }
 
 /* Ensure readable text in Mermaid diagrams - light backgrounds, dark text */
@@ -85,6 +93,21 @@ tr:nth-child(even) {
 .mermaid .cluster rect {
   fill: #eaf6f2 !important;
   stroke: #1f5f59 !important;
+}
+
+/* Distinctive note/info boxes in transfer-case diagrams — amber box, dashed border */
+.mermaid g.noteBox rect,
+.mermaid g.noteBox polygon,
+.mermaid g.noteBox path {
+  fill: #fff8e1 !important;
+  stroke: #f9a825 !important;
+  stroke-width: 2px !important;
+  stroke-dasharray: 6 4 !important;
+}
+.mermaid g.noteBox .label,
+.mermaid g.noteBox .edgeLabel {
+  fill: #5d4037 !important;
+  color: #5d4037 !important;
 }
 
 .cell-output-display {

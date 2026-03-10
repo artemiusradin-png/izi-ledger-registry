@@ -1,7 +1,73 @@
 {
-  "generatedAt": "2026-02-22T13:45:30.357Z",
-  "total": 6,
+  "generatedAt": "2026-03-10T05:27:15.953Z",
+  "total": 9,
   "works": [
+    {
+      "slug": "asset-transfer-case-research-workplan",
+      "fileName": "Asset_Transfer_Case_Research_Workplan",
+      "title": "Asset Transfer Cases Research Workplan",
+      "summary": "Research brief and task plan for collecting domestic and cross-border cases of criminal asset transfer.",
+      "kind": "Analysis",
+      "language": "English",
+      "updatedAt": "2026-03-04T00:00:00.000Z",
+      "htmlPath": "/rendered/Asset_Transfer_Case_Research_Workplan.html",
+      "pdfPath": "/rendered/Asset_Transfer_Case_Research_Workplan.pdf",
+      "tags": [
+        "asset recovery",
+        "confiscation",
+        "repatriation",
+        "research plan",
+        "Switzerland",
+        "Ukraine"
+      ]
+    },
+    {
+      "slug": "asset-transfer-cases-initial-research",
+      "fileName": "Asset_Transfer_Cases_Initial_Research",
+      "title": "Asset Transfer Cases: Initial Research",
+      "summary": "Initial case-based research on verified domestic and cross-border transfers of confiscated criminal assets.",
+      "kind": "Analysis",
+      "language": "English",
+      "updatedAt": "2026-03-04T00:00:00.000Z",
+      "htmlPath": "/rendered/Asset_Transfer_Cases_Initial_Research.html",
+      "pdfPath": "/rendered/Asset_Transfer_Cases_Initial_Research.pdf",
+      "tags": [
+        "asset recovery",
+        "confiscation",
+        "repatriation",
+        "Switzerland",
+        "Nigeria",
+        "Malaysia",
+        "victim compensation"
+      ],
+      "relatedSlugs": [
+        "asset-transfer-cases-initial-research-ukr"
+      ]
+    },
+    {
+      "slug": "asset-transfer-cases-initial-research-ukr",
+      "fileName": "Asset_Transfer_Cases_Initial_Research_UKR",
+      "title": "Кейси передачі активів: початкове дослідження",
+      "summary": "Початкове кейс-орієнтоване дослідження підтверджених внутрішніх і транскордонних передач конфіскованих кримінальних активів.",
+      "kind": "Analysis",
+      "language": "Ukrainian",
+      "updatedAt": "2026-03-04T00:00:00.000Z",
+      "htmlPath": "/rendered/Asset_Transfer_Cases_Initial_Research_UKR.html",
+      "pdfPath": "/rendered/Asset_Transfer_Cases_Initial_Research_UKR.pdf",
+      "tags": [
+        "повернення активів",
+        "конфіскація",
+        "репатріація",
+        "Швейцарія",
+        "Нігерія",
+        "Малайзія",
+        "компенсація потерпілим",
+        "переклад"
+      ],
+      "relatedSlugs": [
+        "asset-transfer-cases-initial-research"
+      ]
+    },
     {
       "slug": "german-sanctions-criminal-asset-pipeline-3page-ukr",
       "fileName": "German_Sanctions_Criminal_Asset_Pipeline_3Page_UKR",
@@ -85,17 +151,20 @@
     {
       "slug": "german-sanction-mechanism-analysis-ukr",
       "fileName": "German_Sanction_Mechanism_Analysis_UKR",
-      "title": "German Sanction Mechanism Analysis (Ukrainian)",
-      "summary": "Ukrainian-language edition of the full German sanctions mechanism analysis.",
+      "title": "Аналіз німецького механізму санкцій",
+      "summary": "Українськомовне видання повного аналізу німецького механізму застосування санкцій.",
       "kind": "Analysis",
       "language": "Ukrainian",
       "updatedAt": "2026-02-17T00:00:00.000Z",
       "htmlPath": "/rendered/German_Sanction_Mechanism_Analysis_UKR.html",
       "pdfPath": "/rendered/German_Sanction_Mechanism_Analysis_UKR.pdf",
       "tags": [
-        "sanctions",
-        "Ukraine",
-        "translation"
+        "санкції",
+        "Німеччина",
+        "ЄС",
+        "застосування",
+        "Україна",
+        "переклад"
       ],
       "relatedSlugs": [
         "german-sanctions-3page-summary-ukr"

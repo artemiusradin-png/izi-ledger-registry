@@ -1,0 +1,317 @@
+---
+title: "Кейси передачі активів: початкове дослідження"
+subtitle: "Підтверджені внутрішні та транскордонні передачі конфіскованих кримінальних активів"
+author:
+  - name: "Artem Radin"
+    affiliation: "Intern"
+date: "2026-03-04"
+lang: uk
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+    papersize: a4
+    geometry:
+      - margin=0.65in
+    fontsize: 9pt
+    fig-align: center
+    include-in-header:
+      - text: |
+          \makeatletter
+          \g@addto@macro\@floatboxreset{\centering}
+          \usepackage{enumitem}
+          \setlist{nosep,leftmargin=*,topsep=0.3em,partopsep=0pt}
+          \setlength{\parskip}{0.35em}
+          \setlength{\parindent}{0pt}
+          \makeatother
+  html:
+    toc: true
+    toc-location: left
+    toc-depth: 2
+    number-sections: true
+    theme: flatly
+    highlight-style: github
+    css: styles/summary.css
+---
+
+## Мета
+
+Ця примітка є **початковим чернеткою дослідження на основі конкретних справ** у відповідь на прохання зосередитися на **фактичних передачах конфіскованих злочинних активів**, а не лише на абстрактних правових шляхах. Він визначає перевірені приклади:
+
+- **внутрішні перекази** з конфіскованих активів потерпілим; і
+- **транскордонні перекази** з однієї держави в іншу або до контрольованого суспільно-корисного механізму.
+
+Замітка спирається переважно на **офіційні джерела**. Судові рішення та офіційні документи включені там, де їх можна було легко ідентифікувати з офіційних матеріалів.
+
+## Попередній висновок
+
+Перший огляд свідчить про чітку закономірність. У найвагоміших публічних прикладах передача активів зазвичай вимагає **трьох окремих кроків**:
+
+1. **Остаточна конфіскація/конфіскація/погашення** у державі, яка повертається.
+2. **Юридичний механізм розподілу** для потерпілих або іноземних бенефіціарів.
+3. **Моніторинг реалізації**, особливо у справах про транскордонну корупцію.
+
+Ось чому найбільш розроблені моделі не є простими випадками «держава А захоплює, а потім передає гроші державі Б». Зазвичай вони поєднують конфіскацію з процесом ремісії, угодою про реституцію або контрольованим трастовим фондом або структурою проекту.
+
+## Початкова таблиця регістрів (розширена)
+
+|Справа|Юрисдикція(и)|Тип передачі|Перерахована сума|одержувач|Основний правовий механізм|Рішення суду / посилання на правовий документ|Статус перевірки|
+|------|------------------|---------------|-------------------|-----------|----------------------|----------------------------------------------|---------------------|
+|Швейцарія -> Нігерія (Абача II)|Швейцарія / Нігерія|Транскордонні|321 млн дол|Населення Нігерії через проект соціального захисту|Конфіскація у Швейцарії + тристороння угода з моніторингом Світового банку|Федеральний верховний суд Швейцарії (система взаємної правової допомоги/конфіскації Abacha) 1A.215/2004 (ATF 131 II 169)[^abachacourt] + тристороння угода 2017 року[^abacha2017]|Перевірено (офіційні джерела + рішення суду)|
+|Великобританія -> Нігерія (Ibori)|Великобританія / Нігерія|Транскордонні|4,2 мільйона фунтів стерлінгів|Інфраструктурні проекти Нігерії|Порядок повернення у Великобританії + угода про повернення між Великобританією та Нігерією|Додаток до Меморандуму про взаєморозуміння між Великобританією та Нігерією, що підтверджує накази про конфіскацію з 2010 року[^iboriannex]|Перевірено (офіційне джерело). Повний текст ухвали суду ще не розміщений у відкритому доступі|
+|США -> Малайзія (1MDB)|США / Малайзія|Транскордонні|близько 1,4 млрд дол|народ Малайзії|Судовий процес у США щодо конфіскації + репатріація Міністерства юстиції|Апеляційний суд США (9th Cir.) у пов’язаній справі про конфіскацію, пов’язаної з 1MDB, *U.S. проти PetroSaudi Oil Services* (13 червня 2023 р.)[^petrosaudi] + повідомлення про репатріацію Міністерства юстиції[^1mdb]|Перевірено (офіційне джерело + рішення суду)|
+
+## Посилання на рішення суду та взаємозв’язок передачі (пріоритетні справи)
+
+### Швейцарія -> Нігерія (Абача)
+
+Швейцарія повернула **321 мільйон доларів США** активів, пов’язаних з Abacha, до Нігерії згідно з тристоронньою угодою зі спостереженням Світового банку.[^abacha2017][^wbabacha] Нігерія звернулася з проханням про взаємоправу; Швейцарські суди підтвердили параметри співпраці (ATF 131 II 169, 2005);[^abachacourt] Женевський прокурор конфіскував активи (2016);[^abacha2016] кошти були виплачені траншами Національному проекту соціальної безпеки для грошових переказів бідним домогосподарствам.
+
+```{mermaid}
+%%| fig-width: 7
+%%| fig-height: 9
+%%{init: {'flowchart': {'rankSpacing': 80, 'nodeSpacing': 60}}}%%
+flowchart TD
+    subgraph MAIN["Main transfer pathway"]
+        A1["Step 1: Nigeria submits MLA request to Switzerland<br/>for Abacha-linked assets held in Swiss banks"]
+        A2["Step 2: Swiss authorities conduct IRSG admissibility review<br/>assess cooperation conditions under mutual legal assistance"]
+        A3["Step 3: Swiss Federal Supreme Court ATF 131 II 169<br/>7 Feb 2005 — confirms legal parameters for cooperation and return"]
+        A4["Step 4: Geneva prosecutor initiates criminal proceedings<br/>against Abba Abacha and related parties"]
+        A5["Step 5: Swiss court Dec 2014: repatriation conditional on<br/>World Bank monitoring of use of funds"]
+        A6["Step 6: Geneva Attorney General confiscates assets<br/>8 Mar 2016 — return process becomes legally possible"]
+        A7["Step 7: Nigeria designates use: National Social Safety Net Project<br/>targeted cash transfers to poor and vulnerable Nigerians"]
+        A8["Step 8: 4 Dec 2017: Tripartite MOU signed<br/>Switzerland, Nigeria, World Bank — USD 321 million"]
+        A9["Step 9: Tranche-based disbursement to Nigeria<br/>funds applied to National Social Safety Net Project"]
+        A10["Step 10: Cash transfers to beneficiaries<br/>poor and vulnerable Nigerians via IDA-financed project"]
+    end
+
+    subgraph MON["Monitoring & oversight structure"]
+        M1["World Bank: monitors use of funds<br/>same manner as IDA Credit for National Social Safety Net Project"]
+        M2["Nigerian CSOs under Network on Asset Recovery<br/>expertise in anti-corruption and asset recovery"]
+        M3["CSOs monitor cash-to-beneficiaries<br/>bi-annual reports on use of funds"]
+        M4["Transparency and accountability framework<br/>civil society oversight per tripartite agreement"]
+    end
+
+    A1 --> A2 --> A3 --> A4 --> A5 --> A6 --> A7 --> A8 --> A9 --> A10
+    A8 -.->|"enables"| M1
+    A9 -.->|"subject to"| M2
+    M2 --> M3
+    M1 --> M4
+    M3 --> M4
+
+    A1 -.-> NA1
+    A2 -.-> NA2
+    A3 -.-> NA3
+    A4 -.-> NA4
+    A5 -.-> NA5
+    A6 -.-> NA6
+    A7 -.-> NA7
+    A8 -.-> NA8
+    A9 -.-> NA9
+    A10 -.-> NA10
+
+    NA1["MLA request under Swiss IRSG Bundesgesetz über internationale Rechtshilfe in Strafsachen; assets traced to late Gen. Sani Abacha and family in Swiss banks; Nigeria as requesting state."]
+    NA2["OFJ and cantonal authorities assessed admissibility under IRSG Art. 3; dual criminality and cooperation conditions reviewed."]
+    NA3["ATF 131 II 169 7 Feb 2005 case 1A.215/2004; confirmed MLA and return parameters under IRSG while proceedings ongoing in Nigeria."]
+    NA4["Procureur général de Genève initiated criminal proceedings against Abba Abacha; assets identified, frozen under Swiss criminal procedure."]
+    NA5["Dec 2014 Swiss court ruling: repatriation conditional on World Bank monitoring of use; precondition for transfer."]
+    NA6["8 Mar 2016 Procureur général Genève confiscation order; assets transferred to Swiss Confederation under Art. 69-72 SCC."]
+    NA7["Nigeria designated National Social Safety Net Project P151488; IDA Credit; targeted cash transfers to poor households."]
+    NA8["4 Dec 2017 tripartite MOU: Federal Govt Nigeria, Swiss Federal Council, World Bank; disbursement modalities and WB monitoring role."]
+    NA9["Tranche-based release; funds applied to IDA-financed National Social Safety Net Project; same monitoring as IDA Credit."]
+    NA10["Cash to beneficiaries; NAR CSOs monitor cash-to-beneficiaries; bi-annual reports per tripartite agreement."]
+
+    classDef noteBox fill:#fff8e1,stroke:#f9a825,stroke-width:2px,stroke-dasharray: 6 4
+    class NA1,NA2,NA3,NA4,NA5,NA6,NA7,NA8,NA9,NA10 noteBox
+```
+
+### США -> Малайзія (1MDB)
+
+США репатріювали **~1,4 мільярда доларів США** доходів від 1MDB до Малайзії шляхом цивільно-правової конфіскації (41 позов з 2016 року) і репатріаційних траншів Міністерства юстиції.[^1mdb] Активи були передані на трастовий рахунок повернення активів Малайзії 1MDB для суспільного блага. Дев’ятий окружний суд підтвердив повноваження на арешт у пов’язаному позові про конфіскацію PetroSaudi (2023 р.).[^petrosaudi]
+
+```{mermaid}
+%%| fig-width: 7
+%%| fig-height: 9
+%%{init: {'flowchart': {'rankSpacing': 80, 'nodeSpacing': 60}}}%%
+flowchart TD
+    subgraph MAIN["Main transfer pathway"]
+        B1["Step 1: DOJ initiates civil forfeiture actions<br/>from Jul 2016 — 41 actions targeting 1MDB-linked assets"]
+        B2["Step 2: U.S. district courts order restraint and seizure<br/>preservation of res during litigation"]
+        B3["Step 3: Ninth Circuit affirms seizure-preservation orders<br/>13 Jun 2023 — PetroSaudi-related track upheld"]
+        B4["Step 4: Forfeiture pipeline: settlements and dispositions<br/>assets converted to recoverable value under U.S. law"]
+        B5["Step 5: DOJ repatriation tranche decisions<br/>executive/legal-policy determination for Malaysia"]
+        B6["Step 6: Transfer to Malaysia 1MDB Asset Recovery Trust Account<br/>e.g. USD 452m Aug 2021, USD 156m Jun 2024 — total ~USD 1.4bn"]
+        B7["Step 7: Funds for benefit of people of Malaysia<br/>administered via Malaysian trust vehicle"]
+    end
+
+    subgraph MON["Monitoring & oversight structure"]
+        N1["Malaysian 1MDB Asset Recovery Trust Account<br/>designated vehicle for repatriated proceeds"]
+        N2["Trust account administration<br/>use for public benefit per agreement"]
+        N3["Bilateral U.S.–Malaysia repatriation framework<br/>tranche-based returns with designated destination"]
+    end
+
+    B1 --> B2 --> B3 --> B4 --> B5 --> B6 --> B7
+    B5 -.->|"governs"| N1
+    B6 -.->|"to"| N1
+    N1 --> N2
+    N2 --> N3
+
+    B1 -.-> NB1
+    B2 -.-> NB2
+    B3 -.-> NB3
+    B4 -.-> NB4
+    B5 -.-> NB5
+    B6 -.-> NB6
+    B7 -.-> NB7
+
+    NB1["41 in rem civil forfeiture actions under 18 USC 981 from Jul 2016; Kleptocracy Asset Recovery Initiative; assets traceable to 1MDB."]
+    NB2["District court restraining orders and warrants of arrest in rem; 18 USC 981; res preserved pending forfeiture litigation."]
+    NB3["9th Cir. U.S. v. PetroSaudi Oil Services Nos. 21-56228 22-55025 13 Jun 2023; affirmed interlocutory orders; USD 380m arbitration fund."]
+    NB4["Settlements and default judgments under 18 USC 981; assets converted to recoverable value; DOJ disposition authority."]
+    NB5["DOJ MLARS repatriation decision; assets legally forfeited; tranche determination under bilateral U.S.-Malaysia framework."]
+    NB6["Wire to 1MDB Asset Recovery Trust Account; USD 452m Aug 2021, USD 156m Jun 2024; total ~USD 1.4bn per DOJ."]
+    NB7["Trust account administered for benefit of people of Malaysia; designated recipient per bilateral repatriation agreement."]
+
+    classDef noteBox fill:#fff8e1,stroke:#f9a825,stroke-width:2px,stroke-dasharray: 6 4
+    class NB1,NB2,NB3,NB4,NB5,NB6,NB7 noteBox
+```
+
+### Великобританія -> Нігерія (Ibori)
+
+Сполучене Королівство повернуло Нігерії **4,2 мільйона фунтів стерлінгів** із доходів, стягнутих згідно з рішеннями про конфіскацію з 2010 року.[^iboriannex] В угоді між Великобританією та Нігерією 2021 року було виділено кошти на інфраструктуру (швидкісна дорога Лагос-Ібадан, дорога Абуджа-Кано, другий міст у Нігері).[^ibori] Фонд Клін забезпечує незалежний моніторинг; Суверенне управління інвестицій Нігерії керує впровадженням. Очікується на розгляд повнотекстової загальнодоступної копії наказів про конфіскацію.[^iboriannex]
+
+```{mermaid}
+%%| fig-width: 7
+%%| fig-height: 9
+%%{init: {'flowchart': {'rankSpacing': 80, 'nodeSpacing': 60}}}%%
+flowchart TD
+    subgraph MAIN["Main transfer pathway"]
+        C1["Step 1: UK investigation: Met Police, NCA, CPS<br/>Ibori network — money laundering, fraud, forgery"]
+        C2["Step 2: Feb 2012: Ibori pleads guilty in UK court<br/>13 years imprisonment"]
+        C3["Step 3: UK confiscation orders since 2010<br/>recoverable criminal property value established"]
+        C4["Step 4: UK–Nigeria return negotiations<br/>framework for destination and safeguards"]
+        C5["Step 5: 9 Mar 2021: UK–Nigeria agreement and annex signed<br/>GBP 4.2 million — project use and oversight conditions"]
+        C6["Step 6: Transfer of GBP 4.2m to Nigeria<br/>under bilateral MoU"]
+        C7["Step 7: Projects: Lagos–Ibadan Expressway, Abuja–Kano road<br/>second Niger Bridge — infrastructure and public benefit"]
+        C8["Step 8: Nigeria Sovereign Investment Authority<br/>administers project implementation"]
+    end
+
+    subgraph MON["Monitoring & oversight structure"]
+        O1["Cleen Foundation: independent monitoring<br/>expertise in infrastructure, anti-corruption, procurement"]
+        O2["Federal Republic of Nigeria Monitoring Team<br/>oversees implementation, regular progress reporting"]
+        O3["Budget plan and work/expenditure schedule<br/>per project, agreed by UK and Nigerian representatives"]
+        O4["Annual accountability reports<br/>published, information to Nigerian public"]
+        O5["Bar on disbursement to perpetrators<br/>and related persons per annex"]
+    end
+
+    C1 --> C2 --> C3 --> C4 --> C5 --> C6 --> C7 --> C8
+    C5 -.->|"requires"| O1
+    C6 -.->|"subject to"| O2
+    O1 --> O3
+    O2 --> O4
+    O3 --> O5
+    O4 --> O5
+
+    C1 -.-> NC1
+    C2 -.-> NC2
+    C3 -.-> NC3
+    C4 -.-> NC4
+    C5 -.-> NC5
+    C6 -.-> NC6
+    C7 -.-> NC7
+    C8 -.-> NC8
+
+    NC1["Met Police Proceeds of Crime Unit, NCA, CPS; POCA 2002; money laundering s.327, conspiracy to defraud, forgery; Ibori network."]
+    NC2["Southwark Crown Court Feb 2012; Ibori guilty plea; 13 years; confiscation proceedings under POCA s.6 followed."]
+    NC3["Confiscation orders under POCA s.6 since 2010; recoverable amount and criminal property value; annex confirms order basis."]
+    NC4["UK-Nigeria negotiations under 2016 MoU; return framework; destination, project earmarking, audit safeguards."]
+    NC5["9 Mar 2021 UK-Nigeria agreement and annex; GBP 4.2m; budget plan and work schedule per project; bar on perpetrator disbursement."]
+    NC6["Transfer under bilateral MoU; first return under 2016 framework; funds to NSIA for designated projects."]
+    NC7["Earmarked: Lagos-Ibadan Expressway, Abuja-Kano road, second Niger Bridge; infrastructure and public benefit."]
+    NC8["NSIA administers; Cleen Foundation independent monitoring; Federal Monitoring Team; annual accountability reports to public."]
+
+    classDef noteBox fill:#fff8e1,stroke:#f9a825,stroke-width:2px,stroke-dasharray: 6 4
+    class NC1,NC2,NC3,NC4,NC5,NC6,NC7,NC8 noteBox
+```
+
+## Завершення шаблону справи (поточний статус)
+
+|Справа|Тип злочину|Авторитет|Правова основа / інструмент|Посилання на рішення суду|Статус перевірки|
+|------|------------|-----------|---------------------------|---------------------|---------------------|
+|США -> жертви Медоффа|Шахрайство / схема Понці / доходи від відмивання грошей|Міністерство юстиції США (MLARS) і призначена адміністрація фонду|Конфіскація США + процес розподілу коштів жертвам Міністерства юстиції|Не є пріоритетним для цього траншу|Перевірено|
+|США -> жертви Western Union|Сприяння шахрайству та збої в боротьбі з відмиванням коштів, пов’язані з шахрайством споживачів|Міністерство юстиції США|Конфіскація + процес ремісії під керівництвом Міністерства юстиції|Не є пріоритетним для цього траншу|Перевірено|
+|Швейцарія -> Нігерія (Абача II)|Корупція / розкрадання / відмивання незаконних державних активів|прокуратура та федеральні органи Швейцарії; FDFA; Світовий банк (моніторингова роль)|Швейцарська система конфіскації + тристороння угода про реституцію (2017)|ATF 131 II 169 (1A.215/2004)[^abachacourt]|Перевірено (сильний)|
+|Великобританія -> Нігерія (Ibori)|Доходи, пов’язані з корупцією та відмиванням, пов’язані з мережею Ibori|державні органи Великобританії; Влада Нігерії|Накази про конфіскацію (з 2010 р.) + додаток про повернення Великобританії та Нігерії (2021 р.)|Додаток підтверджує підстави наказу про конфіскацію; повний текст ухвали суду очікує на розгляд|Перевірено з розривом судового тексту|
+|США -> Малайзія (1MDB)|Привласнення/хабарництво/відмивання грошей у великих розмірах|Міністерство юстиції США; Федеральні суди США|Цивільні позови про конфіскацію + рішення Міністерства юстиції про репатріацію|Рішення дев'ятого округу у пов'язаній справі про конфіскацію[^petrosaudi]|Перевірено (сильний)|
+
+## Домашні роздавальні коробки
+
+### 1. Фонд жертв Медоффа США
+
+Це один із найяскравіших публічних прикладів **конфіскованих активів, які масштабно перерозподіляються жертвам**. 30 грудня 2024 року Міністерство юстиції США оголосило про **10-й і останній розподіл** Фонду жертв Медоффа. Департамент заявив, що конфісковані кошти на суму понад **4,3 мільярда доларів США** були виплачені **40 930 жертвам у 127 країнах**, завдяки чому загальне відшкодування становить **93,71% збитків від шахрайства**.[^madoff]
+
+Юридичним кроком, що передував передачі, було повернення активів урядом США через **цивільну та кримінальну конфіскацію, пов’язану з шахрайською схемою Бернарда Л. Медоффа**. Механізм передачі не був спеціальним політичним рішенням, а формальною структурою компенсації жертвам під керівництвом Міністерства юстиції.
+
+Чому це важливо: це яскравий приклад **національної моделі компенсації жертвам**, побудованої на конфіскованих активах, а не на звичайній реституції.
+
+### 2. Ремісійний фонд Western Union США
+
+Western Union є ще однією сильною національною моделлю, оскільки Міністерство юстиції публічно пояснює як **конфіскацію**, так і **процес розповсюдження**. 9 вересня 2024 року Міністерство юстиції оголосило, що Фонд ремісій Western Union почав свій другий розподіл у другому етапі, перерахувавши приблизно **18,5 мільйонів доларів США** приблизно **3000 жертвам**. Міністерство юстиції заявило, що на обох етапах фонд уже розподілив **понад 420 мільйонів доларів США** **понад 175 000 постраждалим**, які отримали повну компенсацію за свої збитки.[^western]
+
+Офіційні матеріали пов'язують переказ з **коштами, конфіскованими в США від Western Union**. Механізмом компенсації була **ремісія**, офіційний адміністративний процес, за допомогою якого конфісковані кошти можуть бути повернуті жертвам.
+
+Чому це важливо: цей випадок показує, що переказ потерпілим може бути структурований навіть тоді, коли доходи вперше проходять через державу, за умови наявності чітких рамок ремісії та перевіреного класу жертв.
+
+## Транскордонні випадки передачі
+
+### 3. Швейцарія -> Нігерія (Абача II)
+
+Повернення Швейцарією активів Abacha є однією з найкраще задокументованих транскордонних моделей. За даними Федерального департаменту закордонних справ Швейцарії, **4 грудня 2017 року** Швейцарія, Нігерія та Світовий банк підписали **тристоронню угоду**, яка регулює повернення приблизно **321 мільйона доларів США** населенню Нігерії.[^abacha2017]
+
+Офіційне швейцарське пояснення важливе, оскільки воно вказує на юридичний крок, який відбувся перед переказом: кошти були **репатрійовані та конфісковані Швейцарією в рамках кримінального провадження, порушеного прокуратурою Женеви проти Абба Абача**.[^abacha2017] У попередньому швейцарському прес-релізі від **8 березня 2016** зазначено, що процес повернення став можливим після **Генерального прокурора кантону Женева конфіскувала** активи.[^abacha2016]
+
+Угода не дозволяла необмежений переказ до державного бюджету Нігерії. Натомість він вимагав **моніторингу за підтримки Світового банку**, виплати на основі траншів і гарантії проти зловживання. Власний інформаційний бюлетень Світового банку також описує угоду як контрольований процес репатріації.[^wbabacha]
+
+Чому це важливо: це провідний приклад **конфіскації плюс контрольована міждержавна реституція**, яка, ймовірно, більш актуальна для України, ніж безумовна двостороння передача.
+
+### 4. Великобританія -> Нігерія (Іборі)
+
+**9 березня 2021 року** Велика Британія та Нігерія погодилися повернути **4,2 мільйона фунтів стерлінгів**, стягнених з партнерів колишнього губернатора штату Дельта Джеймса Іборі.[^ibori] В офіційному прес-релізі Великобританії говориться, що гроші будуть використані для нігерійських інфраструктурних і суспільно-корисних проектів, а реалізація підлягатиме моніторингу та аудиту.
+
+Пов’язана публікація Великобританією додатку до угоди є корисною, оскільки в ній визначено правового попередника передачі. У ньому зазначено, що повернуті кошти було стягнуто в ході провадження, яке призвело до **розпоряджень про конфіскацію, виданих з 2010 року**.[^iboriannex] Він також обмежує використання грошей на певні проекти та забороняє виплату передбачуваним злочинцям і пов’язаним особам.
+
+Чому це важливо: це стислий приклад **наказів про конфіскацію плюс двостороння угода про виконання**. Передача не випливала автоматично з конфіскації; двостороння домовленість запровадила в дію пункт призначення та контроль.
+
+Статус пов’язаності із судом: цей початковий транш підтверджує підставу наказу про конфіскацію з офіційних матеріалів Великобританії, але повний текст загальнодоступної копії оперативних наказів про конфіскацію все ще очікує.
+
+### 5. США -> Малайзія (1MDB)
+
+Міністерство юстиції США надає надзвичайно чіткі офіційні звіти про репатріацію доходів 1MDB. **13 червня 2024 року** Міністерство юстиції оголосило про репатріацію додаткових **156 мільйонів доларів США** до Малайзії, довівши загальну суму, повернуту Міністерством юстиції, приблизно до **1,4 мільярда доларів США**.[^1mdb]
+
+Міністерство юстиції пов’язує ці повернення з довгостроковою кампанією конфіскації в США, що включає доходи 1MDB. Департамент заявляє, що з липня 2016 року він подав **41 цивільний позов про конфіскацію** та конфіскував активи на суму понад **1,7 мільярда доларів США**, імовірно пов’язані зі схемою.[^1mdb]
+
+Опублікований судовий рівень доступний у пов’язаній версії конфіскації: у справі *Сполучені Штати проти PetroSaudi Oil Services (Venezuela) Ltd.* (дев’ятий округ, 13 червня 2023 р.) суд підтвердив проміжні накази про збереження та арешт активів, які ймовірно пов’язані з доходами 1MDB.[^petrosaudi] Саме по собі це не наказало репатріацію до Малайзії, але вона підтвердила юридичний контроль над активами в процесі конфіскації, який необхідний до прийняття рішень про передачу.
+
+Чому це важливо: 1MDB показує, що великі транскордонні повернення можливі, але лише після тривалого етапу конфіскації, значної роботи з розшуку та спеціального рішення про репатріацію державою, яка повертається.
+
+
+
+[^madoff]: U.S. Department of Justice, "Justice Department's 10th Distribution Brings Total Provided to Over $4.3B in Nearly Full Recovery to Over 40,000 Victims in Madoff Ponzi Scheme", 30 Dec 2024, <https://www.justice.gov/archives/opa/pr/justice-departments-10th-distribution-brings-total-provided-over-43b-nearly-full-recovery>.
+[^western]: U.S. Department of Justice, "Justice Department Begins Second Distribution of Forfeited Funds to Compensate Victims of Fraud Scheme Facilitated by Western Union", 9 Sep 2024, <https://www.justice.gov/archives/opa/pr/justice-department-begins-second-distribution-forfeited-funds-compensate-victims-fraud>.
+[^abacha2017]: Swiss FDFA, "Restitution of USD 321 million by Switzerland to Nigeria under World Bank oversight: signing of a tripartite agreement", 4 Dec 2017, <https://www.eda.admin.ch/countries/democratic-republic-congo/en/home/news/news.html/content/eda/en/meta/news/2017/12/4/69088>.
+[^abacha2016]: Swiss FDFA, "Switzerland and Nigeria conclude agreement on the return of USD 321 million of Abacha's assets", 8 Mar 2016, <https://www.eda.admin.ch/countries/romania/ro/home/aktuell/news.html/content/eda/en/meta/news/2016/3/8/60907>.
+[^wbabacha]: World Bank, "World Bank Monitoring of Repatriated Abacha Funds", 4 Dec 2017, <https://www.worldbank.org/en/news/factsheet/2017/12/04/world-bank-monitoring-of-repatriated-abacha-funds>.
+[^ibori]: GOV.UK, "UK to send millions of pounds recovered from corrupt officials back to Nigeria", 9 Mar 2021, <https://www.gov.uk/government/news/uk-to-send-millions-of-pounds-recovered-from-corrupt-officials-back-to-nigeria>.
+[^iboriannex]: GOV.UK, "MoU between UK and Nigeria on the modalities for return of stolen assets confiscated by the UK: annex 1", 2021, <https://www.gov.uk/government/publications/return-of-stolen-assets-confiscated-by-the-uk-agreement-between-the-uk-and-nigeria/mou-between-uk-and-nigeria-on-the-modalities-for-return-of-stolen-assets-confiscated-by-the-uk-annex-1>.
+[^1mdb]: U.S. Department of Justice, "Justice Department Repatriates $1.4B Misappropriated 1MDB Funds to Malaysia", 13 Jun 2024, <https://www.justice.gov/archives/opa/pr/justice-department-repatriates-14b-misappropriated-1mdb-funds-malaysia>.
+[^petrosaudi]: U.S. Court of Appeals for the Ninth Circuit, *United States v. PetroSaudi Oil Services (Venezuela) Ltd.*, Nos. 21-56228 & 22-55025, filed 13 Jun 2023, <https://cdn.ca9.uscourts.gov/datastore/opinions/2023/06/13/21-56228.pdf>.
+[^abachacourt]: Swiss Federal Supreme Court, ATF 131 II 169 (Abacha et consorts v. Office fédéral de la justice), case 1A.215/2004, 7 Feb 2005, <https://search.bger.ch/ext/eurospider/live/de/php/clir/http/index.php?highlight_docid=atf%3A%2F%2F131-II-169%3Ait&lang=de&type=show_document>.
+[^pep]: Swiss FDFA, "Asset Recovery in cases of foreign politically exposed persons (PEPs)", accessed 4 Mar 2026, <https://www.eda.admin.ch/eda/en/home/foreign-policy/international-law/unrechtmaessig-erworbene-gelder.html>.
+[^sif]: Swiss State Secretariat for International Finance, "How Switzerland supports the fight against financial crime, corruption and tax evasion, and works in the area of asset recovery", accessed 4 Mar 2026, <https://www.sif.admin.ch/en/illicit-financial-flows-2>.
+[^kaz2012]: Swiss FDFA, "Switzerland and the World Bank sign agreement on the restitution of Kazakh assets", 21 Dec 2012, <https://www.eda.admin.ch/eda/en/fdfa/fdfa/aktuell/news.html/content/eda/en/meta/news/2012/12/21/47337>.
+[^kaz2015]: Swiss FDFA, "Restitution of stolen assets to Kazakhstan successfully completed", 9 Dec 2015, <https://www.eda.admin.ch/eda/en/fdfa/fdfa/aktuell/news.html/content/eda/en/meta/news/2015/12/9/59867>.
+[^peru]: Swiss FDFA, "Trilateral agreement: Switzerland and Luxembourg to return illicitly acquired assets to Peru", 16 Dec 2020, <https://www.eda.admin.ch/countries/new-zealand/en/home/news/news.html/content/eda/en/meta/news/2020/12/16/81674>.
+[^peru2]: Swiss FDFA, "A dynamic Swiss policy on restitution of illicit assets", 16 Dec 2020, <https://www.eda.admin.ch/eda/en/fdfa/fdfa/aktuell/newsuebersicht/2020/12/abkommen-peru.html>.
+[^stpo459h]: German Federal Ministry of Justice, StPO § 459h, <https://www.gesetze-im-internet.de/stpo/__459h.html>.
+[^stpo459o]: German Federal Ministry of Justice, StPO § 459o, <https://www.gesetze-im-internet.de/stpo/__459o.html>.
