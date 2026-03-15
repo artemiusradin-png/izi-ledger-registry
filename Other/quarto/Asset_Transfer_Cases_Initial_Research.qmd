@@ -36,36 +36,73 @@ format:
 
 ## Purpose
 
-This note is an **initial case-based research draft** responding to the request to focus on **actual transfers of confiscated criminal assets**, not just on abstract legal pathways. It identifies verified examples of:
+This note analyzes **interstate asset recovery and return mechanisms** — the legal and institutional architecture by which one state returns confiscated criminal assets to another state or to a monitored public-benefit mechanism. It focuses on **cross-border return cases** where the transfer itself is documented, not merely freezing or seizure.
 
-- **domestic transfers** from forfeited assets to victims; and
-- **cross-border transfers** from one state to another or to a monitored public-benefit mechanism.
+The paper provides **case-by-case analysis** of verified interstate returns, covering for each case: accusation, parties, procedural path, legal basis for confiscation and return, use of returned assets, and monitoring arrangements. Domestic victim-compensation models (Madoff, Western Union) are included briefly as **comparator examples** for distribution mechanics, but the primary focus is interstate restitution.
 
-The note relies primarily on **official sources**. Court decisions and formal instruments are included where they were readily identifiable from official materials.
+The note relies on **official sources**: press releases, treaties, MoUs, court decisions, and institutional monitoring reports. Source links appear under each case for independent verification.
 
-## Preliminary Finding
+**Pattern:** In the strongest examples, interstate return requires (1) final confiscation/forfeiture in the recovering state; (2) a legal allocation mechanism (bilateral MoU, tripartite agreement, or repatriation decision); and (3) a monitored implementation vehicle. Returns are not simple budget transfers; they combine confiscation with use-of-funds controls and oversight.
 
-The first review suggests a clear pattern. In the strongest public examples, asset transfer usually requires **three distinct steps**:
+## Interstate Case Matrix
 
-1. **Final confiscation / forfeiture / settlement** in the recovering state.
-2. **A legal allocation mechanism** for victims or a foreign beneficiary.
-3. **A monitored implementation vehicle**, especially in cross-border corruption cases.
+| Case | Accusation / predicate offense | Parties | Forum / decision date | Amount | Legal basis for confiscation | Legal basis for return | Recipient / use of funds | Monitoring / joint project | Sources |
+|------|------------------------------|---------|------------------------|-------|-----------------------------|------------------------|--------------------------|----------------------------|---------|
+| Switzerland -> Nigeria (Abacha II) | Corruption, embezzlement, laundering of state assets under Gen. Sani Abacha | Nigeria (requesting), Switzerland (confiscating), World Bank (monitoring) | Swiss Federal Supreme Court ATF 131 II 169 (7 Feb 2005); Geneva confiscation (8 Mar 2016); tripartite MOU (4 Dec 2017) | USD 321 million | Swiss criminal procedure (SCC Art. 69–72); Geneva prosecutor confiscation | Tripartite restitution agreement (Switzerland–Nigeria–World Bank); MLA framework (IRSG) | National Social Safety Net Project; cash transfers to poor households | World Bank monitors same as IDA Credit; Nigerian CSOs (NAR); bi-annual reports | [^abachacourt][^abacha2016][^abacha2017][^wbabacha] |
+| UK -> Nigeria (Ibori) | Money laundering, conspiracy to defraud, forgery (Ibori network) | UK (confiscating), Nigeria (recipient) | UK confiscation orders since 2010; UK–Nigeria agreement (9 Mar 2021) | GBP 4.2 million | POCA 2002 s.6 confiscation orders | UK–Nigeria bilateral MoU and annex | Lagos–Ibadan Expressway, Abuja–Kano road, second Niger Bridge; NSIA administers | Cleen Foundation independent monitoring; Federal Monitoring Team; annual accountability reports | [^ibori][^iboriannex] |
+| U.S. -> Malaysia (1MDB) | Misappropriation, bribery, money laundering (1MDB scheme) | U.S. (forfeiting), Malaysia (recipient) | U.S. civil forfeiture (41 actions from Jul 2016); Ninth Circuit (13 Jun 2023); DOJ repatriation tranches | ~USD 1.4 billion | 18 USC 981 civil forfeiture; Kleptocracy Asset Recovery Initiative | DOJ repatriation decision; bilateral U.S.–Malaysia framework | Malaysia 1MDB Asset Recovery Trust Account; benefit of people of Malaysia | Trust account administration; bilateral repatriation framework | [^1mdb][^petrosaudi] |
+| Switzerland -> Kazakhstan | Money laundering (Geneva proceedings) | Switzerland, World Bank, Kazakhstan | Geneva confiscation (2011); Switzerland–World Bank agreement (Dec 2012) | USD 48 million (2012); USD 115 million (BOTA, 2007–2015) | Swiss criminal procedure; Geneva judicial authorities | Switzerland–World Bank agreement; BOTA Foundation (tripartite Switzerland–U.S.–Kazakhstan) | Youth policy, energy efficiency (2012); BOTA Child and Youth Development Foundation | World Bank; BOTA Foundation oversight | [^kaz2012][^kaz2015] |
+| Switzerland / Luxembourg -> Peru | Corruption (Montesinos/Fujimori-era; assets frozen since early 2000s) | Switzerland, Luxembourg, Peru | Confiscation procedures concluded 2020; trilateral agreement (16 Dec 2020) | USD 16.3 million (CHF) + EUR 9.7 million (LUX) | Swiss and Luxembourg criminal/forfeiture procedures; Peru non-conviction based forfeiture | Trilateral agreement (Switzerland–Luxembourg–Peru) | Rule of law, judicial transparency, anti-corruption projects | Peru judiciary, public ministry, justice ministry implementation; follow-up meeting May 2022 | [^peru][^peru2] |
 
-This is why the most developed models are not simple "state A seizes, then wires money to state B" cases. They usually combine confiscation with a remission process, a restitution agreement, or a monitored trust-fund or project structure.
+## Interstate Case Analysis (Priority Cases)
 
-## Initial Case Table (Expanded)
+### Switzerland -> Nigeria (Abacha II)
 
-| Case | Jurisdiction(s) | Transfer type | Amount transferred | Recipient | Main legal mechanism | Court decision / legal instrument link | Verification status |
-|------|------------------|---------------|-------------------|-----------|----------------------|----------------------------------------|---------------------|
-| Switzerland -> Nigeria (Abacha II) | Switzerland / Nigeria | Cross-border | USD 321 million | Nigerian population via social protection project | Confiscation in Swiss proceedings + tripartite agreement with World Bank monitoring | Swiss Federal Supreme Court (Abacha mutual legal assistance/confiscation framework) 1A.215/2004 (ATF 131 II 169)[^abachacourt] + 2017 tripartite agreement[^abacha2017] | Verified (official sources + court decision) |
-| UK -> Nigeria (Ibori) | UK / Nigeria | Cross-border | GBP 4.2 million | Nigerian infrastructure projects | UK recovery proceedings + UK-Nigeria return agreement | UK-Nigeria MoU annex confirming confiscation orders since 2010[^iboriannex] | Verified (official source). Court-order text not yet located in public full text |
-| U.S. -> Malaysia (1MDB) | U.S. / Malaysia | Cross-border | about USD 1.4 billion | people of Malaysia | U.S. forfeiture litigation + DOJ repatriation | U.S. Court of Appeals (9th Cir.) in related 1MDB-linked forfeiture action, *U.S. v. PetroSaudi Oil Services* (13 Jun 2023)[^petrosaudi] + DOJ repatriation release[^1mdb] | Verified (official source + court decision) |
+#### Essence of the accusation
 
-## Court Decision Links and Transfer Nexus (Priority Cases)
+Assets traced to late Gen. Sani Abacha and family held in Swiss banks — corruption, embezzlement, and laundering of illicit state assets. Nigeria requested mutual legal assistance for recovery.
 
-### Switzerland -> Nigeria (Abacha)
+#### Parties
 
-Switzerland returned **USD 321 million** of Abacha-linked assets to Nigeria under a tripartite agreement with World Bank monitoring.[^abacha2017][^wbabacha] Nigeria requested MLA; Swiss courts confirmed cooperation parameters (ATF 131 II 169, 2005);[^abachacourt] Geneva prosecutor confiscated assets (2016);[^abacha2016] funds were disbursed tranche-based to the National Social Safety Net Project for cash transfers to poor households.
+- **Requesting state:** Nigeria
+- **Confiscating state:** Switzerland (Geneva prosecutorial authorities, Swiss Federal Supreme Court)
+- **Monitoring:** World Bank; Nigerian civil society (Network on Asset Recovery)
+
+#### Procedural path and court decision
+
+1. Nigeria submits MLA request under Swiss IRSG (Bundesgesetz über internationale Rechtshilfe in Strafsachen).
+2. Swiss Federal Supreme Court ATF 131 II 169 (7 Feb 2005, case 1A.215/2004) confirms MLA and return parameters under IRSG while proceedings ongoing in Nigeria.[^abachacourt]
+3. Geneva prosecutor initiates criminal proceedings against Abba Abacha; assets frozen.
+4. Swiss court (Dec 2014) rules repatriation conditional on World Bank monitoring.
+5. Geneva Attorney General confiscates assets (8 Mar 2016); assets transferred to Swiss Confederation under SCC Art. 69–72.[^abacha2016]
+6. Tripartite MOU signed 4 Dec 2017 (Switzerland, Nigeria, World Bank) — USD 321 million.[^abacha2017]
+
+#### Basis for return of assets
+
+| Element | Legal basis |
+|---------|-------------|
+| **Confiscation** | Swiss criminal procedure (SCC Art. 69–72); Geneva prosecutor confiscation order |
+| **Transfer abroad** | Tripartite restitution agreement; IRSG MLA framework |
+| **Restrictions on use** | MOU requires World Bank monitoring, tranche-based disbursement, earmarking for National Social Safety Net Project |
+
+#### Use of returned assets / joint projects
+
+Funds applied to **National Social Safety Net Project** (IDA Credit P151488): targeted cash transfers to poor and vulnerable Nigerian households. Tranche-based release; same monitoring as IDA Credit. Nigerian CSOs under Network on Asset Recovery monitor cash-to-beneficiaries; bi-annual reports per tripartite agreement.[^wbabacha]
+
+#### Verification note
+
+- Transfer verified: Yes (official Swiss and World Bank sources)
+- Court decision verified: Yes (ATF 131 II 169)
+- Return instrument verified: Yes (2017 tripartite MOU)
+- Use-of-funds evidence verified: Yes (World Bank factsheet, project designation)
+- Open gaps: None material
+
+#### Sources
+
+- Swiss Federal Supreme Court ATF 131 II 169[^abachacourt]
+- Swiss FDFA, Abacha letter of intent (8 Mar 2016)[^abacha2016]
+- Swiss FDFA, tripartite agreement (4 Dec 2017)[^abacha2017]
+- World Bank, monitoring of repatriated Abacha funds[^wbabacha]
 
 ```{mermaid}
 %%| fig-width: 7
@@ -127,7 +164,49 @@ flowchart TD
 
 ### U.S. -> Malaysia (1MDB)
 
-The U.S. repatriated **~USD 1.4 billion** of 1MDB proceeds to Malaysia via civil forfeiture (41 actions from 2016) and DOJ repatriation tranches.[^1mdb] Assets were transferred to the Malaysia 1MDB Asset Recovery Trust Account for public benefit. The Ninth Circuit affirmed seizure authority in a related PetroSaudi forfeiture action (2023).[^petrosaudi]
+#### Essence of the accusation
+
+Large-scale misappropriation, bribery, and money laundering linked to the 1MDB scheme. Assets traceable to the scheme were held or transited through the U.S. financial system.
+
+#### Parties
+
+- **Forfeiting state:** United States (DOJ, Kleptocracy Asset Recovery Initiative)
+- **Recipient:** Malaysia (1MDB Asset Recovery Trust Account)
+- **Beneficiary:** People of Malaysia
+
+#### Procedural path and court decision
+
+1. DOJ initiates 41 in rem civil forfeiture actions under 18 USC 981 from Jul 2016.[^1mdb]
+2. U.S. district courts order restraint and seizure; res preserved pending litigation.
+3. Ninth Circuit affirms seizure-preservation orders in *U.S. v. PetroSaudi Oil Services (Venezuela) Ltd.* (13 Jun 2023, Nos. 21-56228, 22-55025).[^petrosaudi]
+4. Settlements and default judgments; assets converted to recoverable value.
+5. DOJ repatriation tranche decisions under bilateral U.S.–Malaysia framework.
+6. Transfer to Malaysia 1MDB Asset Recovery Trust Account (e.g. USD 452m Aug 2021, USD 156m Jun 2024) — total ~USD 1.4 billion.[^1mdb]
+
+#### Basis for return of assets
+
+| Element | Legal basis |
+|---------|-------------|
+| **Confiscation** | 18 USC 981 civil forfeiture; district court restraining orders and warrants of arrest in rem |
+| **Transfer abroad** | DOJ MLARS repatriation decision; bilateral U.S.–Malaysia repatriation framework |
+| **Restrictions on use** | Designated trust account; use for public benefit per bilateral agreement |
+
+#### Use of returned assets / joint projects
+
+Funds administered via **Malaysia 1MDB Asset Recovery Trust Account** for the benefit of the people of Malaysia. Tranche-based returns; designated destination per bilateral framework. Trust account administration for public benefit.[^1mdb]
+
+#### Verification note
+
+- Transfer verified: Yes (DOJ official releases)
+- Court decision verified: Yes (Ninth Circuit in PetroSaudi-related track)
+- Return instrument verified: Yes (bilateral repatriation framework; DOJ announcements)
+- Use-of-funds evidence verified: Partial (trust account designated; implementation details less public)
+- Open gaps: Trust account implementation and monitoring reports not as detailed as Swiss/UK cases
+
+#### Sources
+
+- DOJ, 1MDB repatriation (13 Jun 2024)[^1mdb]
+- U.S. Court of Appeals for the Ninth Circuit, *U.S. v. PetroSaudi Oil Services*[^petrosaudi]
 
 ```{mermaid}
 %%| fig-width: 7
@@ -178,7 +257,49 @@ flowchart TD
 
 ### UK -> Nigeria (Ibori)
 
-The UK returned **GBP 4.2 million** to Nigeria from proceeds recovered under confiscation orders since 2010.[^iboriannex] The 2021 UK-Nigeria agreement earmarked funds for infrastructure (Lagos-Ibadan Expressway, Abuja-Kano road, second Niger Bridge).[^ibori] Cleen Foundation provides independent monitoring; Nigeria Sovereign Investment Authority administers implementation. Full-text public copy of the underlying confiscation orders is pending.[^iboriannex]
+#### Essence of the accusation
+
+Money laundering (POCA s.327), conspiracy to defraud, forgery — proceeds linked to former Delta State Governor James Ibori and associates. UK Met Police Proceeds of Crime Unit, NCA, and CPS investigated.
+
+#### Parties
+
+- **Confiscating state:** United Kingdom (Met Police, NCA, CPS)
+- **Recipient:** Nigeria (Federal Republic; Nigeria Sovereign Investment Authority administers)
+- **Monitoring:** Cleen Foundation (independent); Federal Republic of Nigeria Monitoring Team
+
+#### Procedural path and court decision
+
+1. UK investigation and prosecution of Ibori network.
+2. Feb 2012: Ibori pleads guilty at Southwark Crown Court; 13 years imprisonment; confiscation proceedings under POCA s.6 followed.
+3. UK confiscation orders since 2010 establish recoverable criminal property value.[^iboriannex]
+4. UK–Nigeria return negotiations under 2016 MoU; framework for destination and safeguards.
+5. 9 Mar 2021: UK–Nigeria agreement and annex signed — GBP 4.2 million; project use and oversight conditions.[^ibori][^iboriannex]
+6. Transfer under bilateral MoU; funds to NSIA for designated projects.
+
+#### Basis for return of assets
+
+| Element | Legal basis |
+|---------|-------------|
+| **Confiscation** | POCA 2002 s.6 confiscation orders | 
+| **Transfer abroad** | UK–Nigeria bilateral MoU and annex (2021) |
+| **Restrictions on use** | Annex: budget plan and work schedule per project; bar on disbursement to perpetrators and related persons; Cleen Foundation independent monitoring |
+
+#### Use of returned assets / joint projects
+
+Funds earmarked for **Lagos–Ibadan Expressway, Abuja–Kano road, second Niger Bridge** — infrastructure and public benefit. Nigeria Sovereign Investment Authority (NSIA) administers implementation. Cleen Foundation provides independent monitoring (infrastructure, anti-corruption, procurement). Federal Monitoring Team oversees implementation; annual accountability reports published.[^ibori]
+
+#### Verification note
+
+- Transfer verified: Yes (UK official announcement and annex)
+- Court decision verified: Partial (annex confirms confiscation-order basis; full court order text not yet located)
+- Return instrument verified: Yes (2021 UK–Nigeria agreement and annex)
+- Use-of-funds evidence verified: Yes (project earmarking; monitoring structure)
+- Open gaps: Full-text public copy of Southwark confiscation orders pending
+
+#### Sources
+
+- GOV.UK, UK–Nigeria return announcement (9 Mar 2021)[^ibori]
+- GOV.UK, annex on Ibori returned funds and confiscation orders[^iboriannex]
 
 ```{mermaid}
 %%| fig-width: 7
@@ -234,65 +355,107 @@ flowchart TD
     class NC1,NC2,NC3,NC4,NC5,NC6,NC7,NC8 noteBox
 ```
 
-## Case Template Completion (Current Status)
+## Additional Interstate Cases
 
-| Case | Crime type | Authority | Legal basis / instrument | Court decision link | Verification status |
-|------|------------|-----------|---------------------------|---------------------|---------------------|
-| U.S. -> Madoff victims | Fraud / Ponzi scheme / money laundering proceeds | U.S. DOJ (MLARS) and appointed fund administration | U.S. forfeiture + DOJ victim fund distribution process | Not prioritized for this tranche | Verified |
-| U.S. -> Western Union victims | Fraud facilitation and AML failures linked to consumer scams | U.S. DOJ | Forfeiture + remission process under DOJ administration | Not prioritized for this tranche | Verified |
-| Switzerland -> Nigeria (Abacha II) | Corruption / embezzlement / laundering of illicit state assets | Swiss prosecutorial and federal authorities; FDFA; World Bank (monitoring role) | Swiss confiscation framework + tripartite restitution agreement (2017) | ATF 131 II 169 (1A.215/2004)[^abachacourt] | Verified (strong) |
-| UK -> Nigeria (Ibori) | Corruption and laundering-related proceeds linked to Ibori network | UK government authorities; Nigerian authorities | Confiscation orders (since 2010) + UK-Nigeria return annex (2021) | Annex confirms confiscation-order basis; full court order text pending | Verified with court-text gap |
-| U.S. -> Malaysia (1MDB) | Large-scale misappropriation / bribery / money laundering | U.S. DOJ; U.S. federal courts | Civil forfeiture actions + DOJ repatriation decisions | Ninth Circuit decision in related forfeiture action[^petrosaudi] | Verified (strong) |
+### Switzerland -> Kazakhstan
 
-## Domestic Transfer Cases
+#### Essence of the accusation
 
-### 1. U.S. Madoff Victim Fund
+Money laundering; assets held in Swiss banks, confiscated in 2011 by Geneva judicial authorities in criminal proceedings.
 
-This is one of the clearest public examples of **forfeited assets being redistributed to victims at scale**. On 30 December 2024, the U.S. Department of Justice announced the **10th and final distribution** of the Madoff Victim Fund. The Department stated that more than **USD 4.3 billion** in forfeited funds had been paid to **40,930 victims in 127 countries**, bringing aggregate recovery to **93.71% of fraud losses**.[^madoff]
+#### Parties
 
-The legal step preceding the transfer was the U.S. government’s recovery of assets through **civil and criminal forfeiture connected to the Bernard L. Madoff fraud scheme**. The transfer mechanism was not an ad hoc political decision, but a formal DOJ-administered victim compensation structure.
+- **Confiscating state:** Switzerland (Geneva judicial authorities)
+- **Recipient:** Kazakhstan
+- **Monitoring / vehicle:** World Bank (2012 agreement); BOTA Foundation (2007–2015, tripartite Switzerland–U.S.–Kazakhstan)
 
-Why it matters: this is a strong example of a **domestic victim-compensation model** built on forfeited assets rather than on ordinary restitution alone.
+#### Procedural path and decision
 
-### 2. U.S. Western Union Remission Fund
+- 2011: Geneva authorities confiscate assets in money-laundering proceedings.
+- Dec 2012: Switzerland and World Bank sign agreement to return USD 48 million for youth policy and energy efficiency projects.[^kaz2012]
+- Earlier track: BOTA Kazakh Child and Youth Development Foundation (2007) — USD 115 million returned by Dec 2015.[^kaz2015]
 
-Western Union is another strong domestic model because the DOJ publicly explains both the **forfeiture event** and the **distribution process**. On 9 September 2024, DOJ announced that the Western Union Remission Fund had begun its second distribution in phase two, transferring approximately **USD 18.5 million** to around **3,000 victims**. DOJ stated that, across both phases, the fund had already distributed **over USD 420 million** to **more than 175,000 victims**, who received full compensation for their losses.[^western]
+#### Basis for return
 
-The official materials connect the transfer to **funds forfeited to the United States from Western Union**. The compensation mechanism was **remission**, a formal administrative process through which forfeited funds can be returned to victims.
+| Element | Legal basis |
+|---------|-------------|
+| **Confiscation** | Swiss criminal procedure; Geneva judicial authorities |
+| **Transfer abroad** | Switzerland–World Bank agreement (2012); BOTA tripartite framework (2007) |
+| **Restrictions on use** | Project earmarking (youth, energy efficiency); BOTA Foundation oversight |
 
-Why it matters: this case shows that a transfer to victims can be structured even when the proceeds first pass through the state, provided there is a clear remission framework and a verified class of victims.
+#### Use of returned assets
 
-## Cross-Border Transfer Cases
+2012 tranche: youth policy and energy efficiency projects. BOTA: Child and Youth Development Foundation.[^kaz2012][^kaz2015]
 
-### 3. Switzerland -> Nigeria (Abacha II)
+#### Verification note
 
-Switzerland’s return of Abacha assets is one of the best documented cross-border models. According to the Swiss Federal Department of Foreign Affairs, on **4 December 2017** Switzerland, Nigeria and the World Bank signed a **tripartite agreement** governing the restitution of approximately **USD 321 million** to Nigeria’s population.[^abacha2017]
+- Transfer verified: Yes (Swiss official sources)
+- Court decision verified: Partial (Geneva proceedings cited; full decision not linked)
+- Return instrument verified: Yes (2012 agreement; BOTA completion 2015)
+- Use-of-funds evidence verified: Yes (project designation; BOTA completion 2015)
+- Open gaps: Geneva court decision link
 
-The official Swiss explanation is important because it identifies the legal step that came before transfer: the funds had been **repatriated and confiscated by Switzerland as part of criminal proceedings brought by the public prosecutor's office of Geneva against Abba Abacha**.[^abacha2017] A prior Swiss press release from **8 March 2016** states that the return process became possible after the **Attorney General of the Canton of Geneva confiscated** the assets.[^abacha2016]
+#### Sources
 
-The agreement did not authorize an unrestricted transfer to the Nigerian state budget. Instead, it required **World Bank-supported monitoring**, tranche-based disbursement, and anti-misuse safeguards. The World Bank’s own factsheet likewise describes the arrangement as a monitored repatriation process.[^wbabacha]
+- Swiss FDFA, Kazakhstan restitution (21 Dec 2012)[^kaz2012]
+- Swiss FDFA, BOTA completion (9 Dec 2015)[^kaz2015]
 
-Why it matters: this is a leading example of **confiscation plus monitored interstate restitution**, which is likely more relevant for Ukraine than an unconditioned bilateral transfer.
+### Switzerland / Luxembourg -> Peru
 
-### 4. UK -> Nigeria (Ibori)
+#### Essence of the accusation
 
-On **9 March 2021**, the UK and Nigeria agreed the return of **GBP 4.2 million** recovered from associates of former Delta State Governor James Ibori.[^ibori] The official UK press release says the money would be used for Nigerian infrastructure and public-benefit projects, and that implementation would be subject to monitoring and audit.
+Corruption linked to Vladimiro Montesinos Torres (head of Fujimori-era intelligence) and associates. Assets frozen in Swiss and Luxembourg banks since early 2000s. Peru used non-conviction based asset forfeiture.
 
-The associated UK publication of the agreement’s annex is useful because it identifies the legal precursor to the transfer. It states that the returned funds were recovered in proceedings resulting in **confiscation orders made since 2010**.[^iboriannex] It also restricts the use of the money to specified projects and bars disbursement to alleged perpetrators and related persons.
+#### Parties
 
-Why it matters: this is a concise example of **confiscation orders plus a bilateral implementation agreement**. The transfer did not follow automatically from confiscation; the bilateral arrangement operationalized the destination and controls.
+- **Confiscating states:** Switzerland, Luxembourg
+- **Recipient:** Peru
+- **Use:** Rule of law, judicial transparency, anti-corruption projects
 
-Court-link status: this initial tranche confirms the confiscation-order basis from official UK materials, but a full-text public copy of the operative confiscation orders is still pending.
+#### Procedural path and decision
 
-### 5. U.S. -> Malaysia (1MDB)
+- Assets frozen for nearly two decades; complex proceedings.
+- Confiscation procedures concluded 2020.
+- 16 Dec 2020: Trilateral agreement signed — Switzerland USD 16.3 million, Luxembourg EUR 9.7 million.[^peru][^peru2]
+- Historic: first execution of a Peruvian confiscation order in a foreign jurisdiction based on Peru's non-conviction based forfeiture.
 
-The U.S. Department of Justice provides unusually clear official reporting on the repatriation of 1MDB proceeds. On **13 June 2024**, DOJ announced an additional **USD 156 million** repatriation to Malaysia, bringing the total returned by DOJ to approximately **USD 1.4 billion**.[^1mdb]
+#### Basis for return
 
-DOJ links these returns to the long-running U.S. forfeiture campaign involving 1MDB proceeds. The Department states that, since July 2016, it had filed **41 civil forfeiture actions** and seized more than **USD 1.7 billion** in assets allegedly traceable to the scheme.[^1mdb]
+| Element | Legal basis |
+|---------|-------------|
+| **Confiscation** | Swiss and Luxembourg criminal/forfeiture procedures; Peru non-conviction based forfeiture |
+| **Transfer abroad** | Trilateral agreement (Switzerland–Luxembourg–Peru) |
+| **Restrictions on use** | Earmarking for rule of law, judicial transparency, anti-corruption |
 
-A published judicial layer is available in a related forfeiture track: in *United States v. PetroSaudi Oil Services (Venezuela) Ltd.* (Ninth Circuit, 13 June 2023), the court affirmed interlocutory orders preserving and permitting seizure of assets allegedly connected to 1MDB proceeds.[^petrosaudi] This did not itself order repatriation to Malaysia, but it upheld legal control over assets in the forfeiture pipeline that is necessary before transfer decisions.
+#### Use of returned assets
 
-Why it matters: 1MDB shows that large cross-border returns are possible, but only after a lengthy forfeiture phase, substantial tracing work, and a dedicated repatriation decision by the recovering state.
+Projects strengthening rule of law, judicial transparency, and fight against corruption and impunity. Peru judiciary, public ministry, and justice ministry implement. Follow-up meeting May 2022 tracked implementation.[^peru2]
+
+#### Verification note
+
+- Transfer verified: Yes (Swiss, Luxembourg, Peru official sources)
+- Court decision verified: Partial (confiscation procedures cited; court texts not linked)
+- Return instrument verified: Yes (2020 trilateral agreement)
+- Use-of-funds evidence verified: Yes (project designation; May 2022 follow-up)
+- Open gaps: Full court/confiscation decision links
+
+#### Sources
+
+- Swiss FDFA, Peru trilateral agreement (16 Dec 2020)[^peru]
+- Swiss FDFA, dynamic policy on restitution (16 Dec 2020)[^peru2]
+
+## Domestic Transfer Cases (Comparator Models)
+
+
+Madoff and Western Union are **domestic** victim-compensation models — forfeited assets distributed to victims within the U.S. legal system. They illustrate **distribution mechanics** (remission, victim funds) but are **not interstate restitution cases**. Included here as comparators.
+
+### U.S. Madoff Victim Fund
+
+DOJ-administered victim fund; **>USD 4.3 billion** to **40,930 victims in 127 countries** (93.71% recovery).[^madoff] Legal basis: civil and criminal forfeiture; formal DOJ victim compensation structure.
+
+### U.S. Western Union Remission Fund
+
+**>USD 420 million** to **>175,000 victims** via remission.[^western] Funds forfeited from Western Union; formal remission process. Shows transfer-to-victims structure when proceeds pass through the state.
 
 
 
