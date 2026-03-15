@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllWorks, getWorkBySlug } from "@/lib/works";
 import { prefixPath } from "@/lib/url";
@@ -21,10 +20,10 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
   return (
     <main className="work-page">
       <div className="work-header">
-        <Link href={prefixPath("/")} className="btn ghost back-link">
+        <a href={prefixPath("/")} className="btn ghost back-link">
           <span className="back-link-arrow" aria-hidden="true">&lt;</span>
           <span>Back to registry</span>
-        </Link>
+        </a>
         <h1>{work.title}</h1>
         <p className="work-summary">{work.summary}</p>
         <div className="actions">
