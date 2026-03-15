@@ -48,11 +48,11 @@ The note relies on **official sources**: press releases, treaties, MoUs, court d
 
 | Case | Accusation / predicate offense | Parties | Forum / decision date | Amount | Legal basis for confiscation | Legal basis for return | Recipient / use of funds | Monitoring / joint project | Sources |
 |------|------------------------------|---------|------------------------|-------|-----------------------------|------------------------|--------------------------|----------------------------|---------|
-| Switzerland -> Nigeria (Abacha II) | Corruption, embezzlement, laundering of state assets under Gen. Sani Abacha | Nigeria (requesting), Switzerland (confiscating), World Bank (monitoring) | Swiss Federal Supreme Court ATF 131 II 169 (7 Feb 2005); Geneva confiscation (8 Mar 2016); tripartite MOU (4 Dec 2017) | USD 321 million | Swiss criminal procedure (SCC Art. 69–72); Geneva prosecutor confiscation | Tripartite restitution agreement (Switzerland–Nigeria–World Bank); MLA framework (IRSG) | National Social Safety Net Project; cash transfers to poor households | World Bank monitors same as IDA Credit; Nigerian CSOs (NAR); bi-annual reports | [^abachacourt][^abacha2016][^abacha2017][^wbabacha] |
-| UK -> Nigeria (Ibori) | Money laundering, conspiracy to defraud, forgery (Ibori network) | UK (confiscating), Nigeria (recipient) | UK confiscation orders since 2010; UK–Nigeria agreement (9 Mar 2021) | GBP 4.2 million | POCA 2002 s.6 confiscation orders | UK–Nigeria bilateral MoU and annex | Lagos–Ibadan Expressway, Abuja–Kano road, second Niger Bridge; NSIA administers | Cleen Foundation independent monitoring; Federal Monitoring Team; annual accountability reports | [^ibori][^iboriannex] |
-| U.S. -> Malaysia (1MDB) | Misappropriation, bribery, money laundering (1MDB scheme) | U.S. (forfeiting), Malaysia (recipient) | U.S. civil forfeiture (41 actions from Jul 2016); Ninth Circuit (13 Jun 2023); DOJ repatriation tranches | ~USD 1.4 billion | 18 USC 981 civil forfeiture; Kleptocracy Asset Recovery Initiative | DOJ repatriation decision; bilateral U.S.–Malaysia framework | Malaysia 1MDB Asset Recovery Trust Account; benefit of people of Malaysia | Trust account administration; bilateral repatriation framework | [^1mdb][^petrosaudi] |
-| Switzerland -> Kazakhstan | Money laundering (Geneva proceedings) | Switzerland, World Bank, Kazakhstan | Geneva confiscation (2011); Switzerland–World Bank agreement (Dec 2012) | USD 48 million (2012); USD 115 million (BOTA, 2007–2015) | Swiss criminal procedure; Geneva judicial authorities | Switzerland–World Bank agreement; BOTA Foundation (tripartite Switzerland–U.S.–Kazakhstan) | Youth policy, energy efficiency (2012); BOTA Child and Youth Development Foundation | World Bank; BOTA Foundation oversight | [^kaz2012][^kaz2015] |
-| Switzerland / Luxembourg -> Peru | Corruption (Montesinos/Fujimori-era; assets frozen since early 2000s) | Switzerland, Luxembourg, Peru | Confiscation procedures concluded 2020; trilateral agreement (16 Dec 2020) | USD 16.3 million (CHF) + EUR 9.7 million (LUX) | Swiss and Luxembourg criminal/forfeiture procedures; Peru non-conviction based forfeiture | Trilateral agreement (Switzerland–Luxembourg–Peru) | Rule of law, judicial transparency, anti-corruption projects | Peru judiciary, public ministry, justice ministry implementation; follow-up meeting May 2022 | [^peru][^peru2] |
+| Switzerland -> Nigeria (Abacha II) | Embezzlement (fake "national security" CBN withdrawals), kickbacks from state contracts, extortion from foreign firms; laundering via Swiss banks (Abacha family, 1993–1998) | Nigeria (requesting), Switzerland (confiscating), World Bank (monitoring) | Swiss Federal Supreme Court ATF 131 II 169 (7 Feb 2005); Geneva confiscation (8 Mar 2016); tripartite MOU (4 Dec 2017) | USD 321 million | Swiss criminal procedure (SCC Art. 69–72); Geneva prosecutor confiscation | Tripartite restitution agreement (Switzerland–Nigeria–World Bank); MLA framework (IRSG) | National Social Safety Net Project; cash transfers to poor households | World Bank monitors same as IDA Credit; Nigerian CSOs (NAR); bi-annual reports | [^abachacourt][^abacha2016][^abacha2017][^wbabacha] |
+| UK -> Nigeria (Ibori) | Fraud (fake consultancy fees on V-Mobile sale, ~GBP 50m+); money laundering (UK properties, luxury goods); forgery (Ibori, ex-Delta State Governor) | UK (confiscating), Nigeria (recipient) | UK confiscation orders since 2010; UK–Nigeria agreement (9 Mar 2021) | GBP 4.2 million | POCA 2002 s.6 confiscation orders | UK–Nigeria bilateral MoU and annex | Lagos–Ibadan Expressway, Abuja–Kano road, second Niger Bridge; NSIA administers | Cleen Foundation independent monitoring; Federal Monitoring Team; annual accountability reports | [^ibori][^iboriannex] |
+| U.S. -> Malaysia (1MDB) | Misappropriation of sovereign fund bond proceeds; bribery (Najib Razak, officials); laundering (real estate, art, films; Jho Low orchestration) | U.S. (forfeiting), Malaysia (recipient) | U.S. civil forfeiture (41 actions from Jul 2016); Ninth Circuit (13 Jun 2023); DOJ repatriation tranches | ~USD 1.4 billion | 18 USC 981 civil forfeiture; Kleptocracy Asset Recovery Initiative | DOJ repatriation decision; bilateral U.S.–Malaysia framework | Malaysia 1MDB Asset Recovery Trust Account; benefit of people of Malaysia | Trust account administration; bilateral repatriation framework | [^1mdb][^petrosaudi] |
+| Switzerland -> Kazakhstan | Corruption/bribery (oil-sector payments to Nazarbayev-linked accounts); money laundering (Geneva proceedings) | Switzerland, World Bank, Kazakhstan | Geneva confiscation (2011); Switzerland–World Bank agreement (Dec 2012) | USD 48 million (2012); USD 115 million (BOTA, 2007–2015) | Swiss criminal procedure; Geneva judicial authorities | Switzerland–World Bank agreement; BOTA Foundation (tripartite Switzerland–U.S.–Kazakhstan) | Youth policy, energy efficiency (2012); BOTA Child and Youth Development Foundation | World Bank; BOTA Foundation oversight | [^kaz2012][^kaz2015] |
+| Switzerland / Luxembourg -> Peru | Bribery (judges, politicians, media); embezzlement; laundering (Montesinos, Fujimori-era intelligence chief) | Switzerland, Luxembourg, Peru | Confiscation procedures concluded 2020; trilateral agreement (16 Dec 2020) | USD 16.3 million (CHF) + EUR 9.7 million (LUX) | Swiss and Luxembourg criminal/forfeiture procedures; Peru non-conviction based forfeiture | Trilateral agreement (Switzerland–Luxembourg–Peru) | Rule of law, judicial transparency, anti-corruption projects | Peru judiciary, public ministry, justice ministry implementation; follow-up meeting May 2022 | [^peru][^peru2] |
 
 ## Interstate Case Analysis (Priority Cases)
 
@@ -60,7 +60,7 @@ The note relies on **official sources**: press releases, treaties, MoUs, court d
 
 #### Essence of the accusation
 
-Assets traced to late Gen. Sani Abacha and family held in Swiss banks — corruption, embezzlement, and laundering of illicit state assets. Nigeria requested mutual legal assistance for recovery.
+**Gen. Sani Abacha** (military dictator of Nigeria, 1993–1998) and his family systematically looted an estimated **USD 3–9 billion** from the Nigerian state. The predicate offenses included: (1) **embezzlement** — advisers submitted fake "urgent national security" requests that Abacha authorised, which the Central Bank of Nigeria paid out in cash; (2) **kickbacks and extortion** — inflated state contracts awarded to associates, and demands for bribes from foreign companies; (3) **money laundering** — proceeds placed in Swiss and other European banks through family members and intermediaries. The Swiss-confiscated assets (USD 321 million) were traced to Abacha, his son Abba Abacha, and related parties. Nigeria requested mutual legal assistance for recovery.
 
 #### Parties
 
@@ -166,7 +166,7 @@ flowchart TD
 
 #### Essence of the accusation
 
-Large-scale misappropriation, bribery, and money laundering linked to the 1MDB scheme. Assets traceable to the scheme were held or transited through the U.S. financial system.
+**1Malaysia Development Berhad (1MDB)** — Malaysia's sovereign wealth fund — was used to divert over **USD 4.5 billion** between 2009 and 2013. The predicate offenses included: (1) **misappropriation** — bond proceeds raised for "development" were channelled through shell companies and offshore accounts; (2) **bribery** — funds flowed to Malaysian officials, including then-Prime Minister Najib Razak (over USD 700 million into his personal accounts); (3) **money laundering** — proceeds used to purchase luxury real estate, art, jewellery, private jets, superyachts, and to finance Hollywood films. Businessman Jho Low orchestrated the scheme as "proxy, conduit, intermediary and facilitator." The U.S. DOJ termed it the "largest kleptocracy case to date." Assets traceable to the scheme transited through or were held in the U.S. financial system.
 
 #### Parties
 
@@ -259,7 +259,7 @@ flowchart TD
 
 #### Essence of the accusation
 
-Money laundering (POCA s.327), conspiracy to defraud, forgery — proceeds linked to former Delta State Governor James Ibori and associates. UK Met Police Proceeds of Crime Unit, NCA, and CPS investigated.
+**James Ibori**, former Governor of Delta State (1999–2007), pleaded guilty in the UK to **10 counts of conspiracy to defraud and money laundering** (POCA s.327). The predicate offenses included: (1) **fraud** — siphoning approximately **GBP 50 million** (prosecutors estimated over GBP 200 million), including a single fraud of USD 37 million in fake consultancy fees during the sale of Delta State's stake in mobile telecoms company V-Mobile; (2) **money laundering** — proceeds used to purchase six properties in the UK, South Africa, and the US (including a GBP 2.2 million Hampstead mansion), luxury vehicles (Bentley, Mercedes Maybach), and an attempted USD 20 million private jet purchase; (3) **forgery** — falsified documents to support the fraud. Ibori was arrested in Dubai (2010), extradited to the UK, and sentenced to 13 years (2012). UK confiscation orders targeted recoverable criminal property.
 
 #### Parties
 
@@ -361,7 +361,7 @@ flowchart TD
 
 #### Essence of the accusation
 
-Money laundering; assets held in Swiss banks, confiscated in 2011 by Geneva judicial authorities in criminal proceedings.
+**Kazakhstan BOTA track:** Approximately **CHF 115 million** was discovered in Swiss bank accounts (Credit Agricole, Pictet) held by or linked to **Nursultan Nazarbayev** (then President of Kazakhstan). The predicate offense was **corruption / bribery** — the funds were allegedly paid by U.S. oil companies in exchange for exploitation rights in Kazakhstan's oil sector and were suspected to be proceeds of corruption. Assets were frozen in 1999. **2012 tranche:** Geneva judicial authorities confiscated additional assets in **money-laundering** proceedings (2011); USD 48 million was returned for youth policy and energy efficiency projects. The BOTA Foundation (tripartite Switzerland–U.S.–Kazakhstan) was established to return the 1999-frozen funds to the Kazakh people without risk of recapture by corrupt officials.
 
 #### Parties
 
@@ -404,7 +404,7 @@ Money laundering; assets held in Swiss banks, confiscated in 2011 by Geneva judi
 
 #### Essence of the accusation
 
-Corruption linked to Vladimiro Montesinos Torres (head of Fujimori-era intelligence) and associates. Assets frozen in Swiss and Luxembourg banks since early 2000s. Peru used non-conviction based asset forfeiture.
+**Vladimiro Montesinos Torres**, head of Peru's National Intelligence Service (SIN) under President Alberto Fujimori (1990–2000), orchestrated a systematic **bribery and embezzlement** scheme to maintain political control. The predicate offenses included: (1) **embezzlement** — diversion of state funds; (2) **bribery** — payments to judges, politicians, journalists, and businesspeople (Montesinos kept meticulous records, including videotaped bribe negotiations); (3) **money laundering** — proceeds placed in Swiss and Luxembourg banks. The "Vladi-videos" scandal (Sept 2000) — a leaked video showing Montesinos bribing a congressman — triggered his flight and Fujimori's resignation. Montesinos faced additional charges including drug trafficking and homicide. Assets were frozen in Swiss and Luxembourg banks since the early 2000s. Peru used **non-conviction based asset forfeiture** to obtain confiscation orders executed abroad.
 
 #### Parties
 
@@ -451,11 +451,11 @@ Madoff and Western Union are **domestic** victim-compensation models — forfeit
 
 ### U.S. Madoff Victim Fund
 
-DOJ-administered victim fund; **>USD 4.3 billion** to **40,930 victims in 127 countries** (93.71% recovery).[^madoff] Legal basis: civil and criminal forfeiture; formal DOJ victim compensation structure.
+**Essence of the accusation:** **Bernard Madoff** operated a **Ponzi scheme** through his investment firm for decades. The predicate offense was **securities fraud** — he promised investors steady returns but used new investors' money to pay earlier investors, fabricating account statements and trade records. No legitimate trading occurred. Estimated losses exceeded USD 17 billion in principal. Madoff pleaded guilty (2009) and was sentenced to 150 years. DOJ-administered victim fund; **>USD 4.3 billion** to **40,930 victims in 127 countries** (93.71% recovery).[^madoff] Legal basis: civil and criminal forfeiture; formal DOJ victim compensation structure.
 
 ### U.S. Western Union Remission Fund
 
-**>USD 420 million** to **>175,000 victims** via remission.[^western] Funds forfeited from Western Union; formal remission process. Shows transfer-to-victims structure when proceeds pass through the state.
+**Essence of the accusation:** **Western Union** admitted to **anti-money laundering and consumer fraud violations** and **aiding and abetting wire fraud**. Perpetrators (often abroad) induced victims to wire money through Western Union for lottery/prize scams, grandparent/emergency scams, and online fraud. Western Union failed to implement adequate AML and anti-fraud controls despite knowing its network was used for such schemes. Victims sent funds through Western Union to scammers (2004–2017). The company forfeited USD 586 million in settlement with DOJ and FTC. **>USD 420 million** distributed to **>175,000 victims** via remission.[^western] Shows transfer-to-victims structure when proceeds pass through the state.
 
 
 
