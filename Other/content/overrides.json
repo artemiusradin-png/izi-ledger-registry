@@ -14,6 +14,12 @@
     "tags": ["повернення активів", "конфіскація", "репатріація", "Швейцарія", "Нігерія", "Малайзія", "компенсація потерпілим", "переклад"],
     "related": ["Asset_Transfer_Cases_Initial_Research"]
   },
+  "Asset_Transfer_Cases_2nd_Research": {
+    "title": "Asset Transfer Cases: Second Research",
+    "summary": "Second case-based research note on new interstate transfer models for confiscated criminal assets, focused on mechanisms relevant to Ukraine.",
+    "kind": "Analysis",
+    "tags": ["asset recovery", "confiscation", "repatriation", "Ukraine", "Uzbekistan", "Nigeria", "Jersey", "Kyrgyz Republic"]
+  },
   "German_Sanctions_Criminal_Asset_Pipeline_3Page": {
     "title": "Germany: Criminally Confiscated Assets Pathway for Ukraine",
     "summary": "Operational playbook for pursuing value transfer to Ukraine from finalized criminal confiscation cases in Germany.",
